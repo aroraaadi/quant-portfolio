@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holdings — Quant Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <span class="brand">Quant Portfolio</span>
+    <a class="tab" href="index.html">Dashboard</a>
+    <a class="tab active" href="holdings.html">Holdings</a>
+    <a class="tab" href="blog.html">Blog</a>
+    <span class="asof" id="asof"></span>
+  </nav>
+
+  <h1>Holdings & changes</h1>
+  <p class="sub">Current target weights, month-over-month changes, and how the book has evolved.</p>
+
+  <div class="card">
+    <h2>Latest rebalance</h2>
+    <div class="scroll-x">
+      <table id="changes-table">
+        <thead><tr>
+          <th>Ticker</th><th class="num">Weight</th><th class="num">Previous</th><th class="num">Change</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="note" id="turnover-note"></p>
+  </div>
+
+  <div class="card">
+    <h2>Portfolio composition over time</h2>
+    <div class="legend" id="comp-legend"></div>
+    <div class="chart-box" id="comp-box" style="height:220px"><canvas id="comp-chart"></canvas></div>
+    <p class="note">One bar per rebalance. Colors follow each name permanently; positions beyond eight fold into “Other”.</p>
+  </div>
+
+  <footer>Personal research project, not investment advice. Weights are percentages of the equity portfolio.</footer>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/holdings.js"></script>
+</body>
+</html>

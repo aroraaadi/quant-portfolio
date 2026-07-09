@@ -1,0 +1,302 @@
+{
+ "AMZN": {
+  "trailingPE": 32.08312,
+  "forwardPE": 24.973917,
+  "shortPercentOfFloat": 0.0101,
+  "sharesShort": 92450944,
+  "floatShares": 9779826044,
+  "marketCap": 2657436303360,
+  "longName": "Amazon.com, Inc.",
+  "short_pct": 0.0101,
+  "roic_quarters": [
+   0.056150526037636116,
+   0.04654194427448094,
+   0.04945137158303393,
+   0.04543895954101354,
+   0.047071988223379956
+  ]
+ },
+ "AAPL": {
+  "trailingPE": 38.237,
+  "forwardPE": 32.908905,
+  "shortPercentOfFloat": 0.0098,
+  "sharesShort": 144248476,
+  "floatShares": 14662534368,
+  "marketCap": 4644435656704,
+  "longName": "Apple Inc.",
+  "short_pct": 0.0098,
+  "roic_quarters": [
+   0.20339849544946764,
+   0.314684066436295,
+   0.1989677769382198,
+   0.1796216374681558,
+   0.18283788351197558
+  ]
+ },
+ "NVDA": {
+  "trailingPE": 31.053598,
+  "forwardPE": 15.88708,
+  "shortPercentOfFloat": 0.0128999995,
+  "sharesShort": 299666309,
+  "floatShares": 23225708000,
+  "marketCap": 4911534178304,
+  "longName": "NVIDIA Corporation",
+  "short_pct": 0.0128999995,
+  "roic_quarters": [
+   0.30015725751107086,
+   0.27276213658209447,
+   0.2711066939641788,
+   0.26717625553725854,
+   0.2386618199483255
+  ]
+ },
+ "BE": {
+  "trailingPE": null,
+  "forwardPE": 58.373703,
+  "shortPercentOfFloat": 0.119799994,
+  "sharesShort": 29780167,
+  "floatShares": 278999612,
+  "marketCap": 73107759104,
+  "longName": "Bloom Energy Corporation",
+  "short_pct": 0.119799994,
+  "roic_quarters": [
+   0.05963254296283947,
+   0.0064801739017286844,
+   -0.00523993346035431,
+   -0.017344081668664788,
+   -0.006561096189864592
+  ]
+ },
+ "GOOG": {
+  "trailingPE": 27.214666,
+  "forwardPE": 24.470528,
+  "shortPercentOfFloat": null,
+  "sharesShort": 45216936,
+  "floatShares": 10823222800,
+  "marketCap": 4347044298752,
+  "longName": "Alphabet Inc.",
+  "short_pct": 0.004177770044611851,
+  "roic_quarters": [
+   0.11862345437113034,
+   0.0782193095073154,
+   0.08828578164913928,
+   0.07527805322806876,
+   0.1000329954311032
+  ]
+ },
+ "MDA": {
+  "trailingPE": 62.762497,
+  "forwardPE": 28.786505,
+  "shortPercentOfFloat": null,
+  "sharesShort": 2114404,
+  "floatShares": null,
+  "marketCap": 6966686208,
+  "longName": "MDA Space Ltd.",
+  "short_pct": null,
+  "roic_quarters": [
+   0.020314873620308413,
+   0.016515991288310227,
+   0.018442072975909003,
+   0.02918446844199232,
+   0.037317010897440245
+  ]
+ },
+ "META": {
+  "trailingPE": 22.962908,
+  "forwardPE": 17.14389,
+  "shortPercentOfFloat": 0.0137,
+  "sharesShort": 29985155,
+  "floatShares": 2192715434,
+  "marketCap": 1602963505152,
+  "longName": "Meta Platforms, Inc.",
+  "short_pct": 0.0137,
+  "roic_quarters": [
+   0.07267835739225598,
+   0.0873741925773481,
+   0.060562528996888555,
+   0.07975159428116155,
+   0.0819313513071951
+  ]
+ },
+ "JPM": {
+  "trailingPE": 16.051197,
+  "forwardPE": 14.020241,
+  "shortPercentOfFloat": 0.0113,
+  "sharesShort": 30082851,
+  "floatShares": 2665256417,
+  "marketCap": 898895642624,
+  "longName": "JPMorgan Chase & Co.",
+  "short_pct": 0.0113,
+  "roic_quarters": []
+ },
+ "SHOP": {
+  "trailingPE": 119.58253,
+  "forwardPE": 52.861298,
+  "shortPercentOfFloat": 0.0173,
+  "sharesShort": 21050356,
+  "floatShares": 1216590127,
+  "marketCap": 159832129536,
+  "longName": "Shopify Inc.",
+  "short_pct": 0.0173,
+  "roic_quarters": [
+   0.0421315625160175,
+   0.05117134763217829,
+   0.03753631313388716,
+   0.026577614428891567,
+   0.022631302521008402
+  ]
+ },
+ "SPGI": {
+  "trailingPE": 27.385199,
+  "forwardPE": 21.288973,
+  "shortPercentOfFloat": 0.0165,
+  "sharesShort": 4887553,
+  "floatShares": 295286640,
+  "marketCap": 128156155904,
+  "longName": "S&P Global Inc.",
+  "short_pct": 0.0165,
+  "roic_quarters": [
+   0.03661820987910806,
+   0.029432195125960903,
+   0.030639960000315436,
+   0.028070514854657645,
+   0.028119475358535307
+  ]
+ },
+ "GE": {
+  "trailingPE": 44.601242,
+  "forwardPE": 41.265408,
+  "shortPercentOfFloat": 0.0134000005,
+  "sharesShort": 13943685,
+  "floatShares": 1039393420,
+  "marketCap": 375135633408,
+  "longName": "GE Aerospace",
+  "short_pct": 0.0134000005,
+  "roic_quarters": [
+   0.08392912571915981,
+   0.09995524545060903,
+   0.08712013894019945,
+   0.07854420139160886,
+   0.08121769465282404
+  ]
+ },
+ "AMD": {
+  "trailingPE": 182.23999,
+  "forwardPE": 41.4205,
+  "shortPercentOfFloat": 0.028800001,
+  "sharesShort": 46762536,
+  "floatShares": 1622023680,
+  "marketCap": 891481882624,
+  "longName": "Advanced Micro Devices, Inc.",
+  "short_pct": 0.028800001,
+  "roic_quarters": [
+   0.022271785157492573,
+   0.026866462523632777,
+   0.019960820975643594,
+   -0.0003958788001827133,
+   0.012711811286851508
+  ]
+ },
+ "MU": {
+  "trailingPE": 22.43022,
+  "forwardPE": 6.626906,
+  "shortPercentOfFloat": 0.0369,
+  "sharesShort": 41592382,
+  "floatShares": 1125316042,
+  "marketCap": 1119951388672,
+  "longName": "Micron Technology, Inc.",
+  "short_pct": 0.0369,
+  "roic_quarters": [
+   0.34387674319468975,
+   0.1992286110902111,
+   0.08611184663240792,
+   0.05537281133256108,
+   0.03503367763528265
+  ]
+ },
+ "COST": {
+  "trailingPE": 45.831825,
+  "forwardPE": 40.3609,
+  "shortPercentOfFloat": 0.0177,
+  "sharesShort": 7837886,
+  "floatShares": 440916269,
+  "marketCap": 404882849792,
+  "longName": "Costco Wholesale Corporation",
+  "short_pct": 0.0177,
+  "roic_quarters": [
+   0.09761992795824936,
+   0.09006429072581222,
+   0.09140588701722603,
+   0.11409238558013152,
+   0.08984190653839808
+  ]
+ },
+ "APH": {
+  "trailingPE": 46.62069,
+  "forwardPE": 28.286,
+  "shortPercentOfFloat": 0.015800001,
+  "sharesShort": 17223423,
+  "floatShares": 1222385549,
+  "marketCap": 199593246720,
+  "longName": "Amphenol Corporation",
+  "short_pct": 0.015800001,
+  "roic_quarters": [
+   0.04213066085734168,
+   0.07309763970389527,
+   0.07843807396359308,
+   0.07125989677935435,
+   0.05080829245893438
+  ]
+ },
+ "MSFT": {
+  "trailingPE": 22.892195,
+  "forwardPE": 19.85706,
+  "shortPercentOfFloat": 0.0128,
+  "sharesShort": 95188264,
+  "floatShares": 7417514905,
+  "marketCap": 2855193018368,
+  "longName": "Microsoft Corporation",
+  "short_pct": 0.0128,
+  "roic_quarters": [
+   0.07378064543068764,
+   0.09204613680103721,
+   0.07171441258540583,
+   0.07422323107374901,
+   0.07440792862807388
+  ]
+ },
+ "AVGO": {
+  "trailingPE": 66.62956,
+  "forwardPE": 20.680271,
+  "shortPercentOfFloat": 0.013200001,
+  "sharesShort": 61482385,
+  "floatShares": 4698966810,
+  "marketCap": 1908312899584,
+  "longName": "Broadcom Inc.",
+  "short_pct": 0.013200001,
+  "roic_quarters": [
+   0.07537929307511043,
+   0.06122962941112552,
+   0.05857965451055662,
+   0.0376389147608017,
+   0.04486681298764977
+  ]
+ },
+ "NEE": {
+  "trailingPE": 22.106598,
+  "forwardPE": 19.790731,
+  "shortPercentOfFloat": 0.0001,
+  "sharesShort": 120161,
+  "floatShares": 2080941386,
+  "marketCap": 181656223744,
+  "longName": "NextEra Energy, Inc.",
+  "short_pct": 0.0001,
+  "roic_quarters": [
+   0.015771409720415918,
+   0.010705374466199163,
+   0.020964447388760073,
+   0.017173023661235222,
+   0.008142130720575468
+  ]
+ }
+}
