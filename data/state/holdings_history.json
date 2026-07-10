@@ -11,5 +11,24 @@
    "NEE": 0.2
   },
   "note": "initial portfolio"
+ },
+ {
+  "date": "2026-07-10",
+  "turnover": 0.5,
+  "model_vol": 0.121,
+  "weights": {
+   "AMZN": 0.1,
+   "AAPL": 0.1,
+   "NVDA": 0.0857,
+   "GOOG": 0.1,
+   "META": 0.0723,
+   "COST": 0.1,
+   "MSFT": 0.0662,
+   "JPM": 0.1,
+   "SPGI": 0.1,
+   "GE": 0.0758,
+   "NEE": 0.1
+  },
+  "note": "monthly rebalance"
  }
 ]

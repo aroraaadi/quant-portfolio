@@ -1,20 +1,43 @@
 {
- "as_of": "2026-07-09",
+ "as_of": "2026-07-10",
  "vol_target_band": [
   0.12,
   0.18
  ],
- "model_vol": 0.1361,
+ "model_vol": 0.121,
  "vol_band_met": true,
- "min_var_vol": 0.0962,
- "n_positions": 5,
+ "min_var_vol": 0.1174,
+ "n_positions": 11,
+ "max_weight": 0.1,
  "sector_neutral": true,
  "pending": [],
  "holdings": [
   {
+   "ticker": "COST",
+   "sector": "Consumer Defensive",
+   "weight": 0.1,
+   "alpha_score": 0.1644,
+   "signals": {
+    "value": 0.6369,
+    "quality": 0.2601,
+    "momentum": 0.2104,
+    "short_interest": -1.0491
+   },
+   "raw": {
+    "pe": 45.8,
+    "ev_ebitda_yield": 0.0328,
+    "fcf_yield": 0.0172,
+    "roic_mean": 0.0966,
+    "operating_margin": 0.0367,
+    "roe": 0.2915,
+    "momentum_12_1": -0.0112,
+    "short_pct": 0.0177
+   }
+  },
+  {
    "ticker": "NEE",
    "sector": "Utilities",
-   "weight": 0.2,
+   "weight": 0.1,
    "alpha_score": 0.3019,
    "signals": {
     "value": 0.3539,
@@ -36,7 +59,7 @@
   {
    "ticker": "JPM",
    "sector": "Financial Services",
-   "weight": 0.2,
+   "weight": 0.1,
    "alpha_score": 0.5988,
    "signals": {
     "value": 1.383,
@@ -56,31 +79,31 @@
    }
   },
   {
-   "ticker": "SPGI",
-   "sector": "Financial Services",
-   "weight": 0.2,
-   "alpha_score": 0.3453,
+   "ticker": "AAPL",
+   "sector": "Technology",
+   "weight": 0.1,
+   "alpha_score": 0.1214,
    "signals": {
-    "value": 1.0835,
-    "quality": 0.2385,
-    "momentum": 0.0697,
-    "short_interest": -0.4579
+    "value": 0.0331,
+    "quality": 0.1194,
+    "momentum": -0.5085,
+    "short_interest": 1.3517
    },
    "raw": {
-    "pe": 27.4,
-    "ev_ebitda_yield": 0.0544,
-    "fcf_yield": 0.0413,
-    "roic_mean": 0.0306,
-    "operating_margin": 0.4428,
-    "roe": 0.1394,
-    "momentum_12_1": -0.2076,
-    "short_pct": 0.0165
+    "pe": 38.2,
+    "ev_ebitda_yield": 0.0346,
+    "fcf_yield": 0.0218,
+    "roic_mean": 0.2159,
+    "operating_margin": 0.3227,
+    "roe": 1.4147,
+    "momentum_12_1": 0.4358,
+    "short_pct": 0.0098
    }
   },
   {
    "ticker": "GOOG",
    "sector": "Communication Services",
-   "weight": 0.2,
+   "weight": 0.1,
    "alpha_score": 0.3634,
    "signals": {
     "value": -0.0351,
@@ -100,9 +123,31 @@
    }
   },
   {
+   "ticker": "SPGI",
+   "sector": "Financial Services",
+   "weight": 0.1,
+   "alpha_score": 0.3453,
+   "signals": {
+    "value": 1.0835,
+    "quality": 0.2385,
+    "momentum": 0.0697,
+    "short_interest": -0.4579
+   },
+   "raw": {
+    "pe": 27.4,
+    "ev_ebitda_yield": 0.0544,
+    "fcf_yield": 0.0413,
+    "roic_mean": 0.0306,
+    "operating_margin": 0.4428,
+    "roe": 0.1394,
+    "momentum_12_1": -0.2076,
+    "short_pct": 0.0165
+   }
+  },
+  {
    "ticker": "AMZN",
    "sector": "Consumer Cyclical",
-   "weight": 0.2,
+   "weight": 0.1,
    "alpha_score": 0.4113,
    "signals": {
     "value": 1.0618,
@@ -119,6 +164,94 @@
     "roe": 0.2429,
     "momentum_12_1": 0.1179,
     "short_pct": 0.0101
+   }
+  },
+  {
+   "ticker": "NVDA",
+   "sector": "Technology",
+   "weight": 0.0857,
+   "alpha_score": 0.2144,
+   "signals": {
+    "value": -0.4093,
+    "quality": 1.2757,
+    "momentum": -0.6745,
+    "short_interest": 0.8208
+   },
+   "raw": {
+    "pe": 31.1,
+    "ev_ebitda_yield": 0.0338,
+    "fcf_yield": 0.0094,
+    "roic_mean": 0.27,
+    "operating_margin": 0.656,
+    "roe": 1.1429,
+    "momentum_12_1": 0.304,
+    "short_pct": 0.0129
+   }
+  },
+  {
+   "ticker": "GE",
+   "sector": "Industrials",
+   "weight": 0.0758,
+   "alpha_score": 0.022,
+   "signals": {
+    "value": 0.2148,
+    "quality": 0.5094,
+    "momentum": -1.9145,
+    "short_interest": 1.8895
+   },
+   "raw": {
+    "pe": 44.6,
+    "ev_ebitda_yield": 0.0289,
+    "fcf_yield": 0.0151,
+    "roic_mean": 0.0862,
+    "operating_margin": 0.2021,
+    "roe": 0.4543,
+    "momentum_12_1": 0.3035,
+    "short_pct": 0.0134
+   }
+  },
+  {
+   "ticker": "META",
+   "sector": "Communication Services",
+   "weight": 0.0723,
+   "alpha_score": 0.2489,
+   "signals": {
+    "value": 0.7391,
+    "quality": 0.2982,
+    "momentum": -0.0697,
+    "short_interest": -0.2993
+   },
+   "raw": {
+    "pe": 23.0,
+    "ev_ebitda_yield": 0.0711,
+    "fcf_yield": 0.0159,
+    "roic_mean": 0.0765,
+    "operating_margin": 0.4062,
+    "roe": 0.3293,
+    "momentum_12_1": -0.1877,
+    "short_pct": 0.0137
+   }
+  },
+  {
+   "ticker": "MSFT",
+   "sector": "Technology",
+   "weight": 0.0662,
+   "alpha_score": -0.0707,
+   "signals": {
+    "value": 0.2774,
+    "quality": -0.1331,
+    "momentum": -1.0853,
+    "short_interest": 1.0491
+   },
+   "raw": {
+    "pe": 22.9,
+    "ev_ebitda_yield": 0.0637,
+    "fcf_yield": 0.013,
+    "roic_mean": 0.0772,
+    "operating_margin": 0.4633,
+    "roe": 0.3401,
+    "momentum_12_1": -0.1709,
+    "short_pct": 0.0128
    }
   }
  ]

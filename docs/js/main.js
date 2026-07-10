@@ -287,6 +287,9 @@ function renderMethodology() {
   const band = PORT.vol_target_band;
   document.getElementById("band-line").textContent =
     `${(band[0] * 100).toFixed(0)}–${(band[1] * 100).toFixed(0)}%`;
+  if (PORT.max_weight != null) {
+    document.getElementById("cap-line").textContent = `${(PORT.max_weight * 100).toFixed(0)}%`;
+  }
   if (RISK && RISK.factors_explained_var) {
     const pct = RISK.factors_explained_var.map(v => (v * 100).toFixed(0) + "%").join(", ");
     document.getElementById("risk-line").textContent =

@@ -1,6 +1,6 @@
 """Portfolio construction: maximize alpha^T w - lambda w^T Sigma w - gamma ||w - w0||_1.
 
-Long-only, fully invested, 20% position cap. Lambda is bisected so model vol
+Long-only, fully invested, per-name position cap. Lambda is bisected so model vol
 lands in config.VOL_BAND; if the band is unreachable long-only we pin to the
 closest feasible vol and flag it honestly. Concentration comes from an
 iterative prune: positions under PRUNE_THRESHOLD are dropped and the problem

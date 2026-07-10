@@ -59,7 +59,11 @@ TRADING_DAYS = 252
 # Band chosen to be feasible for a long-only, fully-invested portfolio of this
 # high-beta universe (verified against the min-variance vol at runtime).
 VOL_BAND = (0.12, 0.18)     # annualized
-MAX_WEIGHT = 0.20
+# Max position size. Keep it below 1/(min names) so the book can't be forced into
+# a uniform corner: at a 0.20 cap the prune-to-5-names step gives 5 x 0.20 = 100%,
+# which pins every weight to the cap regardless of alpha. 0.10 lets ~11 names hold
+# conviction-differentiated weights while staying inside the vol band.
+MAX_WEIGHT = 0.10
 PRUNE_THRESHOLD = 0.02      # drop positions below 2% and re-solve (concentration)
 TC_GAMMA = 0.0020           # 20 bps per unit of one-way turnover in the objective
 REBALANCE_COST_BPS = 10     # deducted from the live track record on rebalance days

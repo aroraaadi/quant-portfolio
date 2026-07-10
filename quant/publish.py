@@ -57,6 +57,7 @@ def portfolio_json(as_of, weights, sig, report, pending=None):
         "vol_band_met": report["vol_band_met"],
         "min_var_vol": _round(report["min_var_vol"]),
         "n_positions": report["n_positions"],
+        "max_weight": _round(config.MAX_WEIGHT),
         "sector_neutral": config.SECTOR_NEUTRAL,
         "pending": pending_out,
         "holdings": holdings,

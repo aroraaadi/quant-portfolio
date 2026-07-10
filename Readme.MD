@@ -83,5 +83,5 @@ Signals (each a multi-metric, SECTOR-NEUTRAL Gaussianized rank composite):
   Top-level weights 30/30/25/15 (static) auto-switch to information-coefficient
   driven once every signal has >= 6 point-in-time snapshots (quant/ic.py).
 Risk: PCA factor model (Sigma = BFB' + D, K<=N-1) on trailing 252d, Ledoit-Wolf cross-check.
-Construction: max a'w - lambda w'Sw - TC, long-only, sum(w)=1, w <= 20%, prune < 2%,
+Construction: max a'w - lambda w'Sw - TC, long-only, sum(w)=1, w <= 10%, prune < 2%,
 lambda bisected so vol lands in the 12-18% band; only names with >= 252d history are traded.
