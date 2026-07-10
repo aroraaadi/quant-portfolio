@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MVO — Quant Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <span class="brand">Quant Portfolio</span>
+    <a class="tab" href="index.html">Dashboard</a>
+    <a class="tab" href="holdings.html">Holdings</a>
+    <a class="tab active" href="mvo.html">MVO</a>
+    <a class="tab" href="blog.html">Blog</a>
+    <span class="asof" id="asof"></span>
+  </nav>
+
+  <h1>Mean-variance optimization</h1>
+  <p class="sub">Toggle assets on and off to build a long-only efficient frontier from
+    their expected returns and covariance. Everything below recomputes live in your browser.</p>
+
+  <div id="content">
+    <div class="card">
+      <div class="controls">
+        <div class="control">
+          <span class="clabel">Expected return</span>
+          <div class="seg" id="mu-seg">
+            <button data-v="hist" class="active">Historical mean</button>
+            <button data-v="alpha">Model alpha</button>
+          </div>
+        </div>
+        <div class="control">
+          <span class="clabel">Optimal portfolio</span>
+          <div class="seg" id="opt-seg">
+            <button data-v="sharpe" class="active">Max Sharpe</button>
+            <button data-v="minvar">Min variance</button>
+          </div>
+        </div>
+        <div class="control">
+          <span class="clabel">Assets</span>
+          <div style="display:flex; gap:8px">
+            <button class="btn-lite" id="sel-all">Select all</button>
+            <button class="btn-lite" id="sel-none">Clear</button>
+          </div>
+        </div>
+        <div class="control">
+          <span class="clabel">Display</span>
+          <label class="check"><input type="checkbox" id="show-cloud" checked> Random portfolios</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Assets <span class="note" id="asset-count" style="font-weight:400"></span></h2>
+      <div class="assetgrid" id="assetgrid"></div>
+    </div>
+
+    <div class="tiles" id="tiles"></div>
+
+    <div class="card">
+      <h2 id="frontier-title">Efficient frontier</h2>
+      <div class="legend" id="frontier-legend"></div>
+      <div class="chart-box" style="height:440px"><canvas id="frontier-chart"></canvas></div>
+      <p class="note" id="frontier-note"></p>
+    </div>
+
+    <div class="card">
+      <h2 id="weights-title">Optimal portfolio weights</h2>
+      <div class="chart-box" id="weights-box" style="height:300px"><canvas id="weights-chart"></canvas></div>
+    </div>
+  </div>
+
+  <footer>
+    Educational tool, not investment advice. Covariance is a Ledoit–Wolf shrinkage estimate over the full
+    return history; the frontier is long-only and fully invested. Expected returns are noisy estimates —
+    small changes move the frontier a lot, which is exactly why concentrated MVO solutions should be treated
+    with caution.
+  </footer>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/mvo.js"></script>
+</body>
+</html>

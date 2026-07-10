@@ -68,6 +68,20 @@ def signals_json(ic_report):
     _write(config.DOCS_DATA_DIR / "signals.json", ic_report)
 
 
+def mvo_json(payload):
+    """Expected returns + covariance for the browser efficient-frontier page."""
+    out = {
+        "assets": payload["assets"],
+        "sectors": payload["sectors"],
+        "rf": _round(payload["rf"]),
+        "mu_hist": [_round(x) for x in payload["mu_hist"]],
+        "mu_alpha": [_round(x, 5) for x in payload["mu_alpha"]],
+        "vol": [_round(x) for x in payload["vol"]],
+        "sigma": [[_round(x, 6) for x in row] for row in payload["sigma"]],
+    }
+    _write(config.DOCS_DATA_DIR / "mvo.json", out)
+
+
 def performance_json(returns, bench, history, weights):
     live = backtest.live_series(history, returns)
     live_start = str(live.index[0].date()) if len(live) else None

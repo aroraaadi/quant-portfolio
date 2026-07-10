@@ -42,10 +42,11 @@ def pca_cov(returns):
     return sigma_daily * config.TRADING_DAYS, diagnostics
 
 
-def ledoit_wolf_cov(returns):
+def ledoit_wolf_cov(returns, lookback=config.RISK_LOOKBACK):
     """Constant-correlation Ledoit-Wolf shrinkage (Honey, I Shrunk the Sample
-    Covariance Matrix, 2004), annualized."""
-    window = returns.iloc[-config.RISK_LOOKBACK:]
+    Covariance Matrix, 2004), annualized. lookback=None uses the full history
+    (the MVO page wants the most data for a stable covariance)."""
+    window = returns if lookback is None else returns.iloc[-lookback:]
     x = window.values - window.values.mean(axis=0)
     t, n = x.shape
     sample = x.T @ x / t

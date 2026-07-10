@@ -17,7 +17,7 @@ from datetime import date
 import numpy as np
 import pandas as pd
 
-from quant import backtest, config, data, fundamentals, ic, optimize, publish, risk, signals
+from quant import backtest, config, data, fundamentals, ic, mvo, optimize, publish, risk, signals
 
 log = logging.getLogger("run_monthly")
 
@@ -136,6 +136,7 @@ def main():
     publish.holdings_history_json(history)
     publish.risk_json(diag)
     publish.signals_json(ic_report)
+    publish.mvo_json(mvo.build_payload(returns, tradeable, sig))
     posts = publish.posts_index()
 
     print(f"\nPublished docs/data/*.json  ({len(posts)} blog posts indexed)")

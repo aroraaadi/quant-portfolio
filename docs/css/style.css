@@ -121,6 +121,33 @@ tr:last-child td { border-bottom: none; }
 .post-body blockquote { border-left: 3px solid var(--baseline); padding-left: 14px; color: var(--ink-2); margin-bottom: 14px; }
 .back { font-size: 13.5px; display: inline-block; margin-bottom: 14px; }
 
+/* Controls (MVO page) */
+.controls { display: flex; flex-wrap: wrap; gap: 18px 28px; align-items: flex-end; }
+.control { display: flex; flex-direction: column; gap: 6px; }
+.control .clabel { font-size: 12px; color: var(--ink-2); font-weight: 600; }
+.seg { display: inline-flex; border: 1px solid var(--baseline); border-radius: 8px; overflow: hidden; }
+.seg button {
+  appearance: none; border: none; background: var(--surface); color: var(--ink-2);
+  font: inherit; font-size: 13px; padding: 6px 14px; cursor: pointer; border-right: 1px solid var(--grid);
+}
+.seg button:last-child { border-right: none; }
+.seg button.active { background: var(--accent); color: #fff; font-weight: 600; }
+.btn-lite {
+  appearance: none; border: 1px solid var(--baseline); background: var(--surface);
+  color: var(--ink-2); font: inherit; font-size: 12.5px; padding: 5px 11px; border-radius: 7px; cursor: pointer;
+}
+.btn-lite:hover { border-color: var(--accent); color: var(--accent); }
+.check { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; color: var(--ink-2); cursor: pointer; }
+
+.assetgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px 16px; }
+.sector-group { margin-bottom: 4px; }
+.sector-group .sector-name { font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+.asset-toggle { display: flex; align-items: center; gap: 8px; font-size: 13.5px; padding: 3px 0; cursor: pointer; user-select: none; }
+.asset-toggle input { accent-color: var(--accent); }
+.asset-toggle .swatch { width: 9px; height: 9px; border-radius: 2px; flex: none; }
+.asset-toggle.off { color: var(--muted); }
+.asset-toggle.off .swatch { opacity: 0.3; }
+
 .note { color: var(--muted); font-size: 12.5px; margin-top: 10px; }
 footer { color: var(--muted); font-size: 12.5px; margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--grid); }
 .error-box { color: var(--down); font-size: 14px; padding: 12px 0; }
