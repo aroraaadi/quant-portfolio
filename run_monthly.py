@@ -17,9 +17,13 @@ from datetime import date
 import numpy as np
 import pandas as pd
 
-from quant import backtest, config, data, fundamentals, optimize, publish, risk, signals
+from quant import backtest, config, data, fundamentals, ic, optimize, publish, risk, signals
 
 log = logging.getLogger("run_monthly")
+
+
+def _fmt(x):
+    return "n/a" if x is None else f"{x:+.3f}"
 
 
 def check_freshness(returns):
@@ -64,25 +68,40 @@ def main():
     bench = data.load_benchmarks()
     check_freshness(returns)
 
+    # Seasoning: names without enough history are held out of the optimizer.
+    tradeable, pending = data.tradeable_universe(returns)
+    if pending:
+        print("\n=== PENDING (seasoning, held out) ===")
+        for t, n in sorted(pending.items()):
+            print(f"  {t}: {n}/{config.MIN_HISTORY_DAYS} days of history")
+
     # 2. Fundamentals (snapshotted to data/fundamentals/ before use)
     fund = fundamentals.fetch(use_cached=args.use_cached)
 
-    # 3. Signals
-    sig = signals.build(fund, returns)
+    # 3. Signal weighting (IC-driven once enough snapshots exist, else static)
+    ic_report, sig_weights = ic.compute(returns)
+    print(f"\n=== SIGNAL IC ({ic_report['weighting']}) ===")
+    for s in ("value", "quality", "momentum", "short_interest"):
+        r = ic_report[s]
+        print(f"  {s:15s} IC={_fmt(r['ic'])}  ({r['snapshots']} snapshots)")
+
+    # 4. Signals
+    sig = signals.build(fund, returns, weights=sig_weights)
     print("\n=== SIGNALS (review before trading) ===")
-    print(sig[["pe", "roic_stability", "momentum_12_1", "short_pct",
-               "composite", "alpha", "coverage"]].round(3)
+    print(sig[["sector", "value_score", "quality_score", "momentum_score",
+               "short_interest_score", "composite", "coverage"]].round(3)
           .sort_values("composite", ascending=False))
 
-    # 4. Risk model
-    sigma, diag = risk.build(returns)
-    print(f"\n3-factor explained variance: "
+    # 5. Risk model (tradeable universe only)
+    sigma, diag = risk.build(returns[tradeable])
+    print(f"\nrisk factors explained variance: "
           f"{[round(v, 3) for v in diag['explained_var']]}")
 
-    # 5. Optimize from drifted previous weights
+    # 6. Optimize from drifted previous weights, over the tradeable set only
     history = load_history()
     w0 = drifted_w0(history, returns)
-    weights, report = optimize.construct(sig["alpha"], sigma, w0)
+    weights, report = optimize.construct(sig["alpha"].reindex(tradeable), sigma,
+                                         w0.reindex(tradeable) if w0 is not None else None)
 
     print("\n=== TARGET PORTFOLIO ===")
     tbl = pd.DataFrame({"target": weights[weights > 0]})
@@ -112,10 +131,11 @@ def main():
     config.HOLDINGS_HISTORY.write_text(json.dumps(history, indent=1))
 
     # 7. Publish site JSON
-    publish.portfolio_json(today, weights, sig, report)
+    publish.portfolio_json(today, weights, sig, report, pending=pending)
     publish.performance_json(returns, bench, history, weights)
     publish.holdings_history_json(history)
     publish.risk_json(diag)
+    publish.signals_json(ic_report)
     posts = publish.posts_index()
 
     print(f"\nPublished docs/data/*.json  ({len(posts)} blog posts indexed)")

@@ -1,15 +1,13 @@
 [
  {
   "date": "2026-07-09",
-  "turnover": 0.5,
-  "model_vol": 0.1223,
+  "turnover": 0.0,
+  "model_vol": 0.1361,
   "weights": {
-   "AAPL": 0.1501,
-   "NVDA": 0.1149,
-   "GOOG": 0.197,
+   "AMZN": 0.2,
+   "GOOG": 0.2,
    "JPM": 0.2,
-   "COST": 0.0851,
-   "MSFT": 0.053,
+   "SPGI": 0.2,
    "NEE": 0.2
   },
   "note": "initial portfolio"

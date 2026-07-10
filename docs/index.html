@@ -36,7 +36,7 @@
     <div class="scroll-x" style="margin-top:16px">
       <table id="holdings-table">
         <thead><tr>
-          <th>Ticker</th><th class="num">Weight</th><th class="num">Alpha</th>
+          <th>Ticker</th><th>Sector</th><th class="num">Weight</th><th class="num">Alpha</th>
           <th class="num">Value</th><th class="num">Quality</th>
           <th class="num">Momentum</th><th class="num">Short int.</th>
           <th class="num">P/E</th>
@@ -44,17 +44,18 @@
         <tbody></tbody>
       </table>
     </div>
-    <p class="note">Signal columns are Gaussianized cross-sectional rank scores (≈ −1.9 … +1.9); alpha is their weighted composite.</p>
+    <p class="note" id="holdings-note">Signal columns are sector-adjusted Gaussianized rank scores (≈ −1.9 … +1.9); alpha is their weighted composite.</p>
   </div>
 
   <div class="card">
     <h2>Methodology</h2>
     <div class="post-body" style="max-width:none">
-      <p><strong>Signals.</strong> Each name in an 18-stock universe is scored cross-sectionally on four signals:
-        value (earnings yield), quality (ROIC stability — mean over standard deviation of quarterly ROIC),
-        12−1 month momentum, and short interest (negated). With only 18 names, raw z-scores are outlier-dominated,
-        so each signal uses a Gaussianized rank. The composite weights are 30% value, 30% quality, 25% momentum,
-        15% short interest.</p>
+      <p><strong>Signals.</strong> Each name is scored cross-sectionally on four multi-metric signals:
+        value (earnings yield + EV/EBITDA yield + FCF yield), quality (ROIC stability + operating margin
+        + ROE + low leverage), 12−1 month momentum, and short interest (negated). Every metric is
+        <span id="neutral-line">sector-neutralized</span> before ranking, so the tilts are stock selection rather than sector bets.
+        With a small universe, raw z-scores are outlier-dominated, so each signal uses a Gaussianized rank.
+        <span id="ic-line"></span></p>
       <p><strong>Risk.</strong> A statistical factor model Σ = BFBᵀ + D estimated on the trailing year:
         B holds the loadings of the top three principal components, D the idiosyncratic variances.
         A Ledoit–Wolf shrinkage estimate is computed alongside as a cross-check every run.

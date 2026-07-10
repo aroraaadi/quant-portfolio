@@ -4,128 +4,121 @@
   0.12,
   0.18
  ],
- "model_vol": 0.1223,
+ "model_vol": 0.1361,
  "vol_band_met": true,
  "min_var_vol": 0.0962,
- "n_positions": 7,
+ "n_positions": 5,
+ "sector_neutral": true,
+ "pending": [],
  "holdings": [
   {
    "ticker": "NEE",
+   "sector": "Utilities",
    "weight": 0.2,
-   "alpha_score": 0.331,
+   "alpha_score": 0.3019,
    "signals": {
-    "value": 1.383,
-    "quality": -1.0491,
-    "momentum": -0.2104,
-    "short_interest": 1.8895
+    "value": 0.3539,
+    "quality": 0.0162,
+    "momentum": 0.6745,
+    "short_interest": 0.148
    },
    "raw": {
     "pe": 22.1,
+    "ev_ebitda_yield": 0.0478,
+    "fcf_yield": -0.1016,
     "roic_mean": 0.0146,
+    "operating_margin": 0.3018,
+    "roe": 0.1032,
     "momentum_12_1": 0.1594,
     "short_pct": 0.0001
    }
   },
   {
    "ticker": "JPM",
+   "sector": "Financial Services",
    "weight": 0.2,
-   "alpha_score": 0.5416,
+   "alpha_score": 0.5988,
    "signals": {
-    "value": 1.9145,
-    "quality": null,
-    "momentum": -0.5085,
-    "short_interest": 0.6289
+    "value": 1.383,
+    "quality": 0.2633,
+    "momentum": 0.5085,
+    "short_interest": -0.148
    },
    "raw": {
     "pe": 16.1,
+    "ev_ebitda_yield": null,
+    "fcf_yield": null,
     "roic_mean": null,
+    "operating_margin": 0.4374,
+    "roe": 0.1647,
     "momentum_12_1": 0.1002,
     "short_pct": 0.0113
    }
   },
   {
-   "ticker": "GOOG",
-   "weight": 0.197,
-   "alpha_score": 0.6605,
+   "ticker": "SPGI",
+   "sector": "Financial Services",
+   "weight": 0.2,
+   "alpha_score": 0.3453,
    "signals": {
-    "value": 0.5085,
-    "quality": 0.2993,
+    "value": 1.0835,
+    "quality": 0.2385,
+    "momentum": 0.0697,
+    "short_interest": -0.4579
+   },
+   "raw": {
+    "pe": 27.4,
+    "ev_ebitda_yield": 0.0544,
+    "fcf_yield": 0.0413,
+    "roic_mean": 0.0306,
+    "operating_margin": 0.4428,
+    "roe": 0.1394,
+    "momentum_12_1": -0.2076,
+    "short_pct": 0.0165
+   }
+  },
+  {
+   "ticker": "GOOG",
+   "sector": "Communication Services",
+   "weight": 0.2,
+   "alpha_score": 0.3634,
+   "signals": {
+    "value": -0.0351,
+    "quality": 0.3787,
     "momentum": 0.8616,
-    "short_interest": 1.3517
+    "short_interest": 0.2993
    },
    "raw": {
     "pe": 27.2,
+    "ev_ebitda_yield": 0.0374,
+    "fcf_yield": 0.0064,
     "roic_mean": 0.0921,
+    "operating_margin": 0.3612,
+    "roe": 0.3888,
     "momentum_12_1": 1.0619,
     "short_pct": 0.0042
    }
   },
   {
-   "ticker": "AAPL",
-   "weight": 0.1501,
-   "alpha_score": 0.3627,
+   "ticker": "AMZN",
+   "sector": "Consumer Cyclical",
+   "weight": 0.2,
+   "alpha_score": 0.4113,
    "signals": {
-    "value": -0.0697,
-    "quality": 0.4579,
+    "value": 1.0618,
+    "quality": 0.3273,
     "momentum": 0.3555,
-    "short_interest": 1.0491
+    "short_interest": -0.6289
    },
    "raw": {
-    "pe": 38.2,
-    "roic_mean": 0.2159,
-    "momentum_12_1": 0.4358,
-    "short_pct": 0.0098
-   }
-  },
-  {
-   "ticker": "NVDA",
-   "weight": 0.1149,
-   "alpha_score": 0.6923,
-   "signals": {
-    "value": 0.2104,
-    "quality": 1.8895,
-    "momentum": 0.0697,
-    "short_interest": 0.2993
-   },
-   "raw": {
-    "pe": 31.1,
-    "roic_mean": 0.27,
-    "momentum_12_1": 0.304,
-    "short_pct": 0.0129
-   }
-  },
-  {
-   "ticker": "COST",
-   "weight": 0.0851,
-   "alpha_score": 0.0071,
-   "signals": {
-    "value": -0.3555,
-    "quality": 1.3517,
-    "momentum": -0.6745,
-    "short_interest": -0.8208
-   },
-   "raw": {
-    "pe": 45.8,
-    "roic_mean": 0.0966,
-    "momentum_12_1": -0.0112,
-    "short_pct": 0.0177
-   }
-  },
-  {
-   "ticker": "MSFT",
-   "weight": 0.053,
-   "alpha_score": 0.3021,
-   "signals": {
-    "value": 0.8616,
-    "quality": 0.8208,
-    "momentum": -1.0853,
-    "short_interest": 0.4579
-   },
-   "raw": {
-    "pe": 22.9,
-    "roic_mean": 0.0772,
-    "momentum_12_1": -0.1709,
-    "short_pct": 0.0128
+    "pe": 32.1,
+    "ev_ebitda_yield": 0.0574,
+    "fcf_yield": 0.0037,
+    "roic_mean": 0.0489,
+    "operating_margin": 0.1314,
+    "roe": 0.2429,
+    "momentum_12_1": 0.1179,
+    "short_pct": 0.0101
    }
   }
  ]

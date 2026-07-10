@@ -21,7 +21,7 @@ def _round(x, dp=4):
     return None if x is None or pd.isna(x) else round(float(x), dp)
 
 
-def portfolio_json(as_of, weights, sig, report):
+def portfolio_json(as_of, weights, sig, report, pending=None):
     holdings = []
     for ticker, w in weights.sort_values(ascending=False).items():
         if w <= 0:
@@ -29,6 +29,7 @@ def portfolio_json(as_of, weights, sig, report):
         row = sig.loc[ticker]
         holdings.append({
             "ticker": ticker,
+            "sector": row.get("sector") if isinstance(row.get("sector"), str) else None,
             "weight": _round(w),
             "alpha_score": _round(row["composite"]),
             "signals": {
@@ -39,11 +40,17 @@ def portfolio_json(as_of, weights, sig, report):
             },
             "raw": {
                 "pe": _round(row["pe"], 1),
+                "ev_ebitda_yield": _round(row.get("ev_ebitda_yield")),
+                "fcf_yield": _round(row.get("fcf_yield")),
                 "roic_mean": _round(row["roic_mean"]),
+                "operating_margin": _round(row.get("operating_margin")),
+                "roe": _round(row.get("roe")),
                 "momentum_12_1": _round(row["momentum_12_1"]),
                 "short_pct": _round(row["short_pct"]),
             },
         })
+    pending_out = [{"ticker": t, "days": n, "needs": config.MIN_HISTORY_DAYS}
+                   for t, n in sorted((pending or {}).items())]
     _write(config.DOCS_DATA_DIR / "portfolio.json", {
         "as_of": as_of,
         "vol_target_band": report["vol_band"],
@@ -51,8 +58,14 @@ def portfolio_json(as_of, weights, sig, report):
         "vol_band_met": report["vol_band_met"],
         "min_var_vol": _round(report["min_var_vol"]),
         "n_positions": report["n_positions"],
+        "sector_neutral": config.SECTOR_NEUTRAL,
+        "pending": pending_out,
         "holdings": holdings,
     })
+
+
+def signals_json(ic_report):
+    _write(config.DOCS_DATA_DIR / "signals.json", ic_report)
 
 
 def performance_json(returns, bench, history, weights):

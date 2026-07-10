@@ -10,21 +10,15 @@ from ibapi.client import EClient
 from ibapi.contract import Contract
 from ibapi.wrapper import EWrapper
 
-# (symbol, secType, exchange, currency, primaryExchange)
-STOCKS_NASDAQ = ["AMZN", "AAPL", "NVDA", "GOOG", "META", "AMD", "MU", "COST", "MSFT", "AVGO"]
-STOCKS_NYSE = ["BE", "JPM", "SHOP", "SPGI", "GE", "APH", "NEE"]
+# The investable universe + benchmarks are defined once in universe.py, which
+# quant/config.py also reads — so a symbol is added in a single place.
+import universe
 
-SYMBOLS = (
-    [dict(symbol=s, secType="STK", exchange="SMART", currency="USD", primaryExchange="NASDAQ")
-     for s in STOCKS_NASDAQ]
-    + [dict(symbol=s, secType="STK", exchange="SMART", currency="USD", primaryExchange="NYSE")
-       for s in STOCKS_NYSE]
-    # MDA Space trades on the Toronto Stock Exchange in CAD
-    + [dict(symbol="MDA", secType="STK", exchange="SMART", currency="CAD", primaryExchange="TSE")]
-    + [dict(symbol="SPX", secType="IND", exchange="CBOE", currency="USD"),
-       dict(symbol="COMP", secType="IND", exchange="NASDAQ", currency="USD"),
-       dict(symbol="INDU", secType="IND", exchange="CME", currency="USD")]
-)
+SYMBOLS = [
+    dict(symbol=u["symbol"], secType=u["sec_type"], exchange=u["exchange"],
+         currency=u["currency"], primaryExchange=u.get("primary_exchange"))
+    for u in universe.UNIVERSE
+]
 
 BASE_DIR = Path(__file__).resolve().parent
 OUT_DIR = BASE_DIR / "Return Series"

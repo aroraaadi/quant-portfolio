@@ -60,15 +60,28 @@ title/date/summary front matter), and:
 Preview the site locally:
     python3 -m http.server -d docs 8000   # then open http://localhost:8000
 
+Changing the universe (add/remove stocks in ONE place):
+    Edit universe.py (append a dict, role="trade"), then:
+      python3 IBKRDATA.py     # with TWS up, to fetch the new name's history
+      python3 run_monthly.py  # new name seasons ~1yr (held out, shown "pending")
+                              # then enters the optimized book automatically
+    Non-USD names are FX-converted to USD automatically (set currency + yf symbol).
+
 Layout:
+    universe.py          single source of truth for the investable universe
     IBKRDATA.py          daily price pull from IBKR TWS (runs via launchd)
-    quant/               signals, risk model, optimizer, backtest, publisher
+    quant/               signals, risk model, IC engine, optimizer, backtest, publisher
     data/fundamentals/   dated yfinance snapshots (point-in-time archive)
     data/state/          holdings_history.json — source of truth per rebalance
     docs/                GitHub Pages site (dashboard, holdings, blog)
 
-Signals: value (1/PE), quality (ROIC stability), 12-1 momentum, short interest —
-each a Gaussianized cross-sectional rank, composite 30/30/25/15, alpha = score x 4%.
-Risk: PCA 3-factor model (Sigma = BFB' + D) on trailing 252d, Ledoit-Wolf cross-check.
+Signals (each a multi-metric, SECTOR-NEUTRAL Gaussianized rank composite):
+    value    = earnings yield (1/PE) + EV/EBITDA yield + FCF yield
+    quality  = ROIC stability + operating margin + ROE + (neg) leverage
+    momentum = 12-1 month total return
+    short    = short % of float, negated
+  Top-level weights 30/30/25/15 (static) auto-switch to information-coefficient
+  driven once every signal has >= 6 point-in-time snapshots (quant/ic.py).
+Risk: PCA factor model (Sigma = BFB' + D, K<=N-1) on trailing 252d, Ledoit-Wolf cross-check.
 Construction: max a'w - lambda w'Sw - TC, long-only, sum(w)=1, w <= 20%, prune < 2%,
-lambda bisected so vol lands in the 12-18% band.
+lambda bisected so vol lands in the 12-18% band; only names with >= 252d history are traded.

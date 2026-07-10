@@ -1,15 +1,16 @@
 /* Dashboard: stat tiles, performance emphasis chart, holdings bar + table. */
 
 let perfChart, weightsChart;
-let PERF, PORT, RISK;
+let PERF, PORT, RISK, SIGNALS;
 
 async function init() {
   const tiles = document.getElementById("tiles");
   try {
-    [PERF, PORT, RISK] = await Promise.all([
+    [PERF, PORT, RISK, SIGNALS] = await Promise.all([
       loadJSON("data/performance.json"),
       loadJSON("data/portfolio.json"),
       loadJSON("data/risk.json").catch(() => null),
+      loadJSON("data/signals.json").catch(() => null),
     ]);
   } catch (err) {
     showError(tiles, err);
@@ -260,6 +261,11 @@ function renderTable() {
     name.appendChild(wrap);
     tr.appendChild(name);
 
+    const sector = document.createElement("td");
+    sector.textContent = h.sector || "–";
+    sector.style.color = "var(--ink-2)";
+    tr.appendChild(sector);
+
     const weight = document.createElement("td");
     weight.className = "num";
     weight.textContent = (h.weight * 100).toFixed(1) + "%";
@@ -284,7 +290,27 @@ function renderMethodology() {
   if (RISK && RISK.factors_explained_var) {
     const pct = RISK.factors_explained_var.map(v => (v * 100).toFixed(0) + "%").join(", ");
     document.getElementById("risk-line").textContent =
-      ` The three factors currently explain ${pct} of return variance.`;
+      ` The ${RISK.factors_explained_var.length} factors currently explain ${pct} of return variance.`;
+  }
+  if (PORT.sector_neutral === false) {
+    document.getElementById("neutral-line").textContent = "ranked directly (sector-neutralization off)";
+  }
+  const icLine = document.getElementById("ic-line");
+  if (SIGNALS && SIGNALS.momentum && SIGNALS.momentum.ic != null) {
+    const mom = SIGNALS.momentum.ic.toFixed(2);
+    const driven = SIGNALS.weighting && SIGNALS.weighting.startsWith("ic");
+    icLine.textContent = ` Signal weights are ${driven ? "information-coefficient driven" :
+      "held at their static defaults until enough point-in-time history accrues"}; ` +
+      `momentum's realized information coefficient over the sample is ${mom}.`;
+  }
+  // Pending (seasoning) names note
+  if (PORT.pending && PORT.pending.length) {
+    const note = document.getElementById("holdings-note");
+    const names = PORT.pending.map(p => `${p.ticker} (${p.days}/${p.needs}d)`).join(", ");
+    const span = document.createElement("span");
+    span.textContent = ` Seasoning — held out until they have ${PORT.pending[0].needs} days of history: ${names}.`;
+    span.style.color = "var(--muted)";
+    note.appendChild(span);
   }
 }
 

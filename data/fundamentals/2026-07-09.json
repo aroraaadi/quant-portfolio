@@ -7,6 +7,13 @@
   "floatShares": 9779826044,
   "marketCap": 2657436303360,
   "longName": "Amazon.com, Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Internet Retail",
+  "enterpriseToEbitda": 17.407,
+  "freeCashflow": 9806624768,
+  "operatingMargins": 0.1314,
+  "debtToEquity": 53.3,
+  "returnOnEquity": 0.24285,
   "short_pct": 0.0101,
   "roic_quarters": [
    0.056150526037636116,
@@ -24,6 +31,13 @@
   "floatShares": 14662534368,
   "marketCap": 4644435656704,
   "longName": "Apple Inc.",
+  "sector": "Technology",
+  "industry": "Consumer Electronics",
+  "enterpriseToEbitda": 28.874,
+  "freeCashflow": 101090746368,
+  "operatingMargins": 0.32275,
+  "debtToEquity": 79.548,
+  "returnOnEquity": 1.4147099,
   "short_pct": 0.0098,
   "roic_quarters": [
    0.20339849544946764,
@@ -41,6 +55,13 @@
   "floatShares": 23225708000,
   "marketCap": 4911534178304,
   "longName": "NVIDIA Corporation",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "enterpriseToEbitda": 29.601,
+  "freeCashflow": 46335873024,
+  "operatingMargins": 0.65596,
+  "debtToEquity": 6.555,
+  "returnOnEquity": 1.14288,
   "short_pct": 0.0128999995,
   "roic_quarters": [
    0.30015725751107086,
@@ -48,23 +69,6 @@
    0.2711066939641788,
    0.26717625553725854,
    0.2386618199483255
-  ]
- },
- "BE": {
-  "trailingPE": null,
-  "forwardPE": 58.373703,
-  "shortPercentOfFloat": 0.119799994,
-  "sharesShort": 29780167,
-  "floatShares": 278999612,
-  "marketCap": 73107759104,
-  "longName": "Bloom Energy Corporation",
-  "short_pct": 0.119799994,
-  "roic_quarters": [
-   0.05963254296283947,
-   0.0064801739017286844,
-   -0.00523993346035431,
-   -0.017344081668664788,
-   -0.006561096189864592
   ]
  },
  "GOOG": {
@@ -75,6 +79,13 @@
   "floatShares": 10823222800,
   "marketCap": 4347044298752,
   "longName": "Alphabet Inc.",
+  "sector": "Communication Services",
+  "industry": "Internet Content & Information",
+  "enterpriseToEbitda": 26.75,
+  "freeCashflow": 27921750016,
+  "operatingMargins": 0.36121,
+  "debtToEquity": 20.026,
+  "returnOnEquity": 0.38884997,
   "short_pct": 0.004177770044611851,
   "roic_quarters": [
    0.11862345437113034,
@@ -82,23 +93,6 @@
    0.08828578164913928,
    0.07527805322806876,
    0.1000329954311032
-  ]
- },
- "MDA": {
-  "trailingPE": 62.762497,
-  "forwardPE": 28.786505,
-  "shortPercentOfFloat": null,
-  "sharesShort": 2114404,
-  "floatShares": null,
-  "marketCap": 6966686208,
-  "longName": "MDA Space Ltd.",
-  "short_pct": null,
-  "roic_quarters": [
-   0.020314873620308413,
-   0.016515991288310227,
-   0.018442072975909003,
-   0.02918446844199232,
-   0.037317010897440245
   ]
  },
  "META": {
@@ -109,6 +103,13 @@
   "floatShares": 2192715434,
   "marketCap": 1602963505152,
   "longName": "Meta Platforms, Inc.",
+  "sector": "Communication Services",
+  "industry": "Internet Content & Information",
+  "enterpriseToEbitda": 14.057,
+  "freeCashflow": 25558249472,
+  "operatingMargins": 0.40617,
+  "debtToEquity": 35.608,
+  "returnOnEquity": 0.32930002,
   "short_pct": 0.0137,
   "roic_quarters": [
    0.07267835739225598,
@@ -116,68 +117,6 @@
    0.060562528996888555,
    0.07975159428116155,
    0.0819313513071951
-  ]
- },
- "JPM": {
-  "trailingPE": 16.051197,
-  "forwardPE": 14.020241,
-  "shortPercentOfFloat": 0.0113,
-  "sharesShort": 30082851,
-  "floatShares": 2665256417,
-  "marketCap": 898895642624,
-  "longName": "JPMorgan Chase & Co.",
-  "short_pct": 0.0113,
-  "roic_quarters": []
- },
- "SHOP": {
-  "trailingPE": 119.58253,
-  "forwardPE": 52.861298,
-  "shortPercentOfFloat": 0.0173,
-  "sharesShort": 21050356,
-  "floatShares": 1216590127,
-  "marketCap": 159832129536,
-  "longName": "Shopify Inc.",
-  "short_pct": 0.0173,
-  "roic_quarters": [
-   0.0421315625160175,
-   0.05117134763217829,
-   0.03753631313388716,
-   0.026577614428891567,
-   0.022631302521008402
-  ]
- },
- "SPGI": {
-  "trailingPE": 27.385199,
-  "forwardPE": 21.288973,
-  "shortPercentOfFloat": 0.0165,
-  "sharesShort": 4887553,
-  "floatShares": 295286640,
-  "marketCap": 128156155904,
-  "longName": "S&P Global Inc.",
-  "short_pct": 0.0165,
-  "roic_quarters": [
-   0.03661820987910806,
-   0.029432195125960903,
-   0.030639960000315436,
-   0.028070514854657645,
-   0.028119475358535307
-  ]
- },
- "GE": {
-  "trailingPE": 44.601242,
-  "forwardPE": 41.265408,
-  "shortPercentOfFloat": 0.0134000005,
-  "sharesShort": 13943685,
-  "floatShares": 1039393420,
-  "marketCap": 375135633408,
-  "longName": "GE Aerospace",
-  "short_pct": 0.0134000005,
-  "roic_quarters": [
-   0.08392912571915981,
-   0.09995524545060903,
-   0.08712013894019945,
-   0.07854420139160886,
-   0.08121769465282404
   ]
  },
  "AMD": {
@@ -188,6 +127,13 @@
   "floatShares": 1622023680,
   "marketCap": 891481882624,
   "longName": "Advanced Micro Devices, Inc.",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "enterpriseToEbitda": 112.41,
+  "freeCashflow": 7173374976,
+  "operatingMargins": 0.14396,
+  "debtToEquity": 6.005,
+  "returnOnEquity": 0.08063,
   "short_pct": 0.028800001,
   "roic_quarters": [
    0.022271785157492573,
@@ -205,6 +151,13 @@
   "floatShares": 1125316042,
   "marketCap": 1119951388672,
   "longName": "Micron Technology, Inc.",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "enterpriseToEbitda": 15.419,
+  "freeCashflow": 7639499776,
+  "operatingMargins": 0.80370003,
+  "debtToEquity": 6.33,
+  "returnOnEquity": 0.66638,
   "short_pct": 0.0369,
   "roic_quarters": [
    0.34387674319468975,
@@ -222,6 +175,13 @@
   "floatShares": 440916269,
   "marketCap": 404882849792,
   "longName": "Costco Wholesale Corporation",
+  "sector": "Consumer Defensive",
+  "industry": "Discount Stores",
+  "enterpriseToEbitda": 30.53,
+  "freeCashflow": 6954375168,
+  "operatingMargins": 0.036730003,
+  "debtToEquity": 60.257,
+  "returnOnEquity": 0.29152,
   "short_pct": 0.0177,
   "roic_quarters": [
    0.09761992795824936,
@@ -229,23 +189,6 @@
    0.09140588701722603,
    0.11409238558013152,
    0.08984190653839808
-  ]
- },
- "APH": {
-  "trailingPE": 46.62069,
-  "forwardPE": 28.286,
-  "shortPercentOfFloat": 0.015800001,
-  "sharesShort": 17223423,
-  "floatShares": 1222385549,
-  "marketCap": 199593246720,
-  "longName": "Amphenol Corporation",
-  "short_pct": 0.015800001,
-  "roic_quarters": [
-   0.04213066085734168,
-   0.07309763970389527,
-   0.07843807396359308,
-   0.07125989677935435,
-   0.05080829245893438
   ]
  },
  "MSFT": {
@@ -256,6 +199,13 @@
   "floatShares": 7417514905,
   "marketCap": 2855193018368,
   "longName": "Microsoft Corporation",
+  "sector": "Technology",
+  "industry": "Software - Infrastructure",
+  "enterpriseToEbitda": 15.694,
+  "freeCashflow": 37011251200,
+  "operatingMargins": 0.46326,
+  "debtToEquity": 30.271,
+  "returnOnEquity": 0.34013999,
   "short_pct": 0.0128,
   "roic_quarters": [
    0.07378064543068764,
@@ -273,6 +223,13 @@
   "floatShares": 4698966810,
   "marketCap": 1908312899584,
   "longName": "Broadcom Inc.",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "enterpriseToEbitda": 45.017,
+  "freeCashflow": 27212249088,
+  "operatingMargins": 0.48988,
+  "debtToEquity": 74.018,
+  "returnOnEquity": 0.37280998,
   "short_pct": 0.013200001,
   "roic_quarters": [
    0.07537929307511043,
@@ -280,6 +237,144 @@
    0.05857965451055662,
    0.0376389147608017,
    0.04486681298764977
+  ]
+ },
+ "BE": {
+  "trailingPE": null,
+  "forwardPE": 58.373703,
+  "shortPercentOfFloat": 0.119799994,
+  "sharesShort": 29780167,
+  "floatShares": 278999612,
+  "marketCap": 73107759104,
+  "longName": "Bloom Energy Corporation",
+  "sector": "Industrials",
+  "industry": "Electrical Equipment & Parts",
+  "enterpriseToEbitda": 314.431,
+  "freeCashflow": 265521248,
+  "operatingMargins": 0.09612001,
+  "debtToEquity": 311.476,
+  "returnOnEquity": 0.01286,
+  "short_pct": 0.119799994,
+  "roic_quarters": [
+   0.05963254296283947,
+   0.0064801739017286844,
+   -0.00523993346035431,
+   -0.017344081668664788,
+   -0.006561096189864592
+  ]
+ },
+ "JPM": {
+  "trailingPE": 16.051197,
+  "forwardPE": 14.020241,
+  "shortPercentOfFloat": 0.0113,
+  "sharesShort": 30082851,
+  "floatShares": 2665256417,
+  "marketCap": 898895642624,
+  "longName": "JPMorgan Chase & Co.",
+  "sector": "Financial Services",
+  "industry": "Banks - Diversified",
+  "enterpriseToEbitda": null,
+  "freeCashflow": null,
+  "operatingMargins": 0.43741,
+  "debtToEquity": null,
+  "returnOnEquity": 0.16465001,
+  "short_pct": 0.0113,
+  "roic_quarters": []
+ },
+ "SHOP": {
+  "trailingPE": 119.58253,
+  "forwardPE": 52.861298,
+  "shortPercentOfFloat": 0.0173,
+  "sharesShort": 21050356,
+  "floatShares": 1216590127,
+  "marketCap": 159832129536,
+  "longName": "Shopify Inc.",
+  "sector": "Technology",
+  "industry": "Software - Application",
+  "enterpriseToEbitda": 69.433,
+  "freeCashflow": 1256749952,
+  "operatingMargins": 0.1571,
+  "debtToEquity": 1.432,
+  "returnOnEquity": 0.11311,
+  "short_pct": 0.0173,
+  "roic_quarters": [
+   0.0421315625160175,
+   0.05117134763217829,
+   0.03753631313388716,
+   0.026577614428891567,
+   0.022631302521008402
+  ]
+ },
+ "SPGI": {
+  "trailingPE": 27.385199,
+  "forwardPE": 21.288973,
+  "shortPercentOfFloat": 0.0165,
+  "sharesShort": 4887553,
+  "floatShares": 295286640,
+  "marketCap": 128156155904,
+  "longName": "S&P Global Inc.",
+  "sector": "Financial Services",
+  "industry": "Financial Data & Stock Exchanges",
+  "enterpriseToEbitda": 18.371,
+  "freeCashflow": 5298874880,
+  "operatingMargins": 0.44282,
+  "debtToEquity": 38.392,
+  "returnOnEquity": 0.13939999,
+  "short_pct": 0.0165,
+  "roic_quarters": [
+   0.03661820987910806,
+   0.029432195125960903,
+   0.030639960000315436,
+   0.028070514854657645,
+   0.028119475358535307
+  ]
+ },
+ "GE": {
+  "trailingPE": 44.601242,
+  "forwardPE": 41.265408,
+  "shortPercentOfFloat": 0.0134000005,
+  "sharesShort": 13943685,
+  "floatShares": 1039393420,
+  "marketCap": 375135633408,
+  "longName": "GE Aerospace",
+  "sector": "Industrials",
+  "industry": "Aerospace & Defense",
+  "enterpriseToEbitda": 34.651,
+  "freeCashflow": 5667999744,
+  "operatingMargins": 0.20207001,
+  "debtToEquity": 116.527,
+  "returnOnEquity": 0.45428002,
+  "short_pct": 0.0134000005,
+  "roic_quarters": [
+   0.08392912571915981,
+   0.09995524545060903,
+   0.08712013894019945,
+   0.07854420139160886,
+   0.08121769465282404
+  ]
+ },
+ "APH": {
+  "trailingPE": 46.62069,
+  "forwardPE": 28.286,
+  "shortPercentOfFloat": 0.015800001,
+  "sharesShort": 17223423,
+  "floatShares": 1222385549,
+  "marketCap": 199593246720,
+  "longName": "Amphenol Corporation",
+  "sector": "Technology",
+  "industry": "Electronic Components",
+  "enterpriseToEbitda": 25.569,
+  "freeCashflow": 3563725056,
+  "operatingMargins": 0.27305,
+  "debtToEquity": 133.051,
+  "returnOnEquity": 0.36825,
+  "short_pct": 0.015800001,
+  "roic_quarters": [
+   0.04213066085734168,
+   0.07309763970389527,
+   0.07843807396359308,
+   0.07125989677935435,
+   0.05080829245893438
   ]
  },
  "NEE": {
@@ -290,6 +385,13 @@
   "floatShares": 2080941386,
   "marketCap": 181656223744,
   "longName": "NextEra Energy, Inc.",
+  "sector": "Utilities",
+  "industry": "Utilities - Regulated Electric",
+  "enterpriseToEbitda": 20.917,
+  "freeCashflow": -18453374976,
+  "operatingMargins": 0.30175,
+  "debtToEquity": 156.686,
+  "returnOnEquity": 0.10325,
   "short_pct": 0.0001,
   "roic_quarters": [
    0.015771409720415918,
@@ -297,6 +399,30 @@
    0.020964447388760073,
    0.017173023661235222,
    0.008142130720575468
+  ]
+ },
+ "MDA": {
+  "trailingPE": 62.762497,
+  "forwardPE": 28.786505,
+  "shortPercentOfFloat": null,
+  "sharesShort": 2114404,
+  "floatShares": null,
+  "marketCap": 6966686208,
+  "longName": "MDA Space Ltd.",
+  "sector": "Industrials",
+  "industry": "Aerospace & Defense",
+  "enterpriseToEbitda": null,
+  "freeCashflow": null,
+  "operatingMargins": 0.1223,
+  "debtToEquity": null,
+  "returnOnEquity": null,
+  "short_pct": null,
+  "roic_quarters": [
+   0.020314873620308413,
+   0.016515991288310227,
+   0.018442072975909003,
+   0.02918446844199232,
+   0.037317010897440245
   ]
  }
 }

@@ -85,7 +85,9 @@ def construct(alpha_series, sigma, w0_series=None):
         log.info("Prune iteration %d: dropped %s", iteration + 1,
                  [t for t, d in zip(tickers, drop) if d])
 
-    weights = pd.Series(np.where(w < 1e-6, 0.0, w), index=tickers)
+    # Zero numerical dust: real positions are always >= PRUNE_THRESHOLD after the
+    # prune loop, so anything this small is solver noise, not an intended holding.
+    weights = pd.Series(np.where(w < 1e-4, 0.0, w), index=tickers)
     weights /= weights.sum()
     turnover = float(np.abs(weights.values - w0).sum()) / 2  # one-way
     report = {

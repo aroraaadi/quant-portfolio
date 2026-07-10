@@ -22,7 +22,12 @@ def pca_cov(returns):
     order = np.argsort(eigvals)[::-1]
     eigvals, eigvecs = eigvals[order], eigvecs[:, order]
 
-    k = config.N_FACTORS
+    # Guard the factor count for a variable-size tradeable universe.
+    n = sample.shape[0]
+    k = min(config.N_FACTORS, max(1, n - 1))
+    if k < config.N_FACTORS:
+        log.warning("Only %d tradeable names — using %d risk factors (not %d)",
+                    n, k, config.N_FACTORS)
     B = eigvecs[:, :k]                      # loadings
     F = np.diag(eigvals[:k])                # factor covariance
     common = B @ F @ B.T

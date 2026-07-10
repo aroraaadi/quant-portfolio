@@ -15,7 +15,9 @@ log = logging.getLogger(__name__)
 
 INFO_FIELDS = [
     "trailingPE", "forwardPE", "shortPercentOfFloat", "sharesShort",
-    "floatShares", "marketCap", "longName",
+    "floatShares", "marketCap", "longName", "sector", "industry",
+    "enterpriseToEbitda", "freeCashflow", "operatingMargins",
+    "debtToEquity", "returnOnEquity",
 ]
 
 
@@ -71,8 +73,7 @@ def fetch(use_cached=False):
 
     out = {}
     for ticker in config.TICKERS:
-        yf_symbol = config.YF_TICKER_MAP.get(ticker, ticker)
-        tkr = yf.Ticker(yf_symbol)
+        tkr = yf.Ticker(config.yf_symbol(ticker))
         try:
             info = tkr.info or {}
         except Exception as exc:
