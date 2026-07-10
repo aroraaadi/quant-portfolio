@@ -70,6 +70,7 @@ def signals_json(ic_report):
 
 def mvo_json(payload):
     """Expected returns + covariance for the browser efficient-frontier page."""
+    oh = payload["optimal_hist"]
     out = {
         "assets": payload["assets"],
         "sectors": payload["sectors"],
@@ -78,6 +79,13 @@ def mvo_json(payload):
         "mu_alpha": [_round(x, 5) for x in payload["mu_alpha"]],
         "vol": [_round(x) for x in payload["vol"]],
         "sigma": [[_round(x, 6) for x in row] for row in payload["sigma"]],
+        "optimal_hist": {
+            "weights": {t: _round(w) for t, w in oh["weights"].items()},
+            "sectors": oh["sectors"],
+            "ret": _round(oh["ret"]),
+            "vol": _round(oh["vol"]),
+            "sharpe": _round(oh["sharpe"], 2),
+        },
     }
     _write(config.DOCS_DATA_DIR / "mvo.json", out)
 

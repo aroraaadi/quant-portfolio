@@ -461,5 +461,30 @@
    0.010305,
    0.298452
   ]
- ]
+ ],
+ "optimal_hist": {
+  "weights": {
+   "GOOG": 0.1393,
+   "MU": 0.1666,
+   "COST": 0.2189,
+   "BE": 0.0577,
+   "JPM": 0.1334,
+   "GE": 0.1599,
+   "APH": 0.0227,
+   "MDA": 0.1016
+  },
+  "sectors": {
+   "GOOG": "Communication Services",
+   "MU": "Technology",
+   "COST": "Consumer Defensive",
+   "BE": "Industrials",
+   "JPM": "Financial Services",
+   "GE": "Industrials",
+   "APH": "Technology",
+   "MDA": "Industrials"
+  },
+  "ret": 0.5697,
+  "vol": 0.2321,
+  "sharpe": 2.28
+ }
 }

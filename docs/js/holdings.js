@@ -1,11 +1,13 @@
 /* Holdings page: latest-rebalance change table + stacked composition per rebalance. */
 
-let compChart, HIST;
+let compChart, mvoChart, HIST, MVO;
 
 async function init() {
-  const table = document.querySelector("#changes-table tbody");
   try {
-    HIST = await loadJSON("data/holdings_history.json");
+    [HIST, MVO] = await Promise.all([
+      loadJSON("data/holdings_history.json"),
+      loadJSON("data/mvo.json").catch(() => null),
+    ]);
   } catch (err) {
     showError(document.querySelector(".card"), err);
     return;
@@ -20,7 +22,84 @@ async function init() {
 function renderAll() {
   applyChartDefaults();
   renderChanges();
+  renderMvo();
   renderComposition();
+}
+
+// Fixed sector -> categorical slot color, in order of first appearance.
+let mvoSectorColor = null;
+function sectorHex(sector) {
+  if (!mvoSectorColor) {
+    mvoSectorColor = {};
+    const order = [];
+    (MVO.sectors || []).forEach(s => { if (!order.includes(s)) order.push(s); });
+    order.forEach((s, i) => { mvoSectorColor[s] = SLOT_VARS[i] || null; });
+  }
+  const v = mvoSectorColor[sector];
+  return v ? tok(v) : tok("--muted");
+}
+
+function renderMvo() {
+  if (!MVO || !MVO.optimal_hist) return;
+  const o = MVO.optimal_hist;
+  const rf = MVO.rf || 0;
+
+  const tiles = document.getElementById("mvo-tiles");
+  tiles.innerHTML = "";
+  const defs = [
+    { label: "Expected return", value: fmtPct(o.ret) },
+    { label: "Volatility", value: fmtPct(o.vol) },
+    { label: "Sharpe", value: o.sharpe != null ? o.sharpe.toFixed(2) : "–" },
+    { label: "Holdings", value: Object.keys(o.weights).length },
+  ];
+  for (const d of defs) {
+    const tile = document.createElement("div");
+    tile.className = "tile";
+    const l = document.createElement("div"); l.className = "label"; l.textContent = d.label;
+    const v = document.createElement("div"); v.className = "value"; v.textContent = d.value;
+    tile.append(l, v); tiles.appendChild(tile);
+  }
+
+  const rows = Object.entries(o.weights)
+    .map(([t, w]) => ({ t, w, sec: (o.sectors && o.sectors[t]) || "Unknown" }))
+    .sort((a, b) => b.w - a.w);
+  document.getElementById("mvo-box").style.height = `${70 + rows.length * 30}px`;
+
+  const cfg = {
+    type: "bar",
+    data: {
+      labels: rows.map(r => r.t),
+      datasets: [{
+        data: rows.map(r => r.w * 100),
+        backgroundColor: rows.map(r => sectorHex(r.sec)),
+        borderRadius: { topRight: 4, bottomRight: 4 }, borderSkipped: "start", barThickness: 18,
+      }],
+    },
+    options: {
+      indexAxis: "y", responsive: true, maintainAspectRatio: false,
+      layout: { padding: { right: 46 } },
+      scales: {
+        x: { grid: { color: tok("--grid") }, border: { display: false }, ticks: { callback: v => v + "%" } },
+        y: { grid: { display: false }, border: { color: tok("--baseline") },
+             ticks: { color: tok("--ink-2"), font: { weight: 600 } } },
+      },
+      plugins: {
+        tooltip: { callbacks: { label: item => ` ${item.raw.toFixed(1)}%  (${rows[item.dataIndex].sec})` } },
+      },
+    },
+    plugins: [{
+      id: "mvolabels",
+      afterDatasetsDraw(chart) {
+        const meta = chart.getDatasetMeta(0), ctx = chart.ctx;
+        ctx.save(); ctx.fillStyle = tok("--ink-2"); ctx.font = "12px system-ui, sans-serif";
+        ctx.textBaseline = "middle";
+        meta.data.forEach((bar, i) => ctx.fillText(`${(rows[i].w * 100).toFixed(1)}%`, bar.x + 8, bar.y));
+        ctx.restore();
+      },
+    }],
+  };
+  if (mvoChart) mvoChart.destroy();
+  mvoChart = new Chart(document.getElementById("mvo-chart"), cfg);
 }
 
 function renderChanges() {

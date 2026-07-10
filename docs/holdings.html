@@ -35,6 +35,16 @@
   </div>
 
   <div class="card">
+    <h2>Best mean-variance portfolio — historical mean</h2>
+    <div class="tiles" id="mvo-tiles" style="margin-bottom:16px"></div>
+    <div class="chart-box" id="mvo-box" style="height:280px"><canvas id="mvo-chart"></canvas></div>
+    <p class="note">The long-only <strong>max-Sharpe</strong> (tangency) portfolio built purely from
+      historical mean returns and the Ledoit–Wolf covariance — the classic Markowitz answer, shown as a
+      benchmark against the live model-driven book above. It chases realized returns, so it concentrates
+      differently; explore it interactively on the <a href="mvo.html">MVO</a> page.</p>
+  </div>
+
+  <div class="card">
     <h2>Portfolio composition over time</h2>
     <div class="legend" id="comp-legend"></div>
     <div class="chart-box" id="comp-box" style="height:220px"><canvas id="comp-chart"></canvas></div>
