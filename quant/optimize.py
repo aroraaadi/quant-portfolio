@@ -75,10 +75,8 @@ def construct(alpha_series, sigma, w0_series=None):
             else:
                 log_hi = (log_lo + log_hi) / 2
 
-        # Concentration: drop dust positions, re-solve on survivors.
-        dust = (w < config.PRUNE_THRESHOLD) & allowed & (w > 1e-9)
-        small = (w <= 1e-9) & allowed
-        drop = dust | small
+        # Concentration: drop sub-threshold positions, re-solve on survivors.
+        drop = (w < config.PRUNE_THRESHOLD) & allowed
         if not drop.any() or (allowed & ~drop).sum() < 5:
             break
         allowed &= ~drop

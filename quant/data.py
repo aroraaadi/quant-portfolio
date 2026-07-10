@@ -102,9 +102,5 @@ def tradeable_universe(returns, min_days=None):
     return tradeable, pending
 
 
-def load_closes():
-    return pd.DataFrame({t: _load_series(t)["close"] for t in config.TICKERS})
-
-
 def load_benchmarks():
     return pd.DataFrame({b: _load_series(b)["return"] for b in config.BENCHMARKS}).dropna(how="all")

@@ -5,7 +5,6 @@ exactly these shapes. All floats rounded so git diffs stay readable.
 """
 import json
 import re
-from pathlib import Path
 
 import pandas as pd
 

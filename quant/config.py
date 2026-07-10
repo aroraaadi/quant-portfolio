@@ -59,7 +59,6 @@ TRADING_DAYS = 252
 # Band chosen to be feasible for a long-only, fully-invested portfolio of this
 # high-beta universe (verified against the min-variance vol at runtime).
 VOL_BAND = (0.12, 0.18)     # annualized
-FULLY_INVESTED = True
 MAX_WEIGHT = 0.20
 PRUNE_THRESHOLD = 0.02      # drop positions below 2% and re-solve (concentration)
 TC_GAMMA = 0.0020           # 20 bps per unit of one-way turnover in the objective

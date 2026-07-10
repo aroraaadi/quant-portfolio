@@ -17,7 +17,7 @@ from datetime import date
 import numpy as np
 import pandas as pd
 
-from quant import backtest, config, data, fundamentals, ic, mvo, optimize, publish, risk, signals
+from quant import config, data, fundamentals, ic, mvo, optimize, publish, risk, signals
 
 log = logging.getLogger("run_monthly")
 
