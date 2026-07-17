@@ -16,6 +16,7 @@ fails after redemption you must generate a fresh token (the old one is spent).
 Refresh tokens also expire after 3 days, so run at least that often (or on demand).
 """
 import json
+import ssl
 import sys
 import urllib.parse
 import urllib.request
@@ -26,13 +27,27 @@ TOKEN_FILE = BASE / ".questrade_token"
 OUT = BASE / "docs" / "data" / "current_portfolio.json"
 LOGIN = "https://login.questrade.com/oauth2/token"
 
+# macOS framework Python often lacks a CA bundle; use certifi's if available.
+try:
+    import certifi
+    _SSL = ssl.create_default_context(cafile=certifi.where())
+except ImportError:
+    _SSL = ssl.create_default_context()
+
 # TSX-listed CDRs (.TO) map to these US underlyings for the later risk/optimal work.
 # (Display keeps the Questrade symbol; this is just metadata for downstream use.)
 
 
+# Questrade's edge blocks default urllib user agents (403), so present a browser one.
+_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+
+
 def _get(url, headers=None):
-    req = urllib.request.Request(url, headers=headers or {})
-    with urllib.request.urlopen(req, timeout=30) as resp:
+    hdrs = {"User-Agent": _UA, "Accept": "application/json"}
+    hdrs.update(headers or {})
+    req = urllib.request.Request(url, headers=hdrs)
+    with urllib.request.urlopen(req, timeout=30, context=_SSL) as resp:
         return json.loads(resp.read().decode())
 
 
@@ -66,7 +81,10 @@ def usdcad_rate():
         return 1.37
 
 
-KIND = {"Stock": "stock", "Etf": "etf", "Option": "option", "Index": "index"}
+KIND = {"Stock": "stock", "Option": "option", "Index": "index"}
+# Questrade's securityType has no ETF value (it reports them as "Stock"), so tag
+# known ETF tickers by hand for display. Extend as holdings change.
+KNOWN_ETFS = {"SCHG", "XIU", "XSP", "XNDU", "SOXL", "SPCX", "SHAZ", "QQQ", "SPY", "VOO"}
 
 
 def build_positions(api, headers):
@@ -89,18 +107,24 @@ def build_positions(api, headers):
 
     fx = usdcad_rate()
     rows, total_cad = [], 0.0
+    pnl = {"CAD": 0.0, "USD": 0.0}
     for p in raw:
         m = meta.get(p.get("symbolId"), {"currency": "CAD", "kind": "stock"})
+        kind = m["kind"]
+        if kind == "stock" and p["symbol"].split(".")[0].split(" ")[0] in KNOWN_ETFS:
+            kind = "etf"
         mv = p.get("currentMarketValue", 0.0)
         cad = mv * (fx if m["currency"] == "USD" else 1.0)
         total_cad += cad
+        open_pnl = p.get("openPnl", 0.0)
+        pnl[m["currency"]] = pnl.get(m["currency"], 0.0) + open_pnl
         rows.append({
             "symbol": p["symbol"],
-            "kind": m["kind"],
+            "kind": kind,
             "currency": m["currency"],
             "_cad_value": cad,
             "mkt_value": round(mv, 2),
-            "open_pnl": round(p.get("openPnl", 0.0), 2),
+            "open_pnl": round(open_pnl, 2),
             "qty": p.get("openQuantity", 0),
             "avg_price": round(p.get("averageEntryPrice", 0.0), 4),
             "last_price": round(p.get("currentPrice", 0.0), 4),
@@ -108,13 +132,6 @@ def build_positions(api, headers):
     for r in rows:
         r["weight"] = round(r.pop("_cad_value") / total_cad, 4) if total_cad else 0.0
     rows.sort(key=lambda r: r["weight"], reverse=True)
-
-    # Aggregate P&L per currency from balances.
-    pnl = {"CAD": 0.0, "USD": 0.0}
-    for acct in accounts:
-        for b in _get(f"{api}v1/accounts/{acct['number']}/balances", headers).get("perCurrencyBalances", []):
-            if b["currency"] in pnl:
-                pnl[b["currency"]] += b.get("realizedPnl", 0.0) + b.get("unrealizedPnl", 0.0)
     return rows, pnl
 
 
