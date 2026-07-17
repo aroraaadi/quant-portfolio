@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MVO — Quant Portfolio</title>
+<title>Research — MVO</title>
 <link rel="stylesheet" href="../css/style.css">
 <script>window.ASSET_BASE = "../";</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
@@ -28,31 +28,39 @@
   </div>
 
   <h1>Mean-variance optimization</h1>
-  <p class="sub">Toggle assets on and off to build a long-only efficient frontier from
-    their expected returns and covariance. Everything below recomputes live in your browser.</p>
+  <p class="sub">Search the S&P 500 (plus everything you hold), add or remove names, and build a long-only
+    efficient frontier. Expected returns and covariance are computed live in your browser from 3 years of
+    daily data.</p>
 
   <div id="content">
     <div class="card">
       <div class="controls">
+        <div class="control search-wrap">
+          <span class="clabel">Add stocks</span>
+          <input class="search-input" id="search" type="text" autocomplete="off"
+                 placeholder="Search ticker or company…">
+          <div id="dropdown"></div>
+        </div>
+        <div class="control">
+          <span class="clabel">Selection</span>
+          <div style="display:flex; gap:8px">
+            <button class="btn-lite" id="load-holdings">Load my holdings</button>
+            <button class="btn-lite" id="clear">Clear</button>
+          </div>
+        </div>
         <div class="control">
           <span class="clabel">Expected return</span>
           <div class="seg" id="mu-seg">
-            <button data-v="hist" class="active">Historical mean</button>
-            <button data-v="alpha">Model alpha</button>
+            <button data-v="mean" class="active">Historical mean</button>
+            <button data-v="shrunk">Shrunk</button>
+            <button data-v="risk">Risk-only</button>
           </div>
         </div>
         <div class="control">
-          <span class="clabel">Optimal portfolio</span>
+          <span class="clabel">Optimal</span>
           <div class="seg" id="opt-seg">
             <button data-v="sharpe" class="active">Max Sharpe</button>
             <button data-v="minvar">Min variance</button>
-          </div>
-        </div>
-        <div class="control">
-          <span class="clabel">Assets</span>
-          <div style="display:flex; gap:8px">
-            <button class="btn-lite" id="sel-all">Select all</button>
-            <button class="btn-lite" id="sel-none">Clear</button>
           </div>
         </div>
         <div class="control">
@@ -60,11 +68,8 @@
           <label class="check"><input type="checkbox" id="show-cloud" checked> Random portfolios</label>
         </div>
       </div>
-    </div>
-
-    <div class="card">
-      <h2>Assets <span class="note" id="asset-count" style="font-weight:400"></span></h2>
-      <div class="assetgrid" id="assetgrid"></div>
+      <div class="chips" id="chips"></div>
+      <p class="note" id="sel-note"></p>
     </div>
 
     <div class="tiles" id="tiles"></div>
@@ -80,13 +85,25 @@
       <h2 id="weights-title">Optimal portfolio weights</h2>
       <div class="chart-box" id="weights-box" style="height:300px"><canvas id="weights-chart"></canvas></div>
     </div>
+
+    <div class="card">
+      <h2>Risk contribution</h2>
+      <div class="chart-box" id="risk-box" style="height:280px"><canvas id="risk-chart"></canvas></div>
+      <p class="note">Each holding's share of total portfolio variance (weight × marginal risk). Sums to 100% —
+        a name can carry more risk than its weight when it's volatile or correlated with the rest.</p>
+    </div>
+
+    <div class="card">
+      <h2>Correlation</h2>
+      <div class="scroll-x"><div id="heatmap"></div></div>
+      <p class="note" id="corr-note">Daily-return correlation of the selected names over the shared window.</p>
+    </div>
   </div>
 
   <footer>
-    Educational tool, not investment advice. Covariance is a Ledoit–Wolf shrinkage estimate over the full
-    return history; the frontier is long-only and fully invested. Expected returns are noisy estimates —
-    small changes move the frontier a lot, which is exactly why concentrated MVO solutions should be treated
-    with caution.
+    Educational tool, not investment advice. Covariance is the sample estimate over the overlapping daily
+    history of the selected names; the frontier is long-only and fully invested. Expected returns are noisy —
+    small changes move the frontier a lot, which is why concentrated MVO solutions warrant caution.
   </footer>
 </div>
 
