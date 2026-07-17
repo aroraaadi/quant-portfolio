@@ -67,8 +67,16 @@ Changing the universe (add/remove stocks in ONE place):
                               # then enters the optimized book automatically
     Non-USD names are FX-converted to USD automatically (set currency + yf symbol).
 
+S&P 500 research dataset (backfill):
+    python3 backfill_data.py   # 3y daily via yfinance for the S&P 500 + everything
+                               # you hold that isn't in it (SHOP, MDA, WULF, ETFs)
+    -> Return Series/{ticker}_daily_yf.csv  (510 names; manifest at data/universe_sp500.json)
+    Separate from the IBKR-sourced *_daily_ibkr.csv (the concentrated model's 18);
+    powers the research side (MVO / risk / optimal allocation over a large universe).
+
 Layout:
-    universe.py          single source of truth for the investable universe
+    universe.py          single source of truth for the concentrated model universe
+    backfill_data.py     one-off S&P 500 + holdings backfill (yfinance)
     IBKRDATA.py          daily price pull from IBKR TWS (runs via launchd)
     quant/               signals, risk model, IC engine, optimizer, backtest, publisher
     data/fundamentals/   dated yfinance snapshots (point-in-time archive)
