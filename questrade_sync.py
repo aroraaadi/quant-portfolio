@@ -24,7 +24,8 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
 TOKEN_FILE = BASE / ".questrade_token"
-OUT = BASE / "docs" / "data" / "current_portfolio.json"
+OUT = BASE / "docs" / "data" / "current_portfolio.json"          # published: allocation only
+STATE = BASE / "data" / "state"                                  # gitignored: full $ detail
 LOGIN = "https://login.questrade.com/oauth2/token"
 
 # macOS framework Python often lacks a CA bundle; use certifi's if available.
@@ -157,18 +158,25 @@ def main():
                 "each position's own currency; value_cad is converted to CAD.",
         "positions": rows,
     }
-    OUT.write_text(json.dumps(payload, indent=2))
-    print(f"Wrote {len(rows)} positions (total ${total_cad:,.2f} CAD) -> {OUT.relative_to(BASE)}")
+    # Full dollar detail stays LOCAL (gitignored); the public site gets allocation only.
+    STATE.mkdir(parents=True, exist_ok=True)
+    (STATE / "current_portfolio_full.json").write_text(json.dumps(payload, indent=2))
+    san = {"as_of": today, "source": "brokerage account — allocation only (relative)",
+           "positions": [{"symbol": r["symbol"], "kind": r["kind"],
+                          "currency": r["currency"], "weight": r["weight"]} for r in rows]}
+    OUT.write_text(json.dumps(san, indent=2))
+    print(f"Wrote {len(rows)} positions (allocation only) -> {OUT.relative_to(BASE)}; "
+          f"full ${total_cad:,.2f} CAD detail -> data/state/ (local)")
 
-    # Append to the forward-tracking value history (idempotent per date).
-    hist_path = OUT.parent / "portfolio_value_history.json"
+    # Forward value history — LOCAL only (has dollars). Idempotent per date.
+    hist_path = STATE / "portfolio_value_history.json"
     hist = json.loads(hist_path.read_text()) if hist_path.exists() else []
     hist = [h for h in hist if h["date"] != today]
     hist.append({"date": today, "total_value_cad": total_cad,
                  "open_pnl_cad": round(pnl["CAD"], 2), "open_pnl_usd": round(pnl["USD"], 2)})
     hist.sort(key=lambda h: h["date"])
     hist_path.write_text(json.dumps(hist, indent=1))
-    print(f"Value history: {len(hist)} point(s) -> {hist_path.name}")
+    print(f"Value history: {len(hist)} point(s) -> data/state/{hist_path.name} (local)")
     print("Review, then: git add -A && git commit -m 'Sync portfolio' && git push")
 
 

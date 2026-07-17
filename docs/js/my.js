@@ -28,8 +28,6 @@ function renderAll() {
 }
 
 const ccyColor = (c) => tok(CCY_SLOT[c] || "--muted");
-const cad = (x) => "$" + Math.abs(x).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const signed = (x) => (x < 0 ? "-" : "") + cad(x);
 
 function tile(el, label, value, opts = {}) {
   const t = document.createElement("div"); t.className = "tile";
@@ -47,10 +45,8 @@ function renderTiles() {
   const p = PF.positions;
   const largest = p.reduce((a, b) => (b.weight > a.weight ? b : a));
   const cadPct = p.filter(x => x.currency === "CAD").reduce((s, x) => s + x.weight, 0);
-  tile(el, "Total value (CAD)", cad(PF.total_value_cad));
-  tile(el, "Open P&L (CAD)", signed(PF.open_pnl_cad), { color: PF.open_pnl_cad >= 0 ? "up" : "down" });
-  tile(el, "Open P&L (USD)", signed(PF.open_pnl_usd), { color: PF.open_pnl_usd >= 0 ? "up" : "down" });
   tile(el, "Positions", p.length, { delta: `${largest.symbol} largest ${fmtPct(largest.weight, 1)}` });
+  tile(el, "CAD / USD split", `${Math.round(cadPct * 100)}% / ${Math.round((1 - cadPct) * 100)}%`, { small: true });
   if (document.getElementById("value-chart") && PHIST && PHIST.length) {
     const last = PHIST[PHIST.length - 1];
     const twr = last.twr_index - 100, spx = last.spx_index != null ? last.spx_index - 100 : null;
@@ -142,7 +138,7 @@ function renderWeightChart() {
         x: { grid: { color: tok("--grid") }, border: { display: false }, ticks: { callback: v => v + "%" } },
         y: { grid: { display: false }, border: { color: tok("--baseline") }, ticks: { color: tok("--ink-2"), font: { weight: 600, size: 11 } } } },
       plugins: { tooltip: { callbacks: { label: (i) => {
-        const r = rows[i.dataIndex]; return ` ${(r.weight * 100).toFixed(1)}% · ${cad(r.value_cad)} CAD · ${r.kind}`; } } } },
+        const r = rows[i.dataIndex]; return ` ${(r.weight * 100).toFixed(1)}% · ${r.kind} · ${r.currency}`; } } } },
     },
     plugins: [{ id: "pflabels", afterDatasetsDraw(chart) {
       const meta = chart.getDatasetMeta(0), ctx = chart.ctx;
@@ -167,19 +163,10 @@ function renderTable() {
     const ccy = document.createElement("td"); ccy.textContent = r.currency; ccy.style.color = "var(--ink-2)";
     tr.append(kind, ccy);
     const wt = document.createElement("td"); wt.className = "num"; wt.textContent = (r.weight * 100).toFixed(2) + "%"; tr.appendChild(wt);
-    const mv = document.createElement("td"); mv.className = "num";
-    mv.textContent = r.mkt_value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }); tr.appendChild(mv);
-    const pnl = document.createElement("td"); pnl.className = "num";
-    pnl.textContent = (r.open_pnl >= 0 ? "+" : "") + r.open_pnl.toFixed(2);
-    pnl.classList.add(r.open_pnl >= 0 ? "pos" : "neg"); tr.appendChild(pnl);
-    for (const val of [r.qty, r.avg_price, r.last_price]) {
-      const td = document.createElement("td"); td.className = "num";
-      td.textContent = typeof val === "number" ? val.toLocaleString() : val; tr.appendChild(td);
-    }
     tbody.appendChild(tr);
   }
   const note = document.getElementById("pf-note");
-  if (note) note.textContent = `${rows.length} positions. Dot marks currency (blue USD, aqua CAD). Open P&L is in each position's own currency.`;
+  if (note) note.textContent = `${rows.length} positions. Weights only — dollar values are kept private.`;
 }
 
 function draw(id, cfg) {

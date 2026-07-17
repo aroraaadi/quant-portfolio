@@ -6,3 +6,6 @@ __pycache__/
 # Personal financial statements (contain name, address, account #) — never commit
 Past transaction/
 data/state/statements_raw.json
+# Full brokerage detail with dollar values — local only, never publish
+data/state/current_portfolio_full.json
+data/state/portfolio_value_history.json

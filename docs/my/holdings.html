@@ -28,7 +28,7 @@
   </div>
 
   <h1>Holdings</h1>
-  <p class="sub">Full detail on every position — weight, market value, open P&L, and cost basis.</p>
+  <p class="sub">Every position and its weight in the account. Dollar values are kept private.</p>
 
   <div id="content">
     <div class="tiles" id="tiles"></div>
@@ -37,10 +37,7 @@
       <div class="scroll-x">
         <table id="pf-table">
           <thead><tr>
-            <th>Symbol</th><th>Type</th><th>Ccy</th>
-            <th class="num">Weight</th><th class="num">Mkt value</th>
-            <th class="num">Open P&L</th><th class="num">Qty</th>
-            <th class="num">Avg</th><th class="num">Last</th>
+            <th>Symbol</th><th>Type</th><th>Ccy</th><th class="num">Weight</th>
           </tr></thead>
           <tbody></tbody>
         </table>
@@ -49,8 +46,8 @@
     </div>
   </div>
 
-  <footer>Personal research project, not investment advice. Market value and P&L are shown in each position's
-    own currency, so they are not summable across currencies.</footer>
+  <footer>Personal research project, not investment advice. Only relative weights are shown; absolute dollar
+    values are kept private.</footer>
 </div>
 
 <script src="../js/common.js"></script>
