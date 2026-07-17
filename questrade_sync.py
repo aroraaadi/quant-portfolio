@@ -122,7 +122,7 @@ def build_positions(api, headers):
             "symbol": p["symbol"],
             "kind": kind,
             "currency": m["currency"],
-            "_cad_value": cad,
+            "value_cad": round(cad, 2),
             "mkt_value": round(mv, 2),
             "open_pnl": round(open_pnl, 2),
             "qty": p.get("openQuantity", 0),
@@ -130,9 +130,9 @@ def build_positions(api, headers):
             "last_price": round(p.get("currentPrice", 0.0), 4),
         })
     for r in rows:
-        r["weight"] = round(r.pop("_cad_value") / total_cad, 4) if total_cad else 0.0
+        r["weight"] = round(r["value_cad"] / total_cad, 4) if total_cad else 0.0
     rows.sort(key=lambda r: r["weight"], reverse=True)
-    return rows, pnl
+    return rows, pnl, round(total_cad, 2)
 
 
 def main():
@@ -143,20 +143,32 @@ def main():
     headers = {"Authorization": f"Bearer {access}"}
     print(f"  api_server: {api}")
 
-    rows, pnl = build_positions(api, headers)
+    rows, pnl, total_cad = build_positions(api, headers)
+    today = date.today().isoformat()
     payload = {
-        "as_of": date.today().isoformat(),
+        "as_of": today,
         "source": "Questrade API (questrade_sync.py)",
         "base_currency": "CAD",
+        "total_value_cad": total_cad,
         "open_pnl_cad": round(pnl["CAD"], 2),
         "open_pnl_usd": round(pnl["USD"], 2),
         "note": "Weights are base-currency (CAD) market value / total. .TO symbols are "
                 "TSX CDRs priced in CAD; the rest are USD. Market value and P&L are in "
-                "each position's own currency.",
+                "each position's own currency; value_cad is converted to CAD.",
         "positions": rows,
     }
     OUT.write_text(json.dumps(payload, indent=2))
-    print(f"Wrote {len(rows)} positions -> {OUT.relative_to(BASE)}")
+    print(f"Wrote {len(rows)} positions (total ${total_cad:,.2f} CAD) -> {OUT.relative_to(BASE)}")
+
+    # Append to the forward-tracking value history (idempotent per date).
+    hist_path = OUT.parent / "portfolio_value_history.json"
+    hist = json.loads(hist_path.read_text()) if hist_path.exists() else []
+    hist = [h for h in hist if h["date"] != today]
+    hist.append({"date": today, "total_value_cad": total_cad,
+                 "open_pnl_cad": round(pnl["CAD"], 2), "open_pnl_usd": round(pnl["USD"], 2)})
+    hist.sort(key=lambda h: h["date"])
+    hist_path.write_text(json.dumps(hist, indent=1))
+    print(f"Value history: {len(hist)} point(s) -> {hist_path.name}")
     print("Review, then: git add -A && git commit -m 'Sync portfolio' && git push")
 
 

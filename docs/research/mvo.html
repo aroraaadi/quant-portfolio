@@ -4,20 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MVO — Quant Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>window.ASSET_BASE = "../";</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
 <div class="wrap">
-  <nav>
-    <span class="brand">Quant Portfolio</span>
-    <a class="tab" href="index.html">Dashboard</a>
-    <a class="tab" href="portfolio.html">Portfolio</a>
-    <a class="tab" href="holdings.html">Holdings</a>
-    <a class="tab active" href="mvo.html">MVO</a>
-    <a class="tab" href="blog.html">Blog</a>
-    <span class="asof" id="asof"></span>
-  </nav>
+  <div class="topbar">
+    <div class="row1">
+      <span class="brand">Quant Portfolio</span>
+      <a class="section" href="../my/index.html">My Portfolio</a>
+      <span class="sep">/</span>
+      <a class="section active" href="index.html">Research</a>
+      <a class="blog" href="../blog.html">Blog</a>
+      <span class="asof" id="asof"></span>
+    </div>
+    <div class="row2">
+      <a href="index.html">Dashboard</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="holdings.html">Holdings</a>
+      <a href="mvo.html" class="active">MVO</a>
+    </div>
+  </div>
 
   <h1>Mean-variance optimization</h1>
   <p class="sub">Toggle assets on and off to build a long-only efficient frontier from
@@ -82,7 +90,7 @@
   </footer>
 </div>
 
-<script src="js/common.js"></script>
-<script src="js/mvo.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/mvo.js"></script>
 </body>
 </html>

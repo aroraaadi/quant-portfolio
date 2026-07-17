@@ -64,6 +64,32 @@ nav a.tab { color: var(--ink-2); font-size: 14px; }
 nav a.tab.active { color: var(--ink); font-weight: 600; }
 nav .asof { margin-left: auto; color: var(--muted); font-size: 13px; }
 
+/* Two-tier nav: section switcher (row 1) + sub-nav (row 2) */
+.topbar {
+  padding: 18px 0 0; margin-bottom: 22px; border-bottom: 1px solid var(--grid);
+}
+.topbar .row1 { display: flex; align-items: baseline; gap: 22px; }
+.topbar .brand { font-weight: 650; font-size: 17px; color: var(--ink); }
+.topbar .section {
+  color: var(--ink-2); font-size: 14.5px; font-weight: 500; padding-bottom: 2px;
+}
+.topbar .section.active { color: var(--ink); font-weight: 650; }
+.topbar .sep { color: var(--grid); }
+.topbar .blog { color: var(--ink-2); font-size: 14px; }
+.topbar .blog.active { color: var(--ink); font-weight: 600; }
+.topbar .asof { margin-left: auto; color: var(--muted); font-size: 13px; }
+.topbar .row2 { display: flex; gap: 20px; padding: 12px 0 10px; }
+.topbar .row2 a {
+  color: var(--muted); font-size: 13.5px; padding-bottom: 8px;
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.topbar .row2 a.active { color: var(--ink); font-weight: 600; border-bottom-color: var(--accent); }
+@media (max-width: 640px) {
+  .topbar .row1 { flex-wrap: wrap; }
+  .topbar .asof { width: 100%; margin-left: 0; order: 5; }
+  .topbar .row2 { overflow-x: auto; }
+}
+
 h1 { font-size: 22px; font-weight: 650; margin-bottom: 4px; }
 h2 { font-size: 16px; font-weight: 650; margin: 0 0 12px; }
 .sub { color: var(--ink-2); font-size: 14px; margin-bottom: 24px; }

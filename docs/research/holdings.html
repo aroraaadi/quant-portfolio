@@ -4,20 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Holdings — Quant Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>window.ASSET_BASE = "../";</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
 <div class="wrap">
-  <nav>
-    <span class="brand">Quant Portfolio</span>
-    <a class="tab" href="index.html">Dashboard</a>
-    <a class="tab" href="portfolio.html">Portfolio</a>
-    <a class="tab active" href="holdings.html">Holdings</a>
-    <a class="tab" href="mvo.html">MVO</a>
-    <a class="tab" href="blog.html">Blog</a>
-    <span class="asof" id="asof"></span>
-  </nav>
+  <div class="topbar">
+    <div class="row1">
+      <span class="brand">Quant Portfolio</span>
+      <a class="section" href="../my/index.html">My Portfolio</a>
+      <span class="sep">/</span>
+      <a class="section active" href="index.html">Research</a>
+      <a class="blog" href="../blog.html">Blog</a>
+      <span class="asof" id="asof"></span>
+    </div>
+    <div class="row2">
+      <a href="index.html">Dashboard</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="holdings.html" class="active">Holdings</a>
+      <a href="mvo.html">MVO</a>
+    </div>
+  </div>
 
   <h1>Holdings & changes</h1>
   <p class="sub">Current target weights, month-over-month changes, and how the book has evolved.</p>
@@ -55,7 +63,7 @@
   <footer>Personal research project, not investment advice. Weights are percentages of the equity portfolio.</footer>
 </div>
 
-<script src="js/common.js"></script>
-<script src="js/holdings.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/holdings.js"></script>
 </body>
 </html>

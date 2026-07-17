@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Portfolio — Positions</title>
+<link rel="stylesheet" href="../css/style.css">
+<script>window.ASSET_BASE = "../";</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="row1">
+      <span class="brand">Quant Portfolio</span>
+      <a class="section active" href="index.html">My Portfolio</a>
+      <span class="sep">/</span>
+      <a class="section" href="../research/index.html">Research</a>
+      <a class="blog" href="../blog.html">Blog</a>
+      <span class="asof" id="asof"></span>
+    </div>
+    <div class="row2">
+      <a href="index.html">Dashboard</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="holdings.html">Holdings</a>
+    </div>
+  </div>
+
+  <h1>Positions by weight</h1>
+  <p class="sub">Every position sized by its CAD-equivalent share of the account, colored by currency.</p>
+
+  <div id="content">
+    <div class="tiles" id="tiles"></div>
+    <div class="card">
+      <h2>Positions</h2>
+      <div class="legend" id="pf-legend"></div>
+      <div class="chart-box" id="pf-box" style="height:640px"><canvas id="pf-chart"></canvas></div>
+    </div>
+  </div>
+
+  <footer>Personal research project, not investment advice. Weights are CAD-equivalent market value / total.
+    <code>.TO</code> symbols are TSX CDRs (CAD); the rest are USD.</footer>
+</div>
+
+<script src="../js/common.js"></script>
+<script src="../js/my.js"></script>
+</body>
+</html>

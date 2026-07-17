@@ -5,8 +5,11 @@ function tok(name) {
 }
 
 async function loadJSON(path) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`${path}: HTTP ${res.status}`);
+  // Pages in subfolders (my/, research/) set window.ASSET_BASE = "../" so shared
+  // data under docs/data/ resolves regardless of page depth.
+  const full = (window.ASSET_BASE || "") + path;
+  const res = await fetch(full);
+  if (!res.ok) throw new Error(`${full}: HTTP ${res.status}`);
   return res.json();
 }
 

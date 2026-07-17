@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Portfolio — Dashboard</title>
+<link rel="stylesheet" href="../css/style.css">
+<script>window.ASSET_BASE = "../";</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="row1">
+      <span class="brand">Quant Portfolio</span>
+      <a class="section active" href="index.html">My Portfolio</a>
+      <span class="sep">/</span>
+      <a class="section" href="../research/index.html">Research</a>
+      <a class="blog" href="../blog.html">Blog</a>
+      <span class="asof" id="asof"></span>
+    </div>
+    <div class="row2">
+      <a href="index.html" class="active">Dashboard</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="holdings.html">Holdings</a>
+    </div>
+  </div>
+
+  <h1>My portfolio</h1>
+  <p class="sub">Your live Questrade account — total value, P&L, and allocation. Synced via API.</p>
+
+  <div id="content">
+    <div class="tiles" id="tiles"></div>
+
+    <div class="card">
+      <h2>Total value over time</h2>
+      <div class="chart-box" style="height:300px"><canvas id="value-chart"></canvas></div>
+      <p class="note" id="value-note"></p>
+    </div>
+
+    <div class="card">
+      <h2>Allocation</h2>
+      <div class="legend" id="alloc-legend"></div>
+      <div class="chart-box" style="height:300px"><canvas id="alloc-chart"></canvas></div>
+      <p class="note">Top holdings by CAD-equivalent weight; the smallest positions are grouped into “Other”.</p>
+    </div>
+  </div>
+
+  <footer>Personal research project, not investment advice. Values are in CAD (base currency); USD positions
+    converted at the latest spot rate.</footer>
+</div>
+
+<script src="../js/common.js"></script>
+<script src="../js/my.js"></script>
+</body>
+</html>

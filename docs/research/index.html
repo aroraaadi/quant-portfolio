@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quant Portfolio</title>
+<link rel="stylesheet" href="../css/style.css">
+<script>window.ASSET_BASE = "../";</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="row1">
+      <span class="brand">Quant Portfolio</span>
+      <a class="section" href="../my/index.html">My Portfolio</a>
+      <span class="sep">/</span>
+      <a class="section active" href="index.html">Research</a>
+      <a class="blog" href="../blog.html">Blog</a>
+      <span class="asof" id="asof"></span>
+    </div>
+    <div class="row2">
+      <a href="index.html" class="active">Dashboard</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="holdings.html">Holdings</a>
+      <a href="mvo.html">MVO</a>
+    </div>
+  </div>
+
+  <h1>Concentrated long-only equity portfolio</h1>
+  <p class="sub">Cross-sectional value, quality, momentum and short-interest signals ·
+    PCA factor risk model · alpha-maximizing optimizer with a volatility band.</p>
+
+  <div class="tiles" id="tiles"></div>
+
+  <div class="card">
+    <h2>Portfolio vs benchmarks — growth of 100</h2>
+    <div class="legend" id="perf-legend"></div>
+    <div class="chart-box" style="height:380px"><canvas id="perf-chart"></canvas></div>
+    <p class="note" id="perf-note"></p>
+  </div>
+
+  <div class="card">
+    <h2>Current holdings</h2>
+    <div class="chart-box" id="weights-box" style="height:300px"><canvas id="weights-chart"></canvas></div>
+    <div class="scroll-x" style="margin-top:16px">
+      <table id="holdings-table">
+        <thead><tr>
+          <th>Ticker</th><th>Sector</th><th class="num">Weight</th><th class="num">Alpha</th>
+          <th class="num">Value</th><th class="num">Quality</th>
+          <th class="num">Momentum</th><th class="num">Short int.</th>
+          <th class="num">P/E</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="note" id="holdings-note">Signal columns are sector-adjusted Gaussianized rank scores (≈ −1.9 … +1.9); alpha is their weighted composite.</p>
+  </div>
+
+  <div class="card">
+    <h2>Methodology</h2>
+    <div class="post-body" style="max-width:none">
+      <p><strong>Signals.</strong> Each name is scored cross-sectionally on four multi-metric signals:
+        value (earnings yield + EV/EBITDA yield + FCF yield), quality (ROIC stability + operating margin
+        + ROE + low leverage), 12−1 month momentum, and short interest (negated). Every metric is
+        <span id="neutral-line">sector-neutralized</span> before ranking, so the tilts are stock selection rather than sector bets.
+        With a small universe, raw z-scores are outlier-dominated, so each signal uses a Gaussianized rank.
+        <span id="ic-line"></span></p>
+      <p><strong>Risk.</strong> A statistical factor model Σ = BFBᵀ + D estimated on the trailing year:
+        B holds the loadings of the top three principal components, D the idiosyncratic variances.
+        A Ledoit–Wolf shrinkage estimate is computed alongside as a cross-check every run.
+        <span id="risk-line"></span></p>
+      <p><strong>Construction.</strong> Weights maximize αᵀw − λ·wᵀΣw − TC(w, w₀), long-only, fully invested,
+        <span id="cap-line">10%</span> position cap. λ is calibrated so portfolio volatility lands in a <span id="band-line">12–18%</span> annualized band,
+        and positions under 2% are pruned for concentration. Rebalanced monthly.</p>
+    </div>
+  </div>
+
+  <footer>
+    Personal research project, not investment advice. Benchmarks are price indices (no dividends);
+    portfolio returns are also price-only and net of an assumed 10 bps per unit of rebalance turnover.
+    Performance before the live date is hypothetical: it applies today's portfolio backwards and carries
+    selection and lookahead bias.
+  </footer>
+</div>
+
+<script src="../js/common.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

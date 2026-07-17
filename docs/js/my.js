@@ -1,0 +1,179 @@
+/* "My Portfolio" section — actual Questrade holdings.
+   One element-guarded module drives all three pages (Dashboard / Portfolio /
+   Holdings): each render step runs only if its container exists on the page. */
+
+let PF, VHIST, charts = {};
+const CCY_SLOT = { USD: "--s1", CAD: "--s2" };
+
+async function init() {
+  const content = document.getElementById("content");
+  try {
+    PF = await loadJSON("data/current_portfolio.json");
+    if (document.getElementById("value-chart")) {
+      VHIST = await loadJSON("data/portfolio_value_history.json").catch(() => []);
+    }
+  } catch (err) { showError(content, err); return; }
+  document.getElementById("asof").textContent = `As of ${fmtDate(PF.as_of)}`;
+  renderAll();
+  onThemeChange(renderAll);
+}
+
+function renderAll() {
+  applyChartDefaults();
+  if (document.getElementById("tiles")) renderTiles();
+  if (document.getElementById("value-chart")) renderValueChart();
+  if (document.getElementById("alloc-chart")) renderAllocation();
+  if (document.getElementById("pf-chart")) renderWeightChart();
+  if (document.getElementById("pf-table")) renderTable();
+}
+
+const ccyColor = (c) => tok(CCY_SLOT[c] || "--muted");
+const cad = (x) => "$" + Math.abs(x).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const signed = (x) => (x < 0 ? "-" : "") + cad(x);
+
+function tile(el, label, value, opts = {}) {
+  const t = document.createElement("div"); t.className = "tile";
+  const l = document.createElement("div"); l.className = "label"; l.textContent = label;
+  const v = document.createElement("div"); v.className = "value"; v.textContent = value;
+  if (opts.color) v.style.color = opts.color === "up" ? "var(--up)" : "var(--down)";
+  if (opts.small) v.style.fontSize = "20px";
+  t.append(l, v);
+  if (opts.delta) { const d = document.createElement("div"); d.className = "delta"; d.textContent = opts.delta; t.appendChild(d); }
+  el.appendChild(t);
+}
+
+function renderTiles() {
+  const el = document.getElementById("tiles"); el.innerHTML = "";
+  const p = PF.positions;
+  const largest = p.reduce((a, b) => (b.weight > a.weight ? b : a));
+  const cadPct = p.filter(x => x.currency === "CAD").reduce((s, x) => s + x.weight, 0);
+  tile(el, "Total value (CAD)", cad(PF.total_value_cad));
+  tile(el, "Open P&L (CAD)", signed(PF.open_pnl_cad), { color: PF.open_pnl_cad >= 0 ? "up" : "down" });
+  tile(el, "Open P&L (USD)", signed(PF.open_pnl_usd), { color: PF.open_pnl_usd >= 0 ? "up" : "down" });
+  tile(el, "Positions", p.length, { delta: `${largest.symbol} largest ${fmtPct(largest.weight, 1)}` });
+  if (document.getElementById("value-chart")) {
+    tile(el, "CAD / USD split", `${Math.round(cadPct * 100)}% / ${Math.round((1 - cadPct) * 100)}%`, { small: true });
+  }
+}
+
+function renderValueChart() {
+  const rows = (VHIST || []).slice();
+  const cfg = {
+    type: "line",
+    data: {
+      labels: rows.map(r => r.date),
+      datasets: [{
+        label: "Total value (CAD)", data: rows.map(r => r.total_value_cad),
+        borderColor: tok("--accent"), backgroundColor: tok("--accent"),
+        borderWidth: 2, pointRadius: rows.length <= 2 ? 5 : 0, pointHoverRadius: 5,
+        pointBackgroundColor: tok("--accent"), tension: 0,
+      }],
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      scales: {
+        x: { grid: { display: false }, border: { color: tok("--baseline") },
+             ticks: { maxTicksLimit: 8, callback(v) { const d = new Date(this.getLabelForValue(v) + "T00:00:00"); return d.toLocaleDateString(undefined, { month: "short", day: "numeric" }); } } },
+        y: { grid: { color: tok("--grid") }, border: { display: false },
+             ticks: { callback: v => "$" + (v / 1000).toFixed(1) + "k" } },
+      },
+      plugins: { tooltip: { callbacks: {
+        title: (i) => fmtDate(i[0].label),
+        label: (i) => " " + cad(i.raw) + " CAD",
+      } } },
+    },
+    plugins: [crosshairPlugin],
+  };
+  draw("value-chart", cfg);
+  const note = document.getElementById("value-note");
+  if (note) note.textContent = rows.length < 2
+    ? "Tracking starts today — the line fills in as the portfolio is re-synced from Questrade."
+    : `${rows.length} snapshots since ${fmtDate(rows[0].date)}.`;
+}
+
+function renderAllocation() {
+  const sorted = [...PF.positions].sort((a, b) => b.weight - a.weight);
+  const top = sorted.slice(0, 8);
+  const otherW = sorted.slice(8).reduce((s, r) => s + r.weight, 0);
+  const labels = top.map(r => r.symbol).concat(otherW > 0 ? ["Other"] : []);
+  const data = top.map(r => r.weight * 100).concat(otherW > 0 ? [otherW * 100] : []);
+  const slots = ["--s1", "--s2", "--s3", "--s4", "--s5", "--s6", "--s7", "--s8"];
+  const colors = top.map((_, i) => tok(slots[i])).concat(otherW > 0 ? [tok("--muted")] : []);
+  buildLegend(document.getElementById("alloc-legend"),
+    labels.map((l, i) => ({ label: l, color: colors[i], shape: "rect" })));
+  const cfg = {
+    type: "doughnut",
+    data: { labels, datasets: [{ data, backgroundColor: colors, borderColor: tok("--surface"), borderWidth: 2 }] },
+    options: {
+      responsive: true, maintainAspectRatio: false, cutout: "58%",
+      plugins: { tooltip: { callbacks: { label: (i) => ` ${i.label}: ${i.raw.toFixed(1)}%` } } },
+    },
+  };
+  draw("alloc-chart", cfg);
+}
+
+function renderWeightChart() {
+  const rows = [...PF.positions].sort((a, b) => b.weight - a.weight);
+  buildLegend(document.getElementById("pf-legend"), [
+    { label: "USD", color: ccyColor("USD"), shape: "rect" },
+    { label: "CAD", color: ccyColor("CAD"), shape: "rect" },
+  ]);
+  document.getElementById("pf-box").style.height = `${60 + rows.length * 26}px`;
+  const cfg = {
+    type: "bar",
+    data: { labels: rows.map(r => r.symbol), datasets: [{
+      data: rows.map(r => r.weight * 100), backgroundColor: rows.map(r => ccyColor(r.currency)),
+      borderRadius: { topRight: 4, bottomRight: 4 }, borderSkipped: "start", barThickness: 15 }] },
+    options: {
+      indexAxis: "y", responsive: true, maintainAspectRatio: false, layout: { padding: { right: 46 } },
+      scales: {
+        x: { grid: { color: tok("--grid") }, border: { display: false }, ticks: { callback: v => v + "%" } },
+        y: { grid: { display: false }, border: { color: tok("--baseline") }, ticks: { color: tok("--ink-2"), font: { weight: 600, size: 11 } } } },
+      plugins: { tooltip: { callbacks: { label: (i) => {
+        const r = rows[i.dataIndex]; return ` ${(r.weight * 100).toFixed(1)}% · ${cad(r.value_cad)} CAD · ${r.kind}`; } } } },
+    },
+    plugins: [{ id: "pflabels", afterDatasetsDraw(chart) {
+      const meta = chart.getDatasetMeta(0), ctx = chart.ctx;
+      ctx.save(); ctx.fillStyle = tok("--ink-2"); ctx.font = "11px system-ui, sans-serif"; ctx.textBaseline = "middle";
+      meta.data.forEach((bar, i) => ctx.fillText(`${(rows[i].weight * 100).toFixed(1)}%`, bar.x + 8, bar.y));
+      ctx.restore(); } }],
+  };
+  draw("pf-chart", cfg);
+}
+
+function renderTable() {
+  const tbody = document.querySelector("#pf-table tbody"); tbody.innerHTML = "";
+  const rows = [...PF.positions].sort((a, b) => b.weight - a.weight);
+  for (const r of rows) {
+    const tr = document.createElement("tr");
+    const sym = document.createElement("td");
+    const wrap = document.createElement("span"); wrap.className = "tick";
+    const dot = document.createElement("span"); dot.className = "dot"; dot.style.background = ccyColor(r.currency);
+    const label = document.createElement("span"); label.textContent = r.symbol; label.style.fontWeight = "600";
+    wrap.append(dot, label); sym.appendChild(wrap); tr.appendChild(sym);
+    const kind = document.createElement("td"); kind.textContent = r.kind; kind.style.color = "var(--ink-2)";
+    const ccy = document.createElement("td"); ccy.textContent = r.currency; ccy.style.color = "var(--ink-2)";
+    tr.append(kind, ccy);
+    const wt = document.createElement("td"); wt.className = "num"; wt.textContent = (r.weight * 100).toFixed(2) + "%"; tr.appendChild(wt);
+    const mv = document.createElement("td"); mv.className = "num";
+    mv.textContent = r.mkt_value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }); tr.appendChild(mv);
+    const pnl = document.createElement("td"); pnl.className = "num";
+    pnl.textContent = (r.open_pnl >= 0 ? "+" : "") + r.open_pnl.toFixed(2);
+    pnl.classList.add(r.open_pnl >= 0 ? "pos" : "neg"); tr.appendChild(pnl);
+    for (const val of [r.qty, r.avg_price, r.last_price]) {
+      const td = document.createElement("td"); td.className = "num";
+      td.textContent = typeof val === "number" ? val.toLocaleString() : val; tr.appendChild(td);
+    }
+    tbody.appendChild(tr);
+  }
+  const note = document.getElementById("pf-note");
+  if (note) note.textContent = `${rows.length} positions. Dot marks currency (blue USD, aqua CAD). Open P&L is in each position's own currency.`;
+}
+
+function draw(id, cfg) {
+  if (charts[id]) charts[id].destroy();
+  charts[id] = new Chart(document.getElementById(id), cfg);
+}
+
+init();
