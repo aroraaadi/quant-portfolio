@@ -1,0 +1,2818 @@
+[
+ {
+  "date": "2026-06-30",
+  "activity": "dividend",
+  "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2026-06-30",
+  "activity": "dividend",
+  "description": "BROADCOM INC COMMON STOCK",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2026-06-30",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2026-06-29",
+  "activity": "buy",
+  "description": "BLOOM ENERGY CORPORATION CLASS A COMMON STOCK",
+  "currency": "CAD",
+  "price": 280.2,
+  "size_pct": 0.0227
+ },
+ {
+  "date": "2026-06-29",
+  "activity": "sell",
+  "description": "BROADCOM INC CDR CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG ",
+  "currency": "CAD",
+  "price": 14.02,
+  "size_pct": 0.0142
+ },
+ {
+  "date": "2026-06-29",
+  "activity": "sell",
+  "description": "NVIDIA CORP CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 43.15,
+  "size_pct": 0.0145
+ },
+ {
+  "date": "2026-06-29",
+  "activity": "dividend",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2026-06-29",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-06-25",
+  "activity": "dividend",
+  "description": "META PLATFORMS INC CLASS A COMMON STOCK",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-06-25",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-06-22",
+  "activity": "dividend",
+  "description": "ALPHABET INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-06-22",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-06-22",
+  "activity": "buy",
+  "description": "BLOOM ENERGY CORPORATION CLASS A COMMON STOCK",
+  "currency": "CAD",
+  "price": 310.135,
+  "size_pct": 0.025
+ },
+ {
+  "date": "2026-06-22",
+  "activity": "sell",
+  "description": "AMAZON.COM INC UNSOLICITED",
+  "currency": "USD",
+  "price": 243.44,
+  "size_pct": 0.0137
+ },
+ {
+  "date": "2026-06-22",
+  "activity": "buy",
+  "description": "BLOOM ENERGY CORPORATION CLASS A COMMON STOCK",
+  "currency": "USD",
+  "price": 309.49,
+  "size_pct": 0.0174
+ },
+ {
+  "date": "2026-06-22",
+  "activity": "buy",
+  "description": "MICROSOFT CORP UNSOLICITED",
+  "currency": "USD",
+  "price": 378.9,
+  "size_pct": 0.0213
+ },
+ {
+  "date": "2026-06-22",
+  "activity": "sell",
+  "description": "NETFLIX INC COM UNSOLICITED",
+  "currency": "USD",
+  "price": 77.41,
+  "size_pct": 0.0217
+ },
+ {
+  "date": "2026-06-22",
+  "activity": "sell",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF UNSOLICITED",
+  "currency": "USD",
+  "price": 33.81,
+  "size_pct": 0.0095
+ },
+ {
+  "date": "2026-06-19",
+  "activity": "sell",
+  "description": "ISHARES S&P/TSX 60 INDEX ETF UNSOLICITED",
+  "currency": "CAD",
+  "price": 51.81,
+  "size_pct": 0.0262
+ },
+ {
+  "date": "2026-06-19",
+  "activity": "buy",
+  "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED UNSOLICITED",
+  "currency": "CAD",
+  "price": 75.66,
+  "size_pct": 0.0042
+ },
+ {
+  "date": "2026-06-17",
+  "activity": "dividend",
+  "description": "S&P GLOBAL INC CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2026-06-17",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-06-17",
+  "activity": "sell",
+  "description": "AMENTUM HOLDINGS INC COMMON STOCK UNSOLICITED",
+  "currency": "CAD",
+  "price": 22.18,
+  "size_pct": 0.0086
+ },
+ {
+  "date": "2026-06-17",
+  "activity": "buy",
+  "description": "INVESTMENT MANAGERS SER TR II TRADR 2X LONG BE DAILY ETF",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2026-06-17",
+  "activity": "sell",
+  "description": "NETFLIX INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 29.7,
+  "size_pct": 0.01
+ },
+ {
+  "date": "2026-06-16",
+  "activity": "buy",
+  "description": "AMAZON.COM CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 28.26,
+  "size_pct": 0.0159
+ },
+ {
+  "date": "2026-06-16",
+  "activity": "buy",
+  "description": "ALPHABET INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 58.65,
+  "size_pct": 0.0263
+ },
+ {
+  "date": "2026-06-16",
+  "activity": "buy",
+  "description": "SPACE EXP TECH CORP(SPACEX) CIBC CDR (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": 28.8,
+  "size_pct": 0.0129
+ },
+ {
+  "date": "2026-06-10",
+  "activity": "sell",
+  "description": "BROADCOM INC CDR CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG ",
+  "currency": "CAD",
+  "price": 14.74,
+  "size_pct": 0.0099
+ },
+ {
+  "date": "2026-06-10",
+  "activity": "sell",
+  "description": "ISHARES S&P/TSX SMALLCAP INDEX ETF UNSOLICITED",
+  "currency": "CAD",
+  "price": 35.96,
+  "size_pct": 0.0262
+ },
+ {
+  "date": "2026-06-10",
+  "activity": "sell",
+  "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED UNSOLICITED",
+  "currency": "CAD",
+  "price": 74.35,
+  "size_pct": 0.0167
+ },
+ {
+  "date": "2026-06-09",
+  "activity": "buy",
+  "description": "BETAPRO 3X SEMICONDUCTOR DAILY LEVERAGED BULL ALTERNATIVE ET",
+  "currency": "CAD",
+  "price": 53.9,
+  "size_pct": 0.0151
+ },
+ {
+  "date": "2026-06-09",
+  "activity": "sell",
+  "description": "XANADU QUANTUM TECHNOLOGIES LTD COM UNSOLICITED",
+  "currency": "CAD",
+  "price": 18.3,
+  "size_pct": 0.0154
+ },
+ {
+  "date": "2026-06-09",
+  "activity": "buy",
+  "description": "AMAZON.COM INC UNSOLICITED",
+  "currency": "USD",
+  "price": 245.64,
+  "size_pct": 0.0138
+ },
+ {
+  "date": "2026-06-09",
+  "activity": "sell",
+  "description": "AMENTUM HOLDINGS INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 22.87,
+  "size_pct": 0.0039
+ },
+ {
+  "date": "2026-06-09",
+  "activity": "buy",
+  "description": "MARVELL TECHNOLOGY INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 299.55,
+  "size_pct": 0.0168
+ },
+ {
+  "date": "2026-06-09",
+  "activity": "buy",
+  "description": "NETFLIX INC COM UNSOLICITED",
+  "currency": "USD",
+  "price": 82.1,
+  "size_pct": 0.0092
+ },
+ {
+  "date": "2026-06-09",
+  "activity": "sell",
+  "description": "REDDIT INC CLASS A COMMON STOCK",
+  "currency": "USD",
+  "price": 170.756,
+  "size_pct": 0.0096
+ },
+ {
+  "date": "2026-06-09",
+  "activity": "sell",
+  "description": "NEBIUS GROUP N V CLASS A ORDINARY SHARES",
+  "currency": "USD",
+  "price": 226.27,
+  "size_pct": 0.0254
+ },
+ {
+  "date": "2026-05-29",
+  "activity": "dividend",
+  "description": "ISHARES S&P/TSX 60 INDEX ETF DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0007
+ },
+ {
+  "date": "2026-05-29",
+  "activity": "sell",
+  "description": "ISHARES S&P/TSX 60 INDEX ETF UNSOLICITED",
+  "currency": "CAD",
+  "price": 50.7,
+  "size_pct": 0.0543
+ },
+ {
+  "date": "2026-05-29",
+  "activity": "buy",
+  "description": "XANADU QUANTUM TECHNOLOGIES LTD COM UNSOLICITED",
+  "currency": "CAD",
+  "price": 24.23,
+  "size_pct": 0.0532
+ },
+ {
+  "date": "2026-05-29",
+  "activity": "sell",
+  "description": "ECOLAB INC UNSOLICITED",
+  "currency": "USD",
+  "price": 263.69,
+  "size_pct": 0.0283
+ },
+ {
+  "date": "2026-05-29",
+  "activity": "buy",
+  "description": "REDDIT INC CLASS A COMMON STOCK",
+  "currency": "USD",
+  "price": 162.37,
+  "size_pct": 0.0087
+ },
+ {
+  "date": "2026-05-29",
+  "activity": "sell",
+  "description": "TUYA INC AMERICAN DEPOSITARY SHARES ECH REPSTG ONE CLASS A O",
+  "currency": "USD",
+  "price": 2.06,
+  "size_pct": 0.001
+ },
+ {
+  "date": "2026-05-29",
+  "activity": "buy",
+  "description": "NEBIUS GROUP N V CLASS A ORDINARY SHARES",
+  "currency": "USD",
+  "price": 228.865,
+  "size_pct": 0.0245
+ },
+ {
+  "date": "2026-05-22",
+  "activity": "buy",
+  "description": "META PLATFORMS INC CLASS A COMMON STOCK",
+  "currency": "USD",
+  "price": 600.47,
+  "size_pct": 0.0322
+ },
+ {
+  "date": "2026-05-22",
+  "activity": "sell",
+  "description": "NOVO NORDISK A/S-ADR EACH CNV INTO 1 CLASS B",
+  "currency": "USD",
+  "price": 44.09,
+  "size_pct": 0.0378
+ },
+ {
+  "date": "2026-05-13",
+  "activity": "buy",
+  "description": "GE AEROSPACE CIBC CDN DEPOSITARY RCPTS CAD HEDGE REG S UNSOL",
+  "currency": "CAD",
+  "price": 38.89,
+  "size_pct": 0.0417
+ },
+ {
+  "date": "2026-05-13",
+  "activity": "sell",
+  "description": "MICROSOFT CORP CDR CAD HEDGED CIBC DEPOSITARY RECEIPT REG S ",
+  "currency": "CAD",
+  "price": 29.25,
+  "size_pct": 0.0125
+ },
+ {
+  "date": "2026-05-13",
+  "activity": "sell",
+  "description": "TAIWAN SEMICONDUCTOR MFG CO LTD-SPONSORED ADR REPSTG 5 COM",
+  "currency": "CAD",
+  "price": 397.64,
+  "size_pct": 0.0287
+ },
+ {
+  "date": "2026-05-07",
+  "activity": "dividend",
+  "description": "JPMORGAN CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2026-05-07",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-05-04",
+  "activity": "buy",
+  "description": "TUYA INC AMERICAN DEPOSITARY SHARES ECH REPSTG ONE CLASS A O",
+  "currency": "USD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2026-05-01",
+  "activity": "buy",
+  "description": "MICROSOFT CORP CDR CAD HEDGED CIBC DEPOSITARY RECEIPT",
+  "currency": "USD",
+  "price": 29.05,
+  "size_pct": 0.013
+ },
+ {
+  "date": "2026-05-01",
+  "activity": "buy",
+  "description": "MICROSOFT CORP CDR CAD HEDGED CIBC DEPOSITARY RECEIPT REG S ",
+  "currency": "CAD",
+  "price": 29.05,
+  "size_pct": 0.0125
+ },
+ {
+  "date": "2026-04-29",
+  "activity": "buy",
+  "description": "AMENTUM HOLDINGS INC COMMON STOCK UNSOLICITED",
+  "currency": "CAD",
+  "price": 26.186,
+  "size_pct": 0.0102
+ },
+ {
+  "date": "2026-04-29",
+  "activity": "buy",
+  "description": "AMENTUM HOLDINGS INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 26.175,
+  "size_pct": 0.0044
+ },
+ {
+  "date": "2026-04-28",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0224
+ },
+ {
+  "date": "2026-04-24",
+  "activity": "buy",
+  "description": "NETFLIX INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 35.57,
+  "size_pct": 0.0119
+ },
+ {
+  "date": "2026-04-24",
+  "activity": "buy",
+  "description": "NETFLIX INC COM UNSOLICITED",
+  "currency": "USD",
+  "price": 93.81,
+  "size_pct": 0.0157
+ },
+ {
+  "date": "2026-04-23",
+  "activity": "sell",
+  "description": "REDWIRE CORPORATION COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 12.063,
+  "size_pct": 0.0209
+ },
+ {
+  "date": "2026-04-22",
+  "activity": "sell",
+  "description": "AMERICOLD REALTY TRUST INC COMMON STOCK UNSOLICITED",
+  "currency": "CAD",
+  "price": 12.9,
+  "size_pct": 0.0387
+ },
+ {
+  "date": "2026-04-22",
+  "activity": "sell",
+  "description": "CARGOJET INC COM VARIABLE VTG UNSOLICITED",
+  "currency": "CAD",
+  "price": 82.67,
+  "size_pct": 0.0277
+ },
+ {
+  "date": "2026-04-22",
+  "activity": "buy",
+  "description": "META CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 35.89,
+  "size_pct": 0.0261
+ },
+ {
+  "date": "2026-04-22",
+  "activity": "buy",
+  "description": "S&P GLOBAL INC CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": 21.26,
+  "size_pct": 0.0273
+ },
+ {
+  "date": "2026-04-16",
+  "activity": "buy",
+  "description": "AMAZON.COM CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 28.63,
+  "size_pct": 0.0016
+ },
+ {
+  "date": "2026-04-16",
+  "activity": "buy",
+  "description": "REDWIRE CORPORATION COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 9.68,
+  "size_pct": 0.0016
+ },
+ {
+  "date": "2026-04-15",
+  "activity": "dividend",
+  "description": "AMERICOLD REALTY TRUST INC COMMON STOCK",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0007
+ },
+ {
+  "date": "2026-04-15",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2026-04-15",
+  "activity": "sell",
+  "description": "BMO GOLD BULLION ETF CAD UNITS UNSOLICITED",
+  "currency": "CAD",
+  "price": 70.4,
+  "size_pct": 0.0354
+ },
+ {
+  "date": "2026-04-15",
+  "activity": "buy",
+  "description": "MDA SPACE LTD COM UNSOLICITED",
+  "currency": "CAD",
+  "price": 45.6,
+  "size_pct": 0.0076
+ },
+ {
+  "date": "2026-04-15",
+  "activity": "buy",
+  "description": "TAIWAN SEMICONDUCTOR MFG CO LTD-SPONSORED ADR REPSTG 5 COM",
+  "currency": "CAD",
+  "price": 375.675,
+  "size_pct": 0.0293
+ },
+ {
+  "date": "2026-04-15",
+  "activity": "sell",
+  "description": "BARRICK MNG CORP COM UNSOLICITED",
+  "currency": "USD",
+  "price": 43.73,
+  "size_pct": 0.0244
+ },
+ {
+  "date": "2026-04-15",
+  "activity": "buy",
+  "description": "NOVO NORDISK A/S-ADR EACH CNV INTO 1 CLASS B",
+  "currency": "USD",
+  "price": 39.16,
+  "size_pct": 0.0241
+ },
+ {
+  "date": "2026-04-14",
+  "activity": "sell",
+  "description": "PROSHARES TRUST ULTRAPRO QQQ UNSOLICITED",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2026-04-14",
+  "activity": "buy",
+  "description": "SHOPIFY INC CL A UNSOLICITED",
+  "currency": "CAD",
+  "price": 158.15,
+  "size_pct": 0.0354
+ },
+ {
+  "date": "2026-04-14",
+  "activity": "sell",
+  "description": "NVIDIA CORP UNSOLICITED",
+  "currency": "USD",
+  "price": 188.205,
+  "size_pct": 0.0105
+ },
+ {
+  "date": "2026-04-14",
+  "activity": "buy",
+  "description": "NOVO NORDISK A/S-ADR EACH CNV INTO 1 CLASS B",
+  "currency": "USD",
+  "price": 37.89,
+  "size_pct": 0.0106
+ },
+ {
+  "date": "2026-04-10",
+  "activity": "sell",
+  "description": "ADVANCED MICRO DEVICES CDR CAD HEDGED CIBC DEPOSITARY RECEIP",
+  "currency": "CAD",
+  "price": 42.53,
+  "size_pct": 0.0285
+ },
+ {
+  "date": "2026-04-10",
+  "activity": "buy",
+  "description": "ISHARES S&P/TSX SMALLCAP INDEX ETF UNSOLICITED",
+  "currency": "CAD",
+  "price": 34.92,
+  "size_pct": 0.0059
+ },
+ {
+  "date": "2026-04-10",
+  "activity": "buy",
+  "description": "SHOPIFY INC CL A UNSOLICITED",
+  "currency": "CAD",
+  "price": 159.27,
+  "size_pct": 0.0267
+ },
+ {
+  "date": "2026-04-09",
+  "activity": "dividend",
+  "description": "NVIDIA CORP CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-04-08",
+  "activity": "dividend",
+  "description": "BROADCOM INC CDR CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG ",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-04-08",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-04-08",
+  "activity": "buy",
+  "description": "PROSHARES TRUST ULTRAPRO QQQ UNSOLICITED",
+  "currency": "CAD",
+  "price": 42.36,
+  "size_pct": 0.0335
+ },
+ {
+  "date": "2026-04-07",
+  "activity": "buy",
+  "description": "ISHARES S&P/TSX SMALLCAP INDEX ETF UNSOLICITED",
+  "currency": "CAD",
+  "price": 34.31,
+  "size_pct": 0.0192
+ },
+ {
+  "date": "2026-04-06",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0559
+ },
+ {
+  "date": "2026-04-02",
+  "activity": "dividend",
+  "description": "CARGOJET INC COM VARIABLE VTG",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2026-04-02",
+  "activity": "dividend",
+  "description": "META CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-04-02",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-04-01",
+  "activity": "dividend",
+  "description": "NVIDIA CORP",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-03-31",
+  "activity": "dividend",
+  "description": "BROADCOM INC COMMON STOCK",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2026-03-31",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-03-30",
+  "activity": "dividend",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2026-03-30",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-03-27",
+  "activity": "buy",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF UNSOLICITED",
+  "currency": "USD",
+  "price": 29.28,
+  "size_pct": 0.0101
+ },
+ {
+  "date": "2026-03-26",
+  "activity": "buy",
+  "description": "ECOLAB INC UNSOLICITED",
+  "currency": "USD",
+  "price": 268.46,
+  "size_pct": 0.0371
+ },
+ {
+  "date": "2026-03-25",
+  "activity": "conversion",
+  "description": "Currency conversion",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0069
+ },
+ {
+  "date": "2026-03-25",
+  "activity": "conversion",
+  "description": "Currency conversion",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0049
+ },
+ {
+  "date": "2026-03-23",
+  "activity": "dividend",
+  "description": "ALPHABET INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-03-23",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-03-18",
+  "activity": "buy",
+  "description": "CARGOJET INC COM VARIABLE VTG UNSOLICITED",
+  "currency": "CAD",
+  "price": 88.32,
+  "size_pct": 0.0122
+ },
+ {
+  "date": "2026-03-18",
+  "activity": "buy",
+  "description": "CARGOJET INC COM VARIABLE VTG UNSOLICITED",
+  "currency": "CAD",
+  "price": 88.32,
+  "size_pct": 0.0244
+ },
+ {
+  "date": "2026-03-18",
+  "activity": "sell",
+  "description": "ISHARES S&P/TSX 60 INDEX ETF UNSOLICITED",
+  "currency": "CAD",
+  "price": 48.56,
+  "size_pct": 0.0335
+ },
+ {
+  "date": "2026-03-16",
+  "activity": "dividend",
+  "description": "BARRICK MNG CORP COM",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0003
+ },
+ {
+  "date": "2026-03-12",
+  "activity": "sell",
+  "description": "AST SPACEMOBILE INC CLASS A COMMON STOCK",
+  "currency": "CAD",
+  "price": 86.55,
+  "size_pct": 0.008
+ },
+ {
+  "date": "2026-03-12",
+  "activity": "sell",
+  "description": "IREN LIMITED ORDINARY SHARES UNSOLICITED",
+  "currency": "CAD",
+  "price": 39.21,
+  "size_pct": 0.0036
+ },
+ {
+  "date": "2026-03-12",
+  "activity": "sell",
+  "description": "DESTINY TECH100 INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 26.31,
+  "size_pct": 0.0273
+ },
+ {
+  "date": "2026-03-12",
+  "activity": "sell",
+  "description": "INFLEQTION INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 12.1,
+  "size_pct": 0.0117
+ },
+ {
+  "date": "2026-03-11",
+  "activity": "buy",
+  "description": "ALPHABET INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 49.78,
+  "size_pct": 0.0344
+ },
+ {
+  "date": "2026-03-11",
+  "activity": "buy",
+  "description": "JPMORGAN CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 37.66,
+  "size_pct": 0.0364
+ },
+ {
+  "date": "2026-03-11",
+  "activity": "sell",
+  "description": "PETROLEO BRASILEIRO SA PETROBRAS SPONSORED ADR",
+  "currency": "CAD",
+  "price": 17.91,
+  "size_pct": 0.0676
+ },
+ {
+  "date": "2026-02-27",
+  "activity": "dividend",
+  "description": "ISHARES S&P/TSX 60 INDEX ETF DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0011
+ },
+ {
+  "date": "2026-02-27",
+  "activity": "sell",
+  "description": "DEFSEC TECHNOLOGIES INC COM UNSOLICITED",
+  "currency": "CAD",
+  "price": 2.51,
+  "size_pct": 0.0026
+ },
+ {
+  "date": "2026-02-27",
+  "activity": "buy",
+  "description": "NVIDIA CORP CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 43.3,
+  "size_pct": 0.0713
+ },
+ {
+  "date": "2026-02-27",
+  "activity": "sell",
+  "description": "SPDR SERIES TRUST STATE STREET SPDR S&P AEROSPACE & DEFENSE ",
+  "currency": "CAD",
+  "price": 279.01,
+  "size_pct": 0.0495
+ },
+ {
+  "date": "2026-02-27",
+  "activity": "sell",
+  "description": "BITWISE BITCOIN ETF COMMON SHARES OF BENEFICIAL INTEREST UNS",
+  "currency": "USD",
+  "price": 37.0,
+  "size_pct": 0.0098
+ },
+ {
+  "date": "2026-02-27",
+  "activity": "buy",
+  "description": "NVIDIA CORP UNSOLICITED",
+  "currency": "USD",
+  "price": 191.58,
+  "size_pct": 0.0126
+ },
+ {
+  "date": "2026-02-27",
+  "activity": "sell",
+  "description": "ROCKET LAB CORPORATION COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 69.84,
+  "size_pct": 0.0046
+ },
+ {
+  "date": "2026-02-17",
+  "activity": "merger",
+  "description": "Merger CHURCHILL CAPITAL CORP X CLASS A ORDINARY SHARES SHRS",
+  "currency": "USD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2026-02-17",
+  "activity": "merger",
+  "description": "Merger INFLEQTION INC COMMON STOCK SHRS RECEIVED THRU MERGER",
+  "currency": "USD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2026-02-05",
+  "activity": "sell",
+  "description": "ADIENT PLC ORDINARY SHARES UNSOLICITED",
+  "currency": "CAD",
+  "price": 24.0,
+  "size_pct": 0.0213
+ },
+ {
+  "date": "2026-02-05",
+  "activity": "buy",
+  "description": "BARRICK MNG CORP COM UNSOLICITED",
+  "currency": "USD",
+  "price": 48.19,
+  "size_pct": 0.0159
+ },
+ {
+  "date": "2026-02-05",
+  "activity": "buy",
+  "description": "BARRICK MNG CORP COM UNSOLICITED",
+  "currency": "USD",
+  "price": 48.23,
+  "size_pct": 0.0159
+ },
+ {
+  "date": "2026-02-05",
+  "activity": "sell",
+  "description": "MICROBOT MEDICAL INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 1.78,
+  "size_pct": 0.0008
+ },
+ {
+  "date": "2026-02-05",
+  "activity": "sell",
+  "description": "MARVELL TECHNOLOGY INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 74.14,
+  "size_pct": 0.0147
+ },
+ {
+  "date": "2026-02-02",
+  "activity": "buy",
+  "description": "ROCKET LAB CORPORATION COMMON STOCK",
+  "currency": "USD",
+  "price": 80.29,
+  "size_pct": 0.0051
+ },
+ {
+  "date": "2026-02-02",
+  "activity": "buy",
+  "description": "ROCKET LAB CORPORATION COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 80.29,
+  "size_pct": 0.0053
+ },
+ {
+  "date": "2026-01-30",
+  "activity": "buy",
+  "description": "BMO GOLD BULLION ETF CAD UNITS UNSOLICITED",
+  "currency": "CAD",
+  "price": 78.8,
+  "size_pct": 0.0454
+ },
+ {
+  "date": "2026-01-30",
+  "activity": "sell",
+  "description": "KLARNA GROUP PLC ORDINARY SHARES UNSOLICITED",
+  "currency": "CAD",
+  "price": 24.205,
+  "size_pct": 0.035
+ },
+ {
+  "date": "2026-01-30",
+  "activity": "buy",
+  "description": "MDA SPACE LTD COM UNSOLICITED",
+  "currency": "CAD",
+  "price": 40.58,
+  "size_pct": 0.0234
+ },
+ {
+  "date": "2026-01-30",
+  "activity": "sell",
+  "description": "RICHTECH ROBOTMNGD INC CLASS B COMMON STOCK",
+  "currency": "USD",
+  "price": 3.96,
+  "size_pct": 0.0208
+ },
+ {
+  "date": "2026-01-29",
+  "activity": "sell",
+  "description": "PAYPAL HLDGS INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPT REG ",
+  "currency": "CAD",
+  "price": 3.98,
+  "size_pct": 0.0301
+ },
+ {
+  "date": "2026-01-16",
+  "activity": "sell",
+  "description": "HONEST COMPANY INC (THE) COMMON STOCK UNSOLICITED",
+  "currency": "CAD",
+  "price": 2.58,
+  "size_pct": 0.0084
+ },
+ {
+  "date": "2026-01-16",
+  "activity": "buy",
+  "description": "ISHARES S&P/TSX 60 INDEX ETF UNSOLICITED",
+  "currency": "CAD",
+  "price": 48.67,
+  "size_pct": 0.1871
+ },
+ {
+  "date": "2026-01-16",
+  "activity": "sell",
+  "description": "VANGUARD S&P 500 INDEX ETF TR UNIT UNSOLICITED",
+  "currency": "CAD",
+  "price": 171.96,
+  "size_pct": 0.1763
+ },
+ {
+  "date": "2026-01-16",
+  "activity": "sell",
+  "description": "DIGITAL REALTY TRUST INC",
+  "currency": "USD",
+  "price": 161.87,
+  "size_pct": 0.0311
+ },
+ {
+  "date": "2026-01-16",
+  "activity": "buy",
+  "description": "MARVELL TECHNOLOGY INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 81.8,
+  "size_pct": 0.0157
+ },
+ {
+  "date": "2026-01-16",
+  "activity": "buy",
+  "description": "REDWIRE CORPORATION COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 10.65,
+  "size_pct": 0.0123
+ },
+ {
+  "date": "2026-01-15",
+  "activity": "dividend",
+  "description": "AMERICOLD REALTY TRUST INC COMMON STOCK",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0008
+ },
+ {
+  "date": "2026-01-15",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2026-01-15",
+  "activity": "buy",
+  "description": "SPDR SERIES TRUST STATE STREET SPDR S&P AEROSPACE & DEFENSE ",
+  "currency": "CAD",
+  "price": 284.973,
+  "size_pct": 0.0515
+ },
+ {
+  "date": "2026-01-14",
+  "activity": "buy",
+  "description": "DEFSEC TECHNOLOGIES INC COM UNSOLICITED",
+  "currency": "CAD",
+  "price": 3.06,
+  "size_pct": 0.0031
+ },
+ {
+  "date": "2026-01-14",
+  "activity": "buy",
+  "description": "MICROBOT MEDICAL INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 2.14,
+  "size_pct": 0.001
+ },
+ {
+  "date": "2026-01-13",
+  "activity": "buy",
+  "description": "ALPHABET INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 52.8,
+  "size_pct": 0.0338
+ },
+ {
+  "date": "2026-01-13",
+  "activity": "buy",
+  "description": "IREN LIMITED ORDINARY SHARES UNSOLICITED",
+  "currency": "CAD",
+  "price": 46.61,
+  "size_pct": 0.0042
+ },
+ {
+  "date": "2026-01-13",
+  "activity": "buy",
+  "description": "KLARNA GROUP PLC ORDINARY SHARES UNSOLICITED",
+  "currency": "CAD",
+  "price": 32.28,
+  "size_pct": 0.0496
+ },
+ {
+  "date": "2026-01-13",
+  "activity": "buy",
+  "description": "PETROLEO BRASILEIRO SA PETROBRAS SPONSORED ADR",
+  "currency": "CAD",
+  "price": 11.905,
+  "size_pct": 0.0441
+ },
+ {
+  "date": "2026-01-13",
+  "activity": "sell",
+  "description": "SURF AIR MOBILITY INC COMMON STOCK UNSOLICITED",
+  "currency": "CAD",
+  "price": 2.94,
+  "size_pct": 0.0514
+ },
+ {
+  "date": "2026-01-12",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0961
+ },
+ {
+  "date": "2026-01-09",
+  "activity": "dividend",
+  "description": "NIKE INC CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2026-01-09",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-01-08",
+  "activity": "dividend",
+  "description": "BROADCOM INC CDR CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG ",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-01-08",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2026-01-08",
+  "activity": "sell",
+  "description": "STARBUCKS CORP CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) R",
+  "currency": "CAD",
+  "price": 24.1,
+  "size_pct": 0.0278
+ },
+ {
+  "date": "2026-01-07",
+  "activity": "dividend",
+  "description": "VANGUARD S&P 500 INDEX ETF TR UNIT DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0004
+ },
+ {
+  "date": "2026-01-06",
+  "activity": "buy",
+  "description": "AST SPACEMOBILE INC CLASS A COMMON STOCK",
+  "currency": "CAD",
+  "price": 87.33,
+  "size_pct": 0.0078
+ },
+ {
+  "date": "2026-01-06",
+  "activity": "buy",
+  "description": "AMAZON.COM CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 26.87,
+  "size_pct": 0.0517
+ },
+ {
+  "date": "2026-01-06",
+  "activity": "buy",
+  "description": "AMAZON.COM CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 27.04,
+  "size_pct": 0.0052
+ },
+ {
+  "date": "2026-01-06",
+  "activity": "buy",
+  "description": "HONEST COMPANY INC (THE) COMMON STOCK UNSOLICITED",
+  "currency": "CAD",
+  "price": 2.7,
+  "size_pct": 0.0089
+ },
+ {
+  "date": "2026-01-06",
+  "activity": "buy",
+  "description": "REDWIRE CORPORATION COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 9.988,
+  "size_pct": 0.0064
+ },
+ {
+  "date": "2026-01-05",
+  "activity": "dividend",
+  "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0004
+ },
+ {
+  "date": "2026-01-05",
+  "activity": "buy",
+  "description": "DIGITAL REALTY TRUST INC",
+  "currency": "USD",
+  "price": 154.64,
+  "size_pct": 0.0297
+ },
+ {
+  "date": "2025-12-31",
+  "activity": "buy",
+  "description": "META CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 36.0,
+  "size_pct": 0.0207
+ },
+ {
+  "date": "2025-12-31",
+  "activity": "dividend",
+  "description": "BROADCOM INC COMMON STOCK",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2025-12-31",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-12-31",
+  "activity": "dividend",
+  "description": "INVESCO QQQ TR UNIT SER 1",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2025-12-31",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-12-30",
+  "activity": "sell",
+  "description": "MASTERCARD CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 35.45,
+  "size_pct": 0.023
+ },
+ {
+  "date": "2025-12-30",
+  "activity": "buy",
+  "description": "BITWISE BITCOIN ETF COMMON SHARES OF BENEFICIAL INTEREST UNS",
+  "currency": "CAD",
+  "price": 47.63,
+  "size_pct": 0.0137
+ },
+ {
+  "date": "2025-12-30",
+  "activity": "buy",
+  "description": "CHURCHILL CAPITAL CORP X CLASS A ORDINARY SHARES",
+  "currency": "CAD",
+  "price": 16.65,
+  "size_pct": 0.0348
+ },
+ {
+  "date": "2025-12-30",
+  "activity": "sell",
+  "description": "CHURCHILL CAPITAL CORP X CLASS A ORDINARY SHARES",
+  "currency": "CAD",
+  "price": 16.47,
+  "size_pct": 0.0178
+ },
+ {
+  "date": "2025-12-30",
+  "activity": "sell",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF UNSOLICITED",
+  "currency": "CAD",
+  "price": 32.964,
+  "size_pct": 0.0475
+ },
+ {
+  "date": "2025-12-29",
+  "activity": "sell",
+  "description": "ENTREPRENEURSHARES SER TR ERSHARES PRIVATE PUBLIC CROSSOVER ",
+  "currency": "CAD",
+  "price": 20.6,
+  "size_pct": 0.0133
+ },
+ {
+  "date": "2025-12-24",
+  "activity": "buy",
+  "description": "VANGUARD S&P 500 INDEX ETF TR UNIT UNSOLICITED",
+  "currency": "CAD",
+  "price": 168.06,
+  "size_pct": 0.0847
+ },
+ {
+  "date": "2025-12-23",
+  "activity": "buy",
+  "description": "AMERICOLD REALTY TRUST INC COMMON STOCK UNSOLICITED",
+  "currency": "CAD",
+  "price": 12.305,
+  "size_pct": 0.0495
+ },
+ {
+  "date": "2025-12-23",
+  "activity": "buy",
+  "description": "ADIENT PLC ORDINARY SHARES UNSOLICITED",
+  "currency": "CAD",
+  "price": 19.496,
+  "size_pct": 0.0196
+ },
+ {
+  "date": "2025-12-23",
+  "activity": "buy",
+  "description": "ADVANCED MICRO DEVICES CDR CAD HEDGED CIBC DEPOSITARY RECEIP",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2025-12-23",
+  "activity": "buy",
+  "description": "SURF AIR MOBILITY INC COMMON STOCK UNSOLICITED",
+  "currency": "CAD",
+  "price": 2.17,
+  "size_pct": 0.0436
+ },
+ {
+  "date": "2025-12-23",
+  "activity": "sell",
+  "description": "VANGUARD FTSE CDA INDEX ETF TR UNITS UNSOLICITED",
+  "currency": "CAD",
+  "price": 69.1,
+  "size_pct": 0.0995
+ },
+ {
+  "date": "2025-12-23",
+  "activity": "sell",
+  "description": "VANGUARD U S TOTAL MKT INDEX ETF CAD HEDGED TR UNITS",
+  "currency": "CAD",
+  "price": 117.61,
+  "size_pct": 0.0677
+ },
+ {
+  "date": "2025-12-23",
+  "activity": "sell",
+  "description": "INVESCO QQQ TR UNIT SER 1 UNSOLICITED",
+  "currency": "CAD",
+  "price": 621.28,
+  "size_pct": 0.0447
+ },
+ {
+  "date": "2025-12-23",
+  "activity": "buy",
+  "description": "RICHTECH ROBOTMNGD INC CLASS B COMMON STOCK",
+  "currency": "CAD",
+  "price": 3.638,
+  "size_pct": 0.0215
+ },
+ {
+  "date": "2025-12-23",
+  "activity": "buy",
+  "description": "ENTREPRENEURSHARES SER TR ERSHARES PRIVATE PUBLIC CROSSOVER ",
+  "currency": "USD",
+  "price": 20.49,
+  "size_pct": 0.0133
+ },
+ {
+  "date": "2025-12-22",
+  "activity": "buy",
+  "description": "DESTINY TECH100 INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 31.2,
+  "size_pct": 0.0247
+ },
+ {
+  "date": "2025-12-22",
+  "activity": "sell",
+  "description": "SHOPIFY INC CL A UNSOLICITED",
+  "currency": "USD",
+  "price": 170.32,
+  "size_pct": 0.0245
+ },
+ {
+  "date": "2025-12-18",
+  "activity": "buy",
+  "description": "DESTINY TECH100 INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 30.96,
+  "size_pct": 0.0089
+ },
+ {
+  "date": "2025-12-17",
+  "activity": "dividend",
+  "description": "PAYPAL HLDGS INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPT REG ",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2025-12-17",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-12-15",
+  "activity": "buy",
+  "description": "BROADCOM INC CDR CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG ",
+  "currency": "CAD",
+  "price": 14.11,
+  "size_pct": 0.0305
+ },
+ {
+  "date": "2025-12-15",
+  "activity": "dividend",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2025-12-15",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-12-15",
+  "activity": "buy",
+  "description": "BROADCOM INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 363.55,
+  "size_pct": 0.0523
+ },
+ {
+  "date": "2025-12-10",
+  "activity": "sell",
+  "description": "LULULEMON CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": 8.04,
+  "size_pct": 0.0648
+ },
+ {
+  "date": "2025-12-10",
+  "activity": "sell",
+  "description": "NIKE INC CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": 11.58,
+  "size_pct": 0.0267
+ },
+ {
+  "date": "2025-12-05",
+  "activity": "dividend",
+  "description": "STARBUCKS CORP CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) R",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2025-12-05",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-11-18",
+  "activity": "sell",
+  "description": "TOAST INC CLASS A COMMON STOCK",
+  "currency": "CAD",
+  "price": 35.3,
+  "size_pct": 0.0205
+ },
+ {
+  "date": "2025-11-17",
+  "activity": "dividend",
+  "description": "MASTERCARD CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-11-17",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-10-31",
+  "activity": "dividend",
+  "description": "INVESCO QQQ TR UNIT SER 1",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-10-31",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-10-23",
+  "activity": "sell",
+  "description": "CROWDSTRIKE HOLDINGS INC CLASS A COMMON STOCK",
+  "currency": "USD",
+  "price": 502.68,
+  "size_pct": 0.0351
+ },
+ {
+  "date": "2025-10-22",
+  "activity": "sell",
+  "description": "NVIDIA CORP CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S -1",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2025-10-22",
+  "activity": "sell",
+  "description": "VISA INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 32.27,
+  "size_pct": 0.0226
+ },
+ {
+  "date": "2025-10-15",
+  "activity": "sell",
+  "description": "HERSHEY COMPANY (THE)",
+  "currency": "CAD",
+  "price": 189.3,
+  "size_pct": 0.0366
+ },
+ {
+  "date": "2025-10-15",
+  "activity": "buy",
+  "description": "LULULEMON CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": 7.42,
+  "size_pct": 0.0347
+ },
+ {
+  "date": "2025-10-15",
+  "activity": "buy",
+  "description": "NVIDIA CORP CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 41.42,
+  "size_pct": 0.0347
+ },
+ {
+  "date": "2025-10-15",
+  "activity": "buy",
+  "description": "VANGUARD FTSE CDA INDEX ETF TR UNITS UNSOLICITED",
+  "currency": "CAD",
+  "price": 65.06,
+  "size_pct": 0.0909
+ },
+ {
+  "date": "2025-10-15",
+  "activity": "buy",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF UNSOLICITED",
+  "currency": "USD",
+  "price": 31.567,
+  "size_pct": 0.0199
+ },
+ {
+  "date": "2025-10-15",
+  "activity": "sell",
+  "description": "SUPER MICRO COMPUTER INC COMMON STOCK UNSOLICITED",
+  "currency": "USD",
+  "price": 54.3,
+  "size_pct": 0.0379
+ },
+ {
+  "date": "2025-10-14",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.1398
+ },
+ {
+  "date": "2025-10-08",
+  "activity": "dividend",
+  "description": "NIKE INC CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2025-10-08",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-10-07",
+  "activity": "dividend",
+  "description": "VANGUARD S&P 500 INDEX ETF TR UNIT DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2025-10-07",
+  "activity": "dividend",
+  "description": "VANGUARD U S TOTAL MKT INDEX ETF CAD HEDGED TR UNITS DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2025-09-29",
+  "activity": "dividend",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2025-09-29",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-09-15",
+  "activity": "dividend",
+  "description": "HERSHEY COMPANY (THE)",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0003
+ },
+ {
+  "date": "2025-09-15",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-09-09",
+  "activity": "dividend",
+  "description": "VISA INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-09-09",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-09-08",
+  "activity": "dividend",
+  "description": "STARBUCKS CORP CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) R",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0003
+ },
+ {
+  "date": "2025-09-08",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-08-15",
+  "activity": "dividend",
+  "description": "MASTERCARD CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-08-15",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-07-31",
+  "activity": "dividend",
+  "description": "INVESCO QQQ TR UNIT SER 1",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2025-07-31",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-07-08",
+  "activity": "dividend",
+  "description": "VANGUARD S&P 500 INDEX ETF TR UNIT DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0003
+ },
+ {
+  "date": "2025-07-08",
+  "activity": "dividend",
+  "description": "VANGUARD U S TOTAL MKT INDEX ETF CAD HEDGED TR UNITS DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2025-07-08",
+  "activity": "dividend",
+  "description": "NIKE INC CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2025-07-08",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-06-30",
+  "activity": "dividend",
+  "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0003
+ },
+ {
+  "date": "2025-06-30",
+  "activity": "dividend",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2025-06-30",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-06-16",
+  "activity": "dividend",
+  "description": "HERSHEY COMPANY (THE)",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0003
+ },
+ {
+  "date": "2025-06-16",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-06-10",
+  "activity": "buy",
+  "description": "LULULEMON CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": 11.95,
+  "size_pct": 0.0269
+ },
+ {
+  "date": "2025-06-09",
+  "activity": "dividend",
+  "description": "VISA INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-06-09",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-06-06",
+  "activity": "dividend",
+  "description": "STARBUCKS CORP CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) R",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0003
+ },
+ {
+  "date": "2025-06-06",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-04-30",
+  "activity": "dividend",
+  "description": "INVESCO QQQ TR UNIT SER 1",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2025-04-30",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-04-21",
+  "activity": "buy",
+  "description": "VANGUARD S&P 500 INDEX ETF TR UNIT UNSOLICITED",
+  "currency": "CAD",
+  "price": 130.33,
+  "size_pct": 0.1168
+ },
+ {
+  "date": "2025-04-08",
+  "activity": "dividend",
+  "description": "NIKE INC CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2025-04-08",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-04-07",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.1484
+ },
+ {
+  "date": "2025-04-07",
+  "activity": "buy",
+  "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED UNSOLICITED",
+  "currency": "CAD",
+  "price": 53.42,
+  "size_pct": 0.0641
+ },
+ {
+  "date": "2025-04-03",
+  "activity": "dividend",
+  "description": "VANGUARD U S TOTAL MKT INDEX ETF CAD HEDGED TR UNITS DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2025-03-31",
+  "activity": "dividend",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2025-03-31",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-03-14",
+  "activity": "dividend",
+  "description": "HERSHEY COMPANY (THE)",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0005
+ },
+ {
+  "date": "2025-03-14",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2025-03-10",
+  "activity": "dividend",
+  "description": "VISA INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2025-03-10",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-03-07",
+  "activity": "dividend",
+  "description": "STARBUCKS CORP CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) R",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0004
+ },
+ {
+  "date": "2025-03-07",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2025-02-27",
+  "activity": "sell",
+  "description": "SUPER MICRO COMPUTER INC CIBC CDN DEPOSITARY RCPTS (CAD HEDG",
+  "currency": "CAD",
+  "price": 18.62,
+  "size_pct": 0.0648
+ },
+ {
+  "date": "2025-02-14",
+  "activity": "dividend",
+  "description": "MASTERCARD CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-02-14",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-01-29",
+  "activity": "buy",
+  "description": "INVESCO QQQ TR UNIT SER 1 UNSOLICITED",
+  "currency": "USD",
+  "price": 515.31,
+  "size_pct": 0.0554
+ },
+ {
+  "date": "2025-01-09",
+  "activity": "dividend",
+  "description": "NIKE INC CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0003
+ },
+ {
+  "date": "2025-01-09",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2025-01-07",
+  "activity": "dividend",
+  "description": "VANGUARD U S TOTAL MKT INDEX ETF CAD HEDGED TR UNITS DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2024-12-16",
+  "activity": "dividend",
+  "description": "HERSHEY COMPANY (THE)",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0004
+ },
+ {
+  "date": "2024-12-16",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2024-12-16",
+  "activity": "dividend",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2024-12-16",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2024-12-09",
+  "activity": "dividend",
+  "description": "VISA INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2024-12-09",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2024-12-06",
+  "activity": "dividend",
+  "description": "STARBUCKS CORP CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) R",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0003
+ },
+ {
+  "date": "2024-12-06",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2024-11-18",
+  "activity": "dividend",
+  "description": "MASTERCARD CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2024-11-18",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2024-10-18",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0005
+ },
+ {
+  "date": "2024-10-18",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0017
+ },
+ {
+  "date": "2024-10-18",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0005
+ },
+ {
+  "date": "2024-10-18",
+  "activity": "merger",
+  "description": "Merger SQUARESPACE INC CLASS A COMMON STOCK CASH FOR MERGED ",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0111
+ },
+ {
+  "date": "2024-10-17",
+  "activity": "buy",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF UNSOLICITED",
+  "currency": "USD",
+  "price": 26.31,
+  "size_pct": 0.0948
+ },
+ {
+  "date": "2024-10-17",
+  "activity": "buy",
+  "description": "SUPER MICRO COMPUTER INC COMMON STOCK UNSOLICITED 10 48.790 ",
+  "currency": "USD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2024-10-16",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.2143
+ },
+ {
+  "date": "2024-10-15",
+  "activity": "other",
+  "description": "Stock Dist SCHWAB STRATEGIC TR US LCAP GR ETF STK SPLIT",
+  "currency": "USD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2024-10-08",
+  "activity": "dividend",
+  "description": "NIKE INC CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0003
+ },
+ {
+  "date": "2024-10-08",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2024-10-07",
+  "activity": "dividend",
+  "description": "VANGUARD U S TOTAL MKT INDEX ETF CAD HEDGED TR UNITS DIST",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2024-10-01",
+  "activity": "buy",
+  "description": "SUPER MICRO COMPUTER INC CIBC CDN DEPOSITARY RCPTS 34 14.250",
+  "currency": "USD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2024-10-01",
+  "activity": "buy",
+  "description": "SUPER MICRO COMPUTER INC CIBC CDN DEPOSITARY RCPTS (CAD HEDG",
+  "currency": "CAD",
+  "price": 14.25,
+  "size_pct": 0.0585
+ },
+ {
+  "date": "2024-09-30",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0947
+ },
+ {
+  "date": "2024-09-30",
+  "activity": "dividend",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2024-09-30",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2024-09-26",
+  "activity": "buy",
+  "description": "STARBUCKS CORP CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) R",
+  "currency": "CAD",
+  "price": 27.06,
+  "size_pct": 0.0139
+ },
+ {
+  "date": "2024-09-25",
+  "activity": "buy",
+  "description": "CROWDSTRIKE HOLDINGS INC CLASS A COMMON STOCK",
+  "currency": "USD",
+  "price": 287.425,
+  "size_pct": 0.0454
+ },
+ {
+  "date": "2024-09-25",
+  "activity": "buy",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF UNSOLICITED",
+  "currency": "USD",
+  "price": 103.19,
+  "size_pct": 0.0326
+ },
+ {
+  "date": "2024-09-24",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0789
+ },
+ {
+  "date": "2024-09-20",
+  "activity": "fee",
+  "description": "Fee",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0158
+ },
+ {
+  "date": "2024-09-20",
+  "activity": "other",
+  "description": "HST CASH HST#",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0021
+ },
+ {
+  "date": "2024-09-19",
+  "activity": "buy",
+  "description": "PAYPAL HLDGS INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPT REG ",
+  "currency": "CAD",
+  "price": 5.34,
+  "size_pct": 0.0995
+ },
+ {
+  "date": "2024-09-19",
+  "activity": "buy",
+  "description": "VANGUARD U S TOTAL MKT INDEX ETF CAD HEDGED TR UNITS",
+  "currency": "CAD",
+  "price": 98.7,
+  "size_pct": 0.1247
+ },
+ {
+  "date": "2024-09-11",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.2368
+ },
+ {
+  "date": "2024-09-10",
+  "activity": "dividend",
+  "description": "VISA INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2024-09-10",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2024-09-09",
+  "activity": "dividend",
+  "description": "STARBUCKS CORP CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) R",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0004
+ },
+ {
+  "date": "2024-09-09",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2024-09-04",
+  "activity": "buy",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF UNSOLICITED 2 101.060 pag",
+  "currency": "USD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2024-08-30",
+  "activity": "buy",
+  "description": "HERSHEY COMPANY (THE)",
+  "currency": "CAD",
+  "price": 192.41,
+  "size_pct": 0.1514
+ },
+ {
+  "date": "2024-08-30",
+  "activity": "buy",
+  "description": "LULULEMON CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": 11.91,
+  "size_pct": 0.0684
+ },
+ {
+  "date": "2024-08-30",
+  "activity": "buy",
+  "description": "MASTERCARD CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 30.02,
+  "size_pct": 0.0259
+ },
+ {
+  "date": "2024-08-30",
+  "activity": "buy",
+  "description": "NIKE INC CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": 15.6,
+  "size_pct": 0.0672
+ },
+ {
+  "date": "2024-08-30",
+  "activity": "buy",
+  "description": "TOAST INC CLASS A COMMON STOCK",
+  "currency": "CAD",
+  "price": 24.21,
+  "size_pct": 0.0572
+ },
+ {
+  "date": "2024-08-28",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0258
+ },
+ {
+  "date": "2024-08-26",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.2872
+ },
+ {
+  "date": "2024-08-16",
+  "activity": "dividend",
+  "description": "MASTERCARD CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0001
+ },
+ {
+  "date": "2024-08-16",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2024-08-08",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0862
+ },
+ {
+  "date": "2024-08-08",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0287
+ },
+ {
+  "date": "2024-07-01",
+  "activity": "dividend",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2024-07-01",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.0
+ },
+ {
+  "date": "2024-06-19",
+  "activity": "buy",
+  "description": "NIKE INC CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+  "currency": "CAD",
+  "price": 17.81,
+  "size_pct": 0.1691
+ },
+ {
+  "date": "2024-06-18",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.1675
+ },
+ {
+  "date": "2024-06-04",
+  "activity": "buy",
+  "description": "SQUARESPACE INC CLASS A COMMON STOCK",
+  "currency": "USD",
+  "price": 43.759,
+  "size_pct": 0.0489
+ },
+ {
+  "date": "2024-05-24",
+  "activity": "buy",
+  "description": "MASTERCARD CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 29.19,
+  "size_pct": 0.1146
+ },
+ {
+  "date": "2024-05-24",
+  "activity": "buy",
+  "description": "STARBUCKS CORP CDRS CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) R",
+  "currency": "CAD",
+  "price": 23.07,
+  "size_pct": 0.2264
+ },
+ {
+  "date": "2024-05-24",
+  "activity": "buy",
+  "description": "VISA INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 26.55,
+  "size_pct": 0.1737
+ },
+ {
+  "date": "2024-05-24",
+  "activity": "buy",
+  "description": "MASTERCARD CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "USD",
+  "price": 29.18,
+  "size_pct": 0.0852
+ },
+ {
+  "date": "2024-05-24",
+  "activity": "sell",
+  "description": "MASTERCARD CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "USD",
+  "price": 29.16,
+  "size_pct": 0.0824
+ },
+ {
+  "date": "2024-05-24",
+  "activity": "buy",
+  "description": "SHOPIFY INC CL A UNSOLICITED",
+  "currency": "USD",
+  "price": 58.85,
+  "size_pct": 0.077
+ },
+ {
+  "date": "2024-04-19",
+  "activity": "buy",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF UNSOLICITED",
+  "currency": "USD",
+  "price": 89.9,
+  "size_pct": 0.1766
+ },
+ {
+  "date": "2024-03-08",
+  "activity": "dividend",
+  "description": "PFIZER CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0012
+ },
+ {
+  "date": "2024-03-08",
+  "activity": "tax",
+  "description": "Non-resident tax withheld",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.0002
+ },
+ {
+  "date": "2024-03-05",
+  "activity": "sell",
+  "description": "APPLE INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 26.37,
+  "size_pct": 0.0694
+ },
+ {
+  "date": "2024-03-05",
+  "activity": "sell",
+  "description": "PAYPAL HLDGS INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPT REG ",
+  "currency": "CAD",
+  "price": 4.54,
+  "size_pct": 0.4543
+ },
+ {
+  "date": "2024-03-05",
+  "activity": "sell",
+  "description": "PAYPAL HOLDINGS INC COM UNSOLICITED",
+  "currency": "USD",
+  "price": 60.29,
+  "size_pct": 0.1588
+ },
+ {
+  "date": "2024-03-05",
+  "activity": "sell",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF UNSOLICITED",
+  "currency": "USD",
+  "price": 91.732,
+  "size_pct": 0.1812
+ },
+ {
+  "date": "2024-03-01",
+  "activity": "buy",
+  "description": "APPLE INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S 4 26",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.5343
+ },
+ {
+  "date": "2024-03-01",
+  "activity": "buy",
+  "description": "APPLE INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 26.79,
+  "size_pct": 0.0705
+ },
+ {
+  "date": "2024-02-29",
+  "activity": "sell",
+  "description": "PFIZER CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 12.68,
+  "size_pct": 0.0751
+ },
+ {
+  "date": "2024-02-22",
+  "activity": "buy",
+  "description": "PAYPAL HLDGS INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPT REG ",
+  "currency": "CAD",
+  "price": 4.43,
+  "size_pct": 0.1984
+ },
+ {
+  "date": "2024-02-16",
+  "activity": "buy",
+  "description": "PAYPAL HLDGS INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPT REG ",
+  "currency": "CAD",
+  "price": 4.36,
+  "size_pct": 0.1292
+ },
+ {
+  "date": "2024-02-13",
+  "activity": "buy",
+  "description": "PAYPAL HLDGS INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPT REG ",
+  "currency": "CAD",
+  "price": 4.25,
+  "size_pct": 0.0392
+ },
+ {
+  "date": "2024-02-09",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": null
+ },
+ {
+  "date": "2024-02-09",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.2305
+ },
+ {
+  "date": "2024-02-09",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.1317
+ },
+ {
+  "date": "2024-02-08",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.3293
+ },
+ {
+  "date": "2024-02-08",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.3293
+ },
+ {
+  "date": "2024-01-17",
+  "activity": "buy",
+  "description": "PAYPAL HOLDINGS INC COM UNSOLICITED",
+  "currency": "USD",
+  "price": 60.8,
+  "size_pct": 0.2626
+ },
+ {
+  "date": "2024-01-16",
+  "activity": "buy",
+  "description": "PAYPAL HLDGS INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPT REG ",
+  "currency": "CAD",
+  "price": 4.61,
+  "size_pct": 0.1245
+ },
+ {
+  "date": "2024-01-16",
+  "activity": "buy",
+  "description": "SCHWAB STRATEGIC TR US LCAP GR ETF UNSOLICITED",
+  "currency": "USD",
+  "price": 83.449,
+  "size_pct": 0.2703
+ },
+ {
+  "date": "2024-01-15",
+  "activity": "buy",
+  "description": "PFIZER CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+  "currency": "CAD",
+  "price": 13.41,
+  "size_pct": 0.1303
+ },
+ {
+  "date": "2024-01-09",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "USD",
+  "price": null,
+  "size_pct": 0.5399
+ },
+ {
+  "date": "2024-01-08",
+  "activity": "contribution",
+  "description": "Contribution",
+  "currency": "CAD",
+  "price": null,
+  "size_pct": 0.27
+ }
+]

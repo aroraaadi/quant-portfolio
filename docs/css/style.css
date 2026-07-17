@@ -219,6 +219,24 @@ tr:last-child td { border-bottom: none; }
 .asset-toggle.off { color: var(--muted); }
 .asset-toggle.off .swatch { opacity: 0.3; }
 
+/* Transaction filter chips + size bars */
+.filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.filter-chip {
+  appearance: none; border: 1px solid var(--baseline); background: var(--surface);
+  color: var(--ink-2); font: inherit; font-size: 12.5px; padding: 5px 12px; border-radius: 16px; cursor: pointer;
+}
+.filter-chip.active { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
+.act-badge {
+  display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;
+  text-transform: capitalize;
+}
+.act-buy { background: color-mix(in srgb, var(--up) 16%, transparent); color: var(--up); }
+.act-sell { background: color-mix(in srgb, var(--down) 16%, transparent); color: var(--down); }
+.act-other { background: var(--grid); color: var(--ink-2); }
+.size-bar-wrap { display: flex; align-items: center; gap: 8px; min-width: 120px; }
+.size-bar { height: 7px; border-radius: 4px; background: var(--accent); min-width: 2px; }
+.size-bar-track { flex: 1; height: 7px; border-radius: 4px; background: var(--grid); overflow: hidden; }
+
 .note { color: var(--muted); font-size: 12.5px; margin-top: 10px; }
 footer { color: var(--muted); font-size: 12.5px; margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--grid); }
 .error-box { color: var(--down); font-size: 14px; padding: 12px 0; }

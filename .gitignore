@@ -3,3 +3,6 @@ __pycache__/
 .DS_Store
 *.csv.tmp
 .questrade_token
+# Personal financial statements (contain name, address, account #) — never commit
+Past transaction/
+data/state/statements_raw.json

@@ -2,7 +2,7 @@
    One element-guarded module drives all three pages (Dashboard / Portfolio /
    Holdings): each render step runs only if its container exists on the page. */
 
-let PF, VHIST, charts = {};
+let PF, PHIST, charts = {};
 const CCY_SLOT = { USD: "--s1", CAD: "--s2" };
 
 async function init() {
@@ -10,7 +10,7 @@ async function init() {
   try {
     PF = await loadJSON("data/current_portfolio.json");
     if (document.getElementById("value-chart")) {
-      VHIST = await loadJSON("data/portfolio_value_history.json").catch(() => []);
+      PHIST = await loadJSON("data/portfolio_history.json").catch(() => []);
     }
   } catch (err) { showError(content, err); return; }
   document.getElementById("asof").textContent = `As of ${fmtDate(PF.as_of)}`;
@@ -51,45 +51,56 @@ function renderTiles() {
   tile(el, "Open P&L (CAD)", signed(PF.open_pnl_cad), { color: PF.open_pnl_cad >= 0 ? "up" : "down" });
   tile(el, "Open P&L (USD)", signed(PF.open_pnl_usd), { color: PF.open_pnl_usd >= 0 ? "up" : "down" });
   tile(el, "Positions", p.length, { delta: `${largest.symbol} largest ${fmtPct(largest.weight, 1)}` });
-  if (document.getElementById("value-chart")) {
-    tile(el, "CAD / USD split", `${Math.round(cadPct * 100)}% / ${Math.round((1 - cadPct) * 100)}%`, { small: true });
+  if (document.getElementById("value-chart") && PHIST && PHIST.length) {
+    const last = PHIST[PHIST.length - 1];
+    const twr = last.twr_index - 100, spx = last.spx_index != null ? last.spx_index - 100 : null;
+    tile(el, "Time-weighted return", `${twr >= 0 ? "+" : ""}${twr.toFixed(1)}%`,
+      { color: twr >= 0 ? "up" : "down", delta: "since Jan 2024" });
+    if (spx != null) tile(el, "S&P 500 (same period)", `${spx >= 0 ? "+" : ""}${spx.toFixed(1)}%`, { small: true });
   }
 }
 
 function renderValueChart() {
-  const rows = (VHIST || []).slice();
+  const rows = (PHIST || []).slice();
+  const line = (label, key, color, dash) => ({
+    label, data: rows.map(r => r[key]), borderColor: color, backgroundColor: color,
+    borderWidth: 2, borderDash: dash || [], pointRadius: 0, pointHoverRadius: 4, tension: 0,
+  });
   const cfg = {
     type: "line",
     data: {
       labels: rows.map(r => r.date),
-      datasets: [{
-        label: "Total value (CAD)", data: rows.map(r => r.total_value_cad),
-        borderColor: tok("--accent"), backgroundColor: tok("--accent"),
-        borderWidth: 2, pointRadius: rows.length <= 2 ? 5 : 0, pointHoverRadius: 5,
-        pointBackgroundColor: tok("--accent"), tension: 0,
-      }],
+      datasets: [
+        line("Portfolio value", "value_index", tok("--accent")),
+        line("Net contributions", "invested_index", tok("--muted"), [5, 4]),
+      ],
     },
     options: {
       responsive: true, maintainAspectRatio: false,
       interaction: { mode: "index", intersect: false },
       scales: {
         x: { grid: { display: false }, border: { color: tok("--baseline") },
-             ticks: { maxTicksLimit: 8, callback(v) { const d = new Date(this.getLabelForValue(v) + "T00:00:00"); return d.toLocaleDateString(undefined, { month: "short", day: "numeric" }); } } },
+             ticks: { maxTicksLimit: 8, callback(v) { const d = new Date(this.getLabelForValue(v) + "T00:00:00"); return d.toLocaleDateString(undefined, { month: "short", year: "2-digit" }); } } },
         y: { grid: { color: tok("--grid") }, border: { display: false },
-             ticks: { callback: v => "$" + (v / 1000).toFixed(1) + "k" } },
+             ticks: { callback: v => v + "" } },
       },
       plugins: { tooltip: { callbacks: {
         title: (i) => fmtDate(i[0].label),
-        label: (i) => " " + cad(i.raw) + " CAD",
+        label: (i) => ` ${i.dataset.label}: ${i.raw} (base 100)`,
       } } },
     },
     plugins: [crosshairPlugin],
   };
   draw("value-chart", cfg);
+  buildLegend(document.getElementById("value-legend"), [
+    { label: "Portfolio value", color: tok("--accent") },
+    { label: "Net contributions", color: tok("--muted") },
+  ]);
   const note = document.getElementById("value-note");
-  if (note) note.textContent = rows.length < 2
-    ? "Tracking starts today — the line fills in as the portfolio is re-synced from Questrade."
-    : `${rows.length} snapshots since ${fmtDate(rows[0].date)}.`;
+  if (note) note.textContent = rows.length
+    ? "Indexed to 100 at Jan 2024. The gap between the two lines is market gains (vs money deposited). "
+      + "Time-weighted return above strips out deposit timing."
+    : "";
 }
 
 function renderAllocation() {

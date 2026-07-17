@@ -3,10 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My Portfolio — Holdings</title>
+<title>My Portfolio — Transactions</title>
 <link rel="stylesheet" href="../css/style.css">
 <script>window.ASSET_BASE = "../";</script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -22,38 +21,37 @@
     <div class="row2">
       <a href="index.html">Dashboard</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="holdings.html" class="active">Holdings</a>
-      <a href="transactions.html">Transactions</a>
+      <a href="holdings.html">Holdings</a>
+      <a href="transactions.html" class="active">Transactions</a>
     </div>
   </div>
 
-  <h1>Holdings</h1>
-  <p class="sub">Full detail on every position — weight, market value, open P&L, and cost basis.</p>
+  <h1>Transaction log</h1>
+  <p class="sub">Every buy, sell, dividend and contribution since Jan 2024, from the monthly statements.
+    Trade sizes are shown relative to the account (as a share of that month's value) — no dollar amounts.</p>
 
   <div id="content">
     <div class="tiles" id="tiles"></div>
     <div class="card">
-      <h2>Positions</h2>
+      <div class="filter-row" id="filters"></div>
       <div class="scroll-x">
-        <table id="pf-table">
+        <table id="tx-table">
           <thead><tr>
-            <th>Symbol</th><th>Type</th><th>Ccy</th>
-            <th class="num">Weight</th><th class="num">Mkt value</th>
-            <th class="num">Open P&L</th><th class="num">Qty</th>
-            <th class="num">Avg</th><th class="num">Last</th>
+            <th>Date</th><th>Activity</th><th>Security</th><th>Ccy</th>
+            <th class="num">Price</th><th>Size (% of book)</th>
           </tr></thead>
           <tbody></tbody>
         </table>
       </div>
-      <p class="note" id="pf-note"></p>
+      <p class="note" id="tx-note"></p>
     </div>
   </div>
 
-  <footer>Personal research project, not investment advice. Market value and P&L are shown in each position's
-    own currency, so they are not summable across currencies.</footer>
+  <footer>Personal research project, not investment advice. Sourced from CIBC Investor's Edge monthly
+    statements; amounts are shown only as a percentage of the account so no absolute dollar figures are published.</footer>
 </div>
 
 <script src="../js/common.js"></script>
-<script src="../js/my.js"></script>
+<script src="../js/my_transactions.js"></script>
 </body>
 </html>
