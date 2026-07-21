@@ -2,7 +2,7 @@
    One element-guarded module drives all three pages (Dashboard / Portfolio /
    Holdings): each render step runs only if its container exists on the page. */
 
-let PF, PHIST, charts = {};
+let PF, PHIST, MET, charts = {};
 const CCY_SLOT = { USD: "--s1", CAD: "--s2" };
 
 async function init() {
@@ -11,6 +11,9 @@ async function init() {
     PF = await loadJSON("data/current_portfolio.json");
     if (document.getElementById("value-chart")) {
       PHIST = await loadJSON("data/portfolio_history.json").catch(() => []);
+    }
+    if (document.getElementById("metrics-tiles")) {
+      MET = await loadJSON("data/portfolio_metrics.json").catch(() => null);
     }
   } catch (err) { showError(content, err); return; }
   document.getElementById("asof").textContent = `As of ${fmtDate(PF.as_of)}`;
@@ -21,6 +24,7 @@ async function init() {
 function renderAll() {
   applyChartDefaults();
   if (document.getElementById("tiles")) renderTiles();
+  if (document.getElementById("metrics-tiles")) renderMetrics();
   if (document.getElementById("value-chart")) renderValueChart();
   if (document.getElementById("alloc-chart")) renderAllocation();
   if (document.getElementById("pf-chart")) renderWeightChart();
@@ -53,6 +57,21 @@ function renderTiles() {
     tile(el, "Time-weighted return", `${twr >= 0 ? "+" : ""}${twr.toFixed(1)}%`,
       { color: twr >= 0 ? "up" : "down", delta: "since Jan 2024" });
     if (spx != null) tile(el, "S&P 500 (same period)", `${spx >= 0 ? "+" : ""}${spx.toFixed(1)}%`, { small: true });
+  }
+}
+
+function renderMetrics() {
+  const el = document.getElementById("metrics-tiles"); el.innerHTML = "";
+  const note = document.getElementById("metrics-note");
+  if (!MET) { if (note) note.textContent = "Metrics unavailable."; return; }
+  tile(el, "Beta (vs S&P 500)", MET.beta.toFixed(2), { delta: MET.beta > 1 ? "amplifies the market" : "dampens the market" });
+  tile(el, "Volatility (ann.)", fmtPct(MET.vol_annual));
+  tile(el, "Max drawdown", fmtPct(MET.max_drawdown), { color: "down" });
+  tile(el, "Sharpe", MET.sharpe.toFixed(2));
+  if (note) {
+    const twr = MET.twr_max_drawdown != null ? ` Actual worst peak-to-trough on the monthly equity curve: ${fmtPct(MET.twr_max_drawdown)}.` : "";
+    note.textContent = `Based on current holdings applied over the past ${Math.round(MET.window_days / 252 * 10) / 10}y `
+      + `(${Math.round(MET.coverage_pct * 100)}% of the book with data) — a hypothetical since weights change over time.` + twr;
   }
 }
 

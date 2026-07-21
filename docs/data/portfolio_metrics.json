@@ -1,0 +1,14 @@
+{
+ "as_of": "2026-07-21",
+ "coverage_pct": 0.9017,
+ "window_days": 729,
+ "beta": 1.44,
+ "vol_annual": 0.2339,
+ "max_drawdown": -0.2482,
+ "sharpe": 1.47,
+ "cagr": 0.384,
+ "best_day": 0.129,
+ "worst_day": -0.0768,
+ "twr_max_drawdown": -0.1097,
+ "note": "Daily metrics apply current holdings over the past ~3y (hypothetical). Max-drawdown (TWR) is the actual monthly equity-curve drawdown."
+}

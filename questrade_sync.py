@@ -114,10 +114,10 @@ def build_positions(api, headers):
         kind = m["kind"]
         if kind == "stock" and p["symbol"].split(".")[0].split(" ")[0] in KNOWN_ETFS:
             kind = "etf"
-        mv = p.get("currentMarketValue", 0.0)
+        mv = p.get("currentMarketValue") or 0.0        # can be None mid-session
         cad = mv * (fx if m["currency"] == "USD" else 1.0)
         total_cad += cad
-        open_pnl = p.get("openPnl", 0.0)
+        open_pnl = p.get("openPnl") or 0.0
         pnl[m["currency"]] = pnl.get(m["currency"], 0.0) + open_pnl
         rows.append({
             "symbol": p["symbol"],
@@ -126,9 +126,9 @@ def build_positions(api, headers):
             "value_cad": round(cad, 2),
             "mkt_value": round(mv, 2),
             "open_pnl": round(open_pnl, 2),
-            "qty": p.get("openQuantity", 0),
-            "avg_price": round(p.get("averageEntryPrice", 0.0), 4),
-            "last_price": round(p.get("currentPrice", 0.0), 4),
+            "qty": p.get("openQuantity") or 0,
+            "avg_price": round(p.get("averageEntryPrice") or 0.0, 4),
+            "last_price": round(p.get("currentPrice") or 0.0, 4),
         })
     for r in rows:
         r["weight"] = round(r["value_cad"] / total_cad, 4) if total_cad else 0.0

@@ -22,7 +22,8 @@ RAW_OUT = BASE / "data" / "state" / "statements_raw.json"
 HIST_OUT = BASE / "docs" / "data" / "portfolio_history.json"
 TX_OUT = BASE / "docs" / "data" / "transactions.json"
 SPX_CSV = BASE / "Return Series" / "spx_daily_ibkr.csv"
-CUR_PORTFOLIO = BASE / "docs" / "data" / "current_portfolio.json"
+# current value comes from the LOCAL full detail (the published file is dollar-free)
+CUR_PORTFOLIO = BASE / "data" / "state" / "current_portfolio_full.json"
 
 MONTHS = {m: i for i, m in enumerate(
     ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], 1)}

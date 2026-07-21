@@ -6,3570 +6,3570 @@
    "symbol": "A",
    "currency": "USD",
    "file": "a_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AAPL",
    "currency": "USD",
    "file": "aapl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ABBV",
    "currency": "USD",
    "file": "abbv_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ABNB",
    "currency": "USD",
    "file": "abnb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ABT",
    "currency": "USD",
    "file": "abt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ACGL",
    "currency": "USD",
    "file": "acgl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ACN",
    "currency": "USD",
    "file": "acn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ADBE",
    "currency": "USD",
    "file": "adbe_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ADI",
    "currency": "USD",
    "file": "adi_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ADM",
    "currency": "USD",
    "file": "adm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ADP",
    "currency": "USD",
    "file": "adp_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ADSK",
    "currency": "USD",
    "file": "adsk_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AEE",
    "currency": "USD",
    "file": "aee_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AEP",
    "currency": "USD",
    "file": "aep_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AES",
    "currency": "USD",
    "file": "aes_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AFL",
    "currency": "USD",
    "file": "afl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AIG",
    "currency": "USD",
    "file": "aig_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AIZ",
    "currency": "USD",
    "file": "aiz_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AJG",
    "currency": "USD",
    "file": "ajg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AKAM",
    "currency": "USD",
    "file": "akam_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ALB",
    "currency": "USD",
    "file": "alb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ALGN",
    "currency": "USD",
    "file": "algn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ALL",
    "currency": "USD",
    "file": "all_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ALLE",
    "currency": "USD",
    "file": "alle_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AMAT",
    "currency": "USD",
    "file": "amat_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AMCR",
    "currency": "USD",
    "file": "amcr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AMD",
    "currency": "USD",
    "file": "amd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AME",
    "currency": "USD",
    "file": "ame_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AMGN",
    "currency": "USD",
    "file": "amgn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AMP",
    "currency": "USD",
    "file": "amp_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AMT",
    "currency": "USD",
    "file": "amt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AMZN",
    "currency": "USD",
    "file": "amzn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ANET",
    "currency": "USD",
    "file": "anet_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AON",
    "currency": "USD",
    "file": "aon_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AOS",
    "currency": "USD",
    "file": "aos_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "APA",
    "currency": "USD",
    "file": "apa_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "APD",
    "currency": "USD",
    "file": "apd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "APH",
    "currency": "USD",
    "file": "aph_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "APO",
    "currency": "USD",
    "file": "apo_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "APP",
    "currency": "USD",
    "file": "app_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "APTV",
    "currency": "USD",
    "file": "aptv_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ARE",
    "currency": "USD",
    "file": "are_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ARES",
    "currency": "USD",
    "file": "ares_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ATO",
    "currency": "USD",
    "file": "ato_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AVB",
    "currency": "USD",
    "file": "avb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AVGO",
    "currency": "USD",
    "file": "avgo_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AVY",
    "currency": "USD",
    "file": "avy_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AWK",
    "currency": "USD",
    "file": "awk_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AXON",
    "currency": "USD",
    "file": "axon_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AXP",
    "currency": "USD",
    "file": "axp_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "AZO",
    "currency": "USD",
    "file": "azo_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BA",
    "currency": "USD",
    "file": "ba_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BAC",
    "currency": "USD",
    "file": "bac_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BALL",
    "currency": "USD",
    "file": "ball_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BAX",
    "currency": "USD",
    "file": "bax_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BBY",
    "currency": "USD",
    "file": "bby_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BDX",
    "currency": "USD",
    "file": "bdx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BEN",
    "currency": "USD",
    "file": "ben_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BF-B",
    "currency": "USD",
    "file": "bf_b_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BG",
    "currency": "USD",
    "file": "bg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BIIB",
    "currency": "USD",
    "file": "biib_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BKNG",
    "currency": "USD",
    "file": "bkng_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BKR",
    "currency": "USD",
    "file": "bkr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BLDR",
    "currency": "USD",
    "file": "bldr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BLK",
    "currency": "USD",
    "file": "blk_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BMY",
    "currency": "USD",
    "file": "bmy_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BNY",
    "currency": "USD",
    "file": "bny_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BR",
    "currency": "USD",
    "file": "br_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BRK-B",
    "currency": "USD",
    "file": "brk_b_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BRO",
    "currency": "USD",
    "file": "bro_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BSX",
    "currency": "USD",
    "file": "bsx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BX",
    "currency": "USD",
    "file": "bx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "BXP",
    "currency": "USD",
    "file": "bxp_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "C",
    "currency": "USD",
    "file": "c_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CAH",
    "currency": "USD",
    "file": "cah_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CARR",
    "currency": "USD",
    "file": "carr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CASY",
    "currency": "USD",
    "file": "casy_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CAT",
    "currency": "USD",
    "file": "cat_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CB",
    "currency": "USD",
    "file": "cb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CBOE",
    "currency": "USD",
    "file": "cboe_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CBRE",
    "currency": "USD",
    "file": "cbre_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CCI",
    "currency": "USD",
    "file": "cci_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CCL",
    "currency": "USD",
    "file": "ccl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CDNS",
    "currency": "USD",
    "file": "cdns_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CDW",
    "currency": "USD",
    "file": "cdw_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CEG",
    "currency": "USD",
    "file": "ceg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CF",
    "currency": "USD",
    "file": "cf_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CFG",
    "currency": "USD",
    "file": "cfg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CHD",
    "currency": "USD",
    "file": "chd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CHRW",
    "currency": "USD",
    "file": "chrw_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CHTR",
    "currency": "USD",
    "file": "chtr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CI",
    "currency": "USD",
    "file": "ci_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CIEN",
    "currency": "USD",
    "file": "cien_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CINF",
    "currency": "USD",
    "file": "cinf_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CL",
    "currency": "USD",
    "file": "cl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CLX",
    "currency": "USD",
    "file": "clx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CMCSA",
    "currency": "USD",
    "file": "cmcsa_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CME",
    "currency": "USD",
    "file": "cme_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CMG",
    "currency": "USD",
    "file": "cmg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CMI",
    "currency": "USD",
    "file": "cmi_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CMS",
    "currency": "USD",
    "file": "cms_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CNC",
    "currency": "USD",
    "file": "cnc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CNP",
    "currency": "USD",
    "file": "cnp_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "COF",
    "currency": "USD",
    "file": "cof_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "COHR",
    "currency": "USD",
    "file": "cohr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "COIN",
    "currency": "USD",
    "file": "coin_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "COO",
    "currency": "USD",
    "file": "coo_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "COP",
    "currency": "USD",
    "file": "cop_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "COR",
    "currency": "USD",
    "file": "cor_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "COST",
    "currency": "USD",
    "file": "cost_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CPAY",
    "currency": "USD",
    "file": "cpay_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CPRT",
    "currency": "USD",
    "file": "cprt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CPT",
    "currency": "USD",
    "file": "cpt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CRH",
    "currency": "USD",
    "file": "crh_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CRL",
    "currency": "USD",
    "file": "crl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CRM",
    "currency": "USD",
    "file": "crm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CRWD",
    "currency": "USD",
    "file": "crwd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CSCO",
    "currency": "USD",
    "file": "csco_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CSGP",
    "currency": "USD",
    "file": "csgp_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CSX",
    "currency": "USD",
    "file": "csx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CTAS",
    "currency": "USD",
    "file": "ctas_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CTSH",
    "currency": "USD",
    "file": "ctsh_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CTVA",
    "currency": "USD",
    "file": "ctva_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CVNA",
    "currency": "USD",
    "file": "cvna_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CVS",
    "currency": "USD",
    "file": "cvs_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "CVX",
    "currency": "USD",
    "file": "cvx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "D",
    "currency": "USD",
    "file": "d_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DAL",
    "currency": "USD",
    "file": "dal_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DASH",
    "currency": "USD",
    "file": "dash_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DD",
    "currency": "USD",
    "file": "dd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DDOG",
    "currency": "USD",
    "file": "ddog_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DE",
    "currency": "USD",
    "file": "de_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DECK",
    "currency": "USD",
    "file": "deck_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DELL",
    "currency": "USD",
    "file": "dell_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DG",
    "currency": "USD",
    "file": "dg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DGX",
    "currency": "USD",
    "file": "dgx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DHI",
    "currency": "USD",
    "file": "dhi_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DHR",
    "currency": "USD",
    "file": "dhr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DIS",
    "currency": "USD",
    "file": "dis_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DLR",
    "currency": "USD",
    "file": "dlr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DLTR",
    "currency": "USD",
    "file": "dltr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DOC",
    "currency": "USD",
    "file": "doc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DOV",
    "currency": "USD",
    "file": "dov_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DOW",
    "currency": "USD",
    "file": "dow_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DPZ",
    "currency": "USD",
    "file": "dpz_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DRI",
    "currency": "USD",
    "file": "dri_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DTE",
    "currency": "USD",
    "file": "dte_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DUK",
    "currency": "USD",
    "file": "duk_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DVA",
    "currency": "USD",
    "file": "dva_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DVN",
    "currency": "USD",
    "file": "dvn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "DXCM",
    "currency": "USD",
    "file": "dxcm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EA",
    "currency": "USD",
    "file": "ea_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EBAY",
    "currency": "USD",
    "file": "ebay_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ECHO",
    "currency": "USD",
    "file": "echo_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ECL",
    "currency": "USD",
    "file": "ecl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ED",
    "currency": "USD",
    "file": "ed_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EFX",
    "currency": "USD",
    "file": "efx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EG",
    "currency": "USD",
    "file": "eg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EIX",
    "currency": "USD",
    "file": "eix_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EL",
    "currency": "USD",
    "file": "el_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ELV",
    "currency": "USD",
    "file": "elv_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EME",
    "currency": "USD",
    "file": "eme_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EMR",
    "currency": "USD",
    "file": "emr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EOG",
    "currency": "USD",
    "file": "eog_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EQIX",
    "currency": "USD",
    "file": "eqix_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EQR",
    "currency": "USD",
    "file": "eqr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EQT",
    "currency": "USD",
    "file": "eqt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ERIE",
    "currency": "USD",
    "file": "erie_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ES",
    "currency": "USD",
    "file": "es_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ESS",
    "currency": "USD",
    "file": "ess_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ETN",
    "currency": "USD",
    "file": "etn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ETR",
    "currency": "USD",
    "file": "etr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EVRG",
    "currency": "USD",
    "file": "evrg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EW",
    "currency": "USD",
    "file": "ew_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EXC",
    "currency": "USD",
    "file": "exc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EXE",
    "currency": "USD",
    "file": "exe_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EXPD",
    "currency": "USD",
    "file": "expd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EXPE",
    "currency": "USD",
    "file": "expe_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "EXR",
    "currency": "USD",
    "file": "exr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "F",
    "currency": "USD",
    "file": "f_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FANG",
    "currency": "USD",
    "file": "fang_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FAST",
    "currency": "USD",
    "file": "fast_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FCX",
    "currency": "USD",
    "file": "fcx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FDS",
    "currency": "USD",
    "file": "fds_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FDX",
    "currency": "USD",
    "file": "fdx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FE",
    "currency": "USD",
    "file": "fe_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FFIV",
    "currency": "USD",
    "file": "ffiv_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FICO",
    "currency": "USD",
    "file": "fico_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FIS",
    "currency": "USD",
    "file": "fis_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FISV",
    "currency": "USD",
    "file": "fisv_daily_yf.csv",
-   "rows": 752,
+   "rows": 749,
    "in_sp500": true
   },
   {
    "symbol": "FITB",
    "currency": "USD",
    "file": "fitb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FIX",
    "currency": "USD",
    "file": "fix_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FLEX",
    "currency": "USD",
    "file": "flex_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FOX",
    "currency": "USD",
    "file": "fox_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FOXA",
    "currency": "USD",
    "file": "foxa_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FRT",
    "currency": "USD",
    "file": "frt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FSLR",
    "currency": "USD",
    "file": "fslr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FTNT",
    "currency": "USD",
    "file": "ftnt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "FTV",
    "currency": "USD",
    "file": "ftv_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GD",
    "currency": "USD",
    "file": "gd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GDDY",
    "currency": "USD",
    "file": "gddy_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GE",
    "currency": "USD",
    "file": "ge_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GEHC",
    "currency": "USD",
    "file": "gehc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GEN",
    "currency": "USD",
    "file": "gen_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GEV",
    "currency": "USD",
    "file": "gev_daily_yf.csv",
-   "rows": 577,
+   "rows": 579,
    "in_sp500": true
   },
   {
    "symbol": "GILD",
    "currency": "USD",
    "file": "gild_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GIS",
    "currency": "USD",
    "file": "gis_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GL",
    "currency": "USD",
    "file": "gl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GLW",
    "currency": "USD",
    "file": "glw_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GM",
    "currency": "USD",
    "file": "gm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GNRC",
    "currency": "USD",
    "file": "gnrc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GOOG",
    "currency": "USD",
    "file": "goog_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GOOGL",
    "currency": "USD",
    "file": "googl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GPC",
    "currency": "USD",
    "file": "gpc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GPN",
    "currency": "USD",
    "file": "gpn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GRMN",
    "currency": "USD",
    "file": "grmn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GS",
    "currency": "USD",
    "file": "gs_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "GWW",
    "currency": "USD",
    "file": "gww_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HAL",
    "currency": "USD",
    "file": "hal_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HAS",
    "currency": "USD",
    "file": "has_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HBAN",
    "currency": "USD",
    "file": "hban_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HCA",
    "currency": "USD",
    "file": "hca_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HD",
    "currency": "USD",
    "file": "hd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HIG",
    "currency": "USD",
    "file": "hig_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HII",
    "currency": "USD",
    "file": "hii_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HLT",
    "currency": "USD",
    "file": "hlt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HON",
    "currency": "USD",
    "file": "hon_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HOOD",
    "currency": "USD",
    "file": "hood_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HPE",
    "currency": "USD",
    "file": "hpe_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HPQ",
    "currency": "USD",
    "file": "hpq_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HRL",
    "currency": "USD",
    "file": "hrl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HSIC",
    "currency": "USD",
    "file": "hsic_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HST",
    "currency": "USD",
    "file": "hst_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HSY",
    "currency": "USD",
    "file": "hsy_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HUBB",
    "currency": "USD",
    "file": "hubb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HUM",
    "currency": "USD",
    "file": "hum_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "HWM",
    "currency": "USD",
    "file": "hwm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "IBKR",
    "currency": "USD",
    "file": "ibkr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "IBM",
    "currency": "USD",
    "file": "ibm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ICE",
    "currency": "USD",
    "file": "ice_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "IDXX",
    "currency": "USD",
    "file": "idxx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "IEX",
    "currency": "USD",
    "file": "iex_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "IFF",
    "currency": "USD",
    "file": "iff_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "INCY",
    "currency": "USD",
    "file": "incy_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "INTC",
    "currency": "USD",
    "file": "intc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "INTU",
    "currency": "USD",
    "file": "intu_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "INVH",
    "currency": "USD",
    "file": "invh_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "IP",
    "currency": "USD",
    "file": "ip_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "IQV",
    "currency": "USD",
    "file": "iqv_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "IR",
    "currency": "USD",
    "file": "ir_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "IRM",
    "currency": "USD",
    "file": "irm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ISRG",
    "currency": "USD",
    "file": "isrg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "IT",
    "currency": "USD",
    "file": "it_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ITW",
    "currency": "USD",
    "file": "itw_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "IVZ",
    "currency": "USD",
    "file": "ivz_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "J",
    "currency": "USD",
    "file": "j_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "JBHT",
    "currency": "USD",
    "file": "jbht_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "JBL",
    "currency": "USD",
    "file": "jbl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "JCI",
    "currency": "USD",
    "file": "jci_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "JKHY",
    "currency": "USD",
    "file": "jkhy_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "JNJ",
    "currency": "USD",
    "file": "jnj_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "JPM",
    "currency": "USD",
    "file": "jpm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KDP",
    "currency": "USD",
    "file": "kdp_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KEY",
    "currency": "USD",
    "file": "key_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KEYS",
    "currency": "USD",
    "file": "keys_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KHC",
    "currency": "USD",
    "file": "khc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KIM",
    "currency": "USD",
    "file": "kim_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KKR",
    "currency": "USD",
    "file": "kkr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KLAC",
    "currency": "USD",
    "file": "klac_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KMB",
    "currency": "USD",
    "file": "kmb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KMI",
    "currency": "USD",
    "file": "kmi_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KO",
    "currency": "USD",
    "file": "ko_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KR",
    "currency": "USD",
    "file": "kr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "KVUE",
    "currency": "USD",
    "file": "kvue_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "L",
    "currency": "USD",
    "file": "l_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LDOS",
    "currency": "USD",
    "file": "ldos_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LEN",
    "currency": "USD",
    "file": "len_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LH",
    "currency": "USD",
    "file": "lh_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LHX",
    "currency": "USD",
    "file": "lhx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LII",
    "currency": "USD",
    "file": "lii_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LIN",
    "currency": "USD",
    "file": "lin_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LITE",
    "currency": "USD",
    "file": "lite_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LLY",
    "currency": "USD",
    "file": "lly_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LMT",
    "currency": "USD",
    "file": "lmt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LNT",
    "currency": "USD",
    "file": "lnt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LOW",
    "currency": "USD",
    "file": "low_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LRCX",
    "currency": "USD",
    "file": "lrcx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LULU",
    "currency": "USD",
    "file": "lulu_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LUV",
    "currency": "USD",
    "file": "luv_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LVS",
    "currency": "USD",
    "file": "lvs_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LYB",
    "currency": "USD",
    "file": "lyb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "LYV",
    "currency": "USD",
    "file": "lyv_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MA",
    "currency": "USD",
    "file": "ma_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MAA",
    "currency": "USD",
    "file": "maa_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MAR",
    "currency": "USD",
    "file": "mar_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MAS",
    "currency": "USD",
    "file": "mas_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MCD",
    "currency": "USD",
    "file": "mcd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MCHP",
    "currency": "USD",
    "file": "mchp_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MCK",
    "currency": "USD",
    "file": "mck_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MCO",
    "currency": "USD",
    "file": "mco_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MDA.TO",
    "currency": "CAD",
    "file": "mda_to_daily_yf.csv",
-   "rows": 754,
+   "rows": 752,
    "in_sp500": false
   },
   {
    "symbol": "MDLZ",
    "currency": "USD",
    "file": "mdlz_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MDT",
    "currency": "USD",
    "file": "mdt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MET",
    "currency": "USD",
    "file": "met_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "META",
    "currency": "USD",
    "file": "meta_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MGM",
    "currency": "USD",
    "file": "mgm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MKC",
    "currency": "USD",
    "file": "mkc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MLM",
    "currency": "USD",
    "file": "mlm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MMM",
    "currency": "USD",
    "file": "mmm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MNST",
    "currency": "USD",
    "file": "mnst_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MO",
    "currency": "USD",
    "file": "mo_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MOS",
    "currency": "USD",
    "file": "mos_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MPC",
    "currency": "USD",
    "file": "mpc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MPWR",
    "currency": "USD",
    "file": "mpwr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MRK",
    "currency": "USD",
    "file": "mrk_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MRNA",
    "currency": "USD",
    "file": "mrna_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MRSH",
    "currency": "USD",
    "file": "mrsh_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MRVL",
    "currency": "USD",
    "file": "mrvl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MS",
    "currency": "USD",
    "file": "ms_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MSCI",
    "currency": "USD",
    "file": "msci_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MSFT",
    "currency": "USD",
    "file": "msft_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MSI",
    "currency": "USD",
    "file": "msi_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MTB",
    "currency": "USD",
    "file": "mtb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MTD",
    "currency": "USD",
    "file": "mtd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "MU",
    "currency": "USD",
    "file": "mu_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NCLH",
    "currency": "USD",
    "file": "nclh_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NDAQ",
    "currency": "USD",
    "file": "ndaq_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NDSN",
    "currency": "USD",
    "file": "ndsn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NEE",
    "currency": "USD",
    "file": "nee_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NEM",
    "currency": "USD",
    "file": "nem_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NFLX",
    "currency": "USD",
    "file": "nflx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NI",
    "currency": "USD",
    "file": "ni_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NKE",
    "currency": "USD",
    "file": "nke_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NOC",
    "currency": "USD",
    "file": "noc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NOW",
    "currency": "USD",
    "file": "now_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NRG",
    "currency": "USD",
    "file": "nrg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NSC",
    "currency": "USD",
    "file": "nsc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NTAP",
    "currency": "USD",
    "file": "ntap_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NTRS",
    "currency": "USD",
    "file": "ntrs_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NUE",
    "currency": "USD",
    "file": "nue_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NVDA",
    "currency": "USD",
    "file": "nvda_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NVR",
    "currency": "USD",
    "file": "nvr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NWS",
    "currency": "USD",
    "file": "nws_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NWSA",
    "currency": "USD",
    "file": "nwsa_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "NXPI",
    "currency": "USD",
    "file": "nxpi_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "O",
    "currency": "USD",
    "file": "o_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ODFL",
    "currency": "USD",
    "file": "odfl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "OKE",
    "currency": "USD",
    "file": "oke_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "OMC",
    "currency": "USD",
    "file": "omc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ON",
    "currency": "USD",
    "file": "on_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ORCL",
    "currency": "USD",
    "file": "orcl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ORLY",
    "currency": "USD",
    "file": "orly_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "OTIS",
    "currency": "USD",
    "file": "otis_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "OXY",
    "currency": "USD",
    "file": "oxy_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PANW",
    "currency": "USD",
    "file": "panw_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PAYX",
    "currency": "USD",
    "file": "payx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PCAR",
    "currency": "USD",
    "file": "pcar_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PCG",
    "currency": "USD",
    "file": "pcg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PEG",
    "currency": "USD",
    "file": "peg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PEP",
    "currency": "USD",
    "file": "pep_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PFE",
    "currency": "USD",
    "file": "pfe_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PFG",
    "currency": "USD",
    "file": "pfg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PG",
    "currency": "USD",
    "file": "pg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PGR",
    "currency": "USD",
    "file": "pgr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PH",
    "currency": "USD",
    "file": "ph_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PHM",
    "currency": "USD",
    "file": "phm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PKG",
    "currency": "USD",
    "file": "pkg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PLD",
    "currency": "USD",
    "file": "pld_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PLTR",
    "currency": "USD",
    "file": "pltr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PM",
    "currency": "USD",
    "file": "pm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PNC",
    "currency": "USD",
    "file": "pnc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PNR",
    "currency": "USD",
    "file": "pnr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PNW",
    "currency": "USD",
    "file": "pnw_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PODD",
    "currency": "USD",
    "file": "podd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PPG",
    "currency": "USD",
    "file": "ppg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PPL",
    "currency": "USD",
    "file": "ppl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PRU",
    "currency": "USD",
    "file": "pru_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PSA",
    "currency": "USD",
    "file": "psa_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PSKY",
    "currency": "USD",
    "file": "psky_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PSX",
    "currency": "USD",
    "file": "psx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PTC",
    "currency": "USD",
    "file": "ptc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PWR",
    "currency": "USD",
    "file": "pwr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "PYPL",
    "currency": "USD",
    "file": "pypl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "Q",
    "currency": "USD",
    "file": "q_daily_yf.csv",
-   "rows": 180,
+   "rows": 182,
    "in_sp500": true
   },
   {
    "symbol": "QCOM",
    "currency": "USD",
    "file": "qcom_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "RCL",
    "currency": "USD",
    "file": "rcl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "REG",
    "currency": "USD",
    "file": "reg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "REGN",
    "currency": "USD",
    "file": "regn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "RF",
    "currency": "USD",
    "file": "rf_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "RJF",
    "currency": "USD",
    "file": "rjf_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "RL",
    "currency": "USD",
    "file": "rl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "RMD",
    "currency": "USD",
    "file": "rmd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ROK",
    "currency": "USD",
    "file": "rok_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ROL",
    "currency": "USD",
    "file": "rol_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ROP",
    "currency": "USD",
    "file": "rop_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ROST",
    "currency": "USD",
    "file": "rost_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "RSG",
    "currency": "USD",
    "file": "rsg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "RTX",
    "currency": "USD",
    "file": "rtx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "RVTY",
    "currency": "USD",
    "file": "rvty_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SBAC",
    "currency": "USD",
    "file": "sbac_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SBUX",
    "currency": "USD",
    "file": "sbux_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SCHG",
    "currency": "USD",
    "file": "schg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": false
   },
   {
    "symbol": "SCHW",
    "currency": "USD",
    "file": "schw_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SHAZ",
    "currency": "USD",
    "file": "shaz_daily_yf.csv",
-   "rows": 103,
+   "rows": 105,
    "in_sp500": false
   },
   {
    "symbol": "SHOP",
    "currency": "USD",
    "file": "shop_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": false
   },
   {
    "symbol": "SHW",
    "currency": "USD",
    "file": "shw_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SJM",
    "currency": "USD",
    "file": "sjm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SLB",
    "currency": "USD",
    "file": "slb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SMCI",
    "currency": "USD",
    "file": "smci_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SNA",
    "currency": "USD",
    "file": "sna_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SNDK",
    "currency": "USD",
    "file": "sndk_daily_yf.csv",
-   "rows": 356,
+   "rows": 358,
    "in_sp500": true
   },
   {
    "symbol": "SNPS",
    "currency": "USD",
    "file": "snps_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SO",
    "currency": "USD",
    "file": "so_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SOLV",
    "currency": "USD",
    "file": "solv_daily_yf.csv",
-   "rows": 578,
+   "rows": 580,
    "in_sp500": true
   },
   {
    "symbol": "SOXL",
    "currency": "USD",
    "file": "soxl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": false
   },
   {
    "symbol": "SPG",
    "currency": "USD",
    "file": "spg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SPGI",
    "currency": "USD",
    "file": "spgi_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SRE",
    "currency": "USD",
    "file": "sre_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "STE",
    "currency": "USD",
    "file": "ste_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "STLD",
    "currency": "USD",
    "file": "stld_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "STT",
    "currency": "USD",
    "file": "stt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "STX",
    "currency": "USD",
    "file": "stx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "STZ",
    "currency": "USD",
    "file": "stz_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SW",
    "currency": "USD",
    "file": "sw_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SWK",
    "currency": "USD",
    "file": "swk_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SWKS",
    "currency": "USD",
    "file": "swks_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SYF",
    "currency": "USD",
    "file": "syf_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SYK",
    "currency": "USD",
    "file": "syk_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "SYY",
    "currency": "USD",
    "file": "syy_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "T",
    "currency": "USD",
    "file": "t_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TAP",
    "currency": "USD",
    "file": "tap_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TDG",
    "currency": "USD",
    "file": "tdg_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TDY",
    "currency": "USD",
    "file": "tdy_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TECH",
    "currency": "USD",
    "file": "tech_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TEL",
    "currency": "USD",
    "file": "tel_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TER",
    "currency": "USD",
    "file": "ter_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TFC",
    "currency": "USD",
    "file": "tfc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TGT",
    "currency": "USD",
    "file": "tgt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TJX",
    "currency": "USD",
    "file": "tjx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TKO",
    "currency": "USD",
    "file": "tko_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TMO",
    "currency": "USD",
    "file": "tmo_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TMUS",
    "currency": "USD",
    "file": "tmus_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TPL",
    "currency": "USD",
    "file": "tpl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TPR",
    "currency": "USD",
    "file": "tpr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TRGP",
    "currency": "USD",
    "file": "trgp_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TRMB",
    "currency": "USD",
    "file": "trmb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TROW",
    "currency": "USD",
    "file": "trow_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TRV",
    "currency": "USD",
    "file": "trv_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TSCO",
    "currency": "USD",
    "file": "tsco_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TSLA",
    "currency": "USD",
    "file": "tsla_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TSN",
    "currency": "USD",
    "file": "tsn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TT",
    "currency": "USD",
    "file": "tt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TTD",
    "currency": "USD",
    "file": "ttd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TTWO",
    "currency": "USD",
    "file": "ttwo_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TXN",
    "currency": "USD",
    "file": "txn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TXT",
    "currency": "USD",
    "file": "txt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "TYL",
    "currency": "USD",
    "file": "tyl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "UAL",
    "currency": "USD",
    "file": "ual_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "UBER",
    "currency": "USD",
    "file": "uber_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "UDR",
    "currency": "USD",
    "file": "udr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "UHS",
    "currency": "USD",
    "file": "uhs_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ULTA",
    "currency": "USD",
    "file": "ulta_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "UNH",
    "currency": "USD",
    "file": "unh_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "UNP",
    "currency": "USD",
    "file": "unp_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "UPS",
    "currency": "USD",
    "file": "ups_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "URI",
    "currency": "USD",
    "file": "uri_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "USB",
    "currency": "USD",
    "file": "usb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "V",
    "currency": "USD",
    "file": "v_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VEEV",
    "currency": "USD",
    "file": "veev_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VICI",
    "currency": "USD",
    "file": "vici_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VLO",
    "currency": "USD",
    "file": "vlo_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VLTO",
    "currency": "USD",
    "file": "vlto_daily_yf.csv",
-   "rows": 697,
+   "rows": 699,
    "in_sp500": true
   },
   {
    "symbol": "VMC",
    "currency": "USD",
    "file": "vmc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VRSK",
    "currency": "USD",
    "file": "vrsk_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VRSN",
    "currency": "USD",
    "file": "vrsn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VRT",
    "currency": "USD",
    "file": "vrt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VRTX",
    "currency": "USD",
    "file": "vrtx_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VST",
    "currency": "USD",
    "file": "vst_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VTR",
    "currency": "USD",
    "file": "vtr_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VTRS",
    "currency": "USD",
    "file": "vtrs_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "VZ",
    "currency": "USD",
    "file": "vz_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WAB",
    "currency": "USD",
    "file": "wab_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WAT",
    "currency": "USD",
    "file": "wat_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WBD",
    "currency": "USD",
    "file": "wbd_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WDAY",
    "currency": "USD",
    "file": "wday_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WDC",
    "currency": "USD",
    "file": "wdc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WEC",
    "currency": "USD",
    "file": "wec_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WELL",
    "currency": "USD",
    "file": "well_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WFC",
    "currency": "USD",
    "file": "wfc_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WM",
    "currency": "USD",
    "file": "wm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WMB",
    "currency": "USD",
    "file": "wmb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WMT",
    "currency": "USD",
    "file": "wmt_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WRB",
    "currency": "USD",
    "file": "wrb_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WSM",
    "currency": "USD",
    "file": "wsm_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WST",
    "currency": "USD",
    "file": "wst_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WTW",
    "currency": "USD",
    "file": "wtw_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WULF",
    "currency": "USD",
    "file": "wulf_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": false
   },
   {
    "symbol": "WY",
    "currency": "USD",
    "file": "wy_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "WYNN",
    "currency": "USD",
    "file": "wynn_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "XEL",
    "currency": "USD",
    "file": "xel_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "XIU.TO",
    "currency": "CAD",
    "file": "xiu_to_daily_yf.csv",
-   "rows": 754,
+   "rows": 752,
    "in_sp500": false
   },
   {
    "symbol": "XNDU.TO",
    "currency": "CAD",
    "file": "xndu_to_daily_yf.csv",
-   "rows": 77,
+   "rows": 79,
    "in_sp500": false
   },
   {
    "symbol": "XOM",
    "currency": "USD",
    "file": "xom_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "XSP.TO",
    "currency": "CAD",
    "file": "xsp_to_daily_yf.csv",
-   "rows": 754,
+   "rows": 752,
    "in_sp500": false
   },
   {
    "symbol": "XYL",
    "currency": "USD",
    "file": "xyl_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "XYZ",
    "currency": "USD",
    "file": "xyz_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "YUM",
    "currency": "USD",
    "file": "yum_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ZBH",
    "currency": "USD",
    "file": "zbh_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ZBRA",
    "currency": "USD",
    "file": "zbra_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   },
   {
    "symbol": "ZTS",
    "currency": "USD",
    "file": "zts_daily_yf.csv",
-   "rows": 753,
+   "rows": 750,
    "in_sp500": true
   }
  ],

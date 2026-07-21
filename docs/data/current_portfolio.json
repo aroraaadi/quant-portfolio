@@ -1,144 +1,144 @@
 {
-  "as_of": "2026-07-20",
+  "as_of": "2026-07-21",
   "source": "brokerage account \u2014 allocation only (relative)",
   "positions": [
     {
       "symbol": "SCHG",
       "kind": "etf",
       "currency": "USD",
-      "weight": 0.1322
+      "weight": 0.1366
     },
     {
       "symbol": "GOOG.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.0924
+      "weight": 0.0936
     },
     {
       "symbol": "AMZN.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.0741
+      "weight": 0.0751
     },
     {
       "symbol": "SHOP.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.0731
+      "weight": 0.0732
     },
     {
       "symbol": "XIU.TO",
       "kind": "etf",
       "currency": "CAD",
-      "weight": 0.0645
+      "weight": 0.0667
     },
     {
       "symbol": "AVGO",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0626
-    },
-    {
-      "symbol": "META",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0534
-    },
-    {
-      "symbol": "GE.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0518
-    },
-    {
-      "symbol": "NVDA.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0506
+      "weight": 0.0653
     },
     {
       "symbol": "BE",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0501
+      "weight": 0.0582
+    },
+    {
+      "symbol": "META",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0544
+    },
+    {
+      "symbol": "GE.TO",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0534
+    },
+    {
+      "symbol": "NVDA.TO",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0531
     },
     {
       "symbol": "META.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.0424
+      "weight": 0.0433
     },
     {
       "symbol": "XSP.TO",
       "kind": "etf",
       "currency": "CAD",
-      "weight": 0.0394
+      "weight": 0.0408
     },
     {
       "symbol": "JPM.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.0355
+      "weight": 0.037
     },
     {
       "symbol": "MSFT",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.033
+      "weight": 0.0336
     },
     {
       "symbol": "MDA.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.0301
+      "weight": 0.0322
     },
     {
       "symbol": "SPGI.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.0286
+      "weight": 0.0282
     },
     {
       "symbol": "XNDU.TO",
       "kind": "etf",
       "currency": "CAD",
-      "weight": 0.0231
-    },
-    {
-      "symbol": "WULF28Aug26C19.50",
-      "kind": "option",
-      "currency": "USD",
-      "weight": 0.0186
-    },
-    {
-      "symbol": "MRVL",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0163
+      "weight": 0.0242
     },
     {
       "symbol": "SOXL.TO",
       "kind": "etf",
       "currency": "CAD",
-      "weight": 0.0103
+      "weight": 0.0118
     },
     {
       "symbol": "SPCX.TO",
       "kind": "etf",
       "currency": "CAD",
-      "weight": 0.0096
+      "weight": 0.01
     },
     {
       "symbol": "SHAZ",
       "kind": "etf",
       "currency": "USD",
-      "weight": 0.005
+      "weight": 0.006
     },
     {
       "symbol": "WULF",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0031
+      "weight": 0.0034
+    },
+    {
+      "symbol": "MRVL",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0
+    },
+    {
+      "symbol": "WULF28Aug26C19.50",
+      "kind": "option",
+      "currency": "USD",
+      "weight": 0.0
     }
   ]
 }
