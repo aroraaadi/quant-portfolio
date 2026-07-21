@@ -237,6 +237,15 @@ tr:last-child td { border-bottom: none; }
 .size-bar { height: 7px; border-radius: 4px; background: var(--accent); min-width: 2px; }
 .size-bar-track { flex: 1; height: 7px; border-radius: 4px; background: var(--grid); overflow: hidden; }
 
+/* Dense metric grid (Analytics) */
+.metric-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  gap: 1px; background: var(--grid); border: 1px solid var(--grid); border-radius: 8px; overflow: hidden; }
+.metric { background: var(--surface); padding: 11px 14px; }
+.metric .m-label { font-size: 11.5px; color: var(--ink-2); }
+.metric .m-value { font-size: 19px; font-weight: 600; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.metric .m-value.up { color: var(--up); } .metric .m-value.down { color: var(--down); }
+.metric .m-hint { font-size: 10.5px; color: var(--muted); margin-top: 1px; }
+
 .note { color: var(--muted); font-size: 12.5px; margin-top: 10px; }
 footer { color: var(--muted); font-size: 12.5px; margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--grid); }
 .error-box { color: var(--down); font-size: 14px; padding: 12px 0; }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Portfolio — Analytics</title>
+<link rel="stylesheet" href="../css/style.css">
+<script>window.ASSET_BASE = "../";</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="row1">
+      <span class="brand">Quant Portfolio</span>
+      <a class="section active" href="index.html">My Portfolio</a>
+      <span class="sep">/</span>
+      <a class="section" href="../research/index.html">Research</a>
+      <a class="blog" href="../blog.html">Blog</a>
+      <span class="asof" id="asof"></span>
+    </div>
+    <div class="row2">
+      <a href="index.html">Dashboard</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="holdings.html">Holdings</a>
+      <a href="transactions.html">Transactions</a>
+      <a href="analytics.html" class="active">Analytics</a>
+    </div>
+  </div>
+
+  <h1>Risk analytics</h1>
+  <p class="sub" id="intro"></p>
+
+  <div id="content">
+    <div class="card">
+      <h2>Return &amp; risk</h2>
+      <div class="metric-grid" id="g-return"></div>
+    </div>
+    <div class="card">
+      <h2>Market sensitivity <span class="note" style="font-weight:400">vs S&amp;P 500</span></h2>
+      <div class="metric-grid" id="g-market"></div>
+    </div>
+    <div class="card">
+      <h2>Tail risk</h2>
+      <div class="metric-grid" id="g-tail"></div>
+    </div>
+
+    <div class="card">
+      <h2>Drawdown</h2>
+      <div class="chart-box" style="height:240px"><canvas id="dd-chart"></canvas></div>
+      <p class="note" id="dd-note"></p>
+    </div>
+
+    <div class="card">
+      <h2>Beta — up vs down markets</h2>
+      <div class="legend" id="beta-legend"></div>
+      <div class="chart-box" style="height:340px"><canvas id="beta-chart"></canvas></div>
+      <p class="note">Each dot is one day: portfolio return (y) vs S&amp;P 500 (x). The two lines are the fitted
+        slope on down days (β⁻) and up days (β⁺) — their gap is the portfolio's up/down asymmetry.</p>
+    </div>
+
+    <div class="card">
+      <h2>Daily return distribution</h2>
+      <div class="chart-box" style="height:240px"><canvas id="hist-chart"></canvas></div>
+      <p class="note" id="hist-note"></p>
+    </div>
+
+    <div class="card">
+      <h2>Concentration</h2>
+      <div class="metric-grid" id="g-conc" style="margin-bottom:16px"></div>
+      <div class="legend" id="sector-legend"></div>
+      <div class="chart-box" id="sector-box" style="height:240px"><canvas id="sector-chart"></canvas></div>
+      <p class="note" id="conc-note"></p>
+    </div>
+  </div>
+
+  <footer>Educational analytics, not investment advice. Daily metrics apply current holdings over the
+    available history (hypothetical, since weights change); all figures are ratios or percentages.</footer>
+</div>
+
+<script src="../js/common.js"></script>
+<script src="../js/my_analytics.js"></script>
+</body>
+</html>
