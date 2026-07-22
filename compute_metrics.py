@@ -47,6 +47,12 @@ def ann_return(r, n):
     return float(np.prod(1 + r) ** (252 / n) - 1)
 
 
+def beta_of(p, m):
+    """cov(p,m)/var(m) — both from one sample covariance matrix (consistent ddof=1)."""
+    C = np.cov(p, m)
+    return float(C[0, 1] / C[1, 1])
+
+
 def capture(port, mkt, mask):
     mm = mkt[mask].mean()                         # avg-return ratio on up/down days
     return float(port[mask].mean() / mm) if mm else None
@@ -58,8 +64,8 @@ SEC_ALIAS = {"Technology": "Information Technology", "Financial Services": "Fina
 
 def main():
     pf = json.loads(PF.read_text())
-    data = json.loads(MATRIX.read_text())["data"]
-    dates_all = json.loads(MATRIX.read_text())["dates"]
+    matrix = json.loads(MATRIX.read_text())
+    data, dates_all = matrix["data"], matrix["dates"]
     sectors = {x["symbol"]: x["sector"] for x in json.loads(INDEX.read_text())}
 
     spx = {}
@@ -89,18 +95,17 @@ def main():
     vol = float(port.std(ddof=1) * math.sqrt(252))
     cagr = ann_return(port, n)
     dd_min, dd_series = max_drawdown(port)
-    downside = np.minimum(port, 0.0)
-    downside_dev = float(math.sqrt((downside ** 2).mean()) * math.sqrt(252))
+    below = np.minimum(port - RF_D, 0.0)          # downside relative to the risk-free MAR
+    downside_dev = float(math.sqrt((below ** 2).mean()) * math.sqrt(252))
     sharpe = (cagr - RF) / vol if vol else 0.0
     sortino = (cagr - RF) / downside_dev if downside_dev else 0.0
     calmar = cagr / abs(dd_min) if dd_min else 0.0
 
     # --- market sensitivity ---
-    var_m = float(np.var(mkt))
-    beta = float(np.cov(port, mkt)[0, 1] / var_m)
     dn, up = mkt < 0, mkt > 0
-    beta_dn = float(np.cov(port[dn], mkt[dn])[0, 1] / np.var(mkt[dn]))
-    beta_up = float(np.cov(port[up], mkt[up])[0, 1] / np.var(mkt[up]))
+    beta = beta_of(port, mkt)
+    beta_dn = beta_of(port[dn], mkt[dn])
+    beta_up = beta_of(port[up], mkt[up])
     alpha_ann = float(((port - RF_D).mean() - beta * (mkt - RF_D).mean()) * 252)
     corr = float(np.corrcoef(port, mkt)[0, 1])
     te = float((port - mkt).std(ddof=1) * math.sqrt(252))
@@ -115,9 +120,9 @@ def main():
     kurt = float(stats.kurtosis(port))          # excess
     pct_pos = float((port > 0).mean())
 
-    # --- concentration (HHI on published weights) ---
-    weights = {p["symbol"]: p["weight"] for p in pf["positions"]}
-    wv = np.array(list(weights.values()))
+    # --- concentration (HHI on renormalized weights) ---
+    wv = np.array([p["weight"] for p in pf["positions"]], float)
+    wv = wv / wv.sum()                            # published weights are rounded — renormalize
     hhi = float((wv ** 2).sum())
     ws = sorted(wv, reverse=True)
     sec, cur = {}, {}

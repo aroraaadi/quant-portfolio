@@ -241,10 +241,10 @@
  },
  {
   "date": "2026-07-21",
-  "value_index": 1794.38,
+  "value_index": 1793.75,
   "invested_index": 1617.09,
-  "twr_index": 123.37,
+  "twr_index": 123.32,
   "spx_index": 155.11,
-  "ret": -0.0673
+  "ret": -0.0676
  }
 ]

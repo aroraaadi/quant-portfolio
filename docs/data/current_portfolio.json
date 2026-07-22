@@ -12,13 +12,13 @@
       "symbol": "GOOG.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.0936
+      "weight": 0.0937
     },
     {
       "symbol": "AMZN.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.0751
+      "weight": 0.0752
     },
     {
       "symbol": "SHOP.TO",
@@ -36,19 +36,19 @@
       "symbol": "AVGO",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0653
+      "weight": 0.0652
     },
     {
       "symbol": "BE",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0582
+      "weight": 0.058
     },
     {
       "symbol": "META",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0544
+      "weight": 0.0545
     },
     {
       "symbol": "GE.TO",
@@ -72,7 +72,7 @@
       "symbol": "XSP.TO",
       "kind": "etf",
       "currency": "CAD",
-      "weight": 0.0408
+      "weight": 0.0409
     },
     {
       "symbol": "JPM.TO",
@@ -84,7 +84,7 @@
       "symbol": "MSFT",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0336
+      "weight": 0.0337
     },
     {
       "symbol": "MDA.TO",
