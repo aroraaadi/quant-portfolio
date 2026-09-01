@@ -1,5 +1,6 @@
 import logging
 import os
+import socket
 import sys
 import threading
 import time
@@ -23,13 +24,27 @@ SYMBOLS = [
 BASE_DIR = Path(__file__).resolve().parent
 OUT_DIR = BASE_DIR / "Return Series"
 
-HOST = "127.0.0.1"
-PORT = 7497
-CLIENT_ID = 123
+HOST = os.environ.get("IBKR_HOST", "127.0.0.1")
+# TWS live 7496 / TWS paper 7497 / Gateway live 4001 / Gateway paper 4002.
+# Set IBKR_PORT to pin one; otherwise probe in this order and take the first that
+# answers. Hardcoding 7497 silently aimed the job at paper while TWS ran live.
+CANDIDATE_PORTS = (7496, 7497, 4001, 4002)
+CLIENT_ID = int(os.environ.get("IBKR_CLIENT_ID", 123))
 DURATION = "3 Y"
 REQUEST_TIMEOUT = 60.0
 CONNECT_TIMEOUT = 10.0
 PACING_SLEEP = 2.0
+
+NO_LISTENER = """No IBKR API listener on {host} ports {ports}.
+
+TWS is running but its API socket is closed. In TWS:
+  Edit -> Global Configuration -> API -> Settings
+    [x] Enable ActiveX and Socket Clients
+    Socket port: 7496 (live) or 7497 (paper)
+    [x] Allow connections from localhost only
+  Apply -> OK.  The setting only takes effect once TWS is logged in.
+
+Then re-run. Pin a specific port with IBKR_PORT=7496 if needed."""
 
 # Status noise from TWS (market data farm connection messages etc.)
 INFO_CODES = {2100, 2103, 2104, 2105, 2106, 2107, 2108, 2119, 2150, 2158}
@@ -89,16 +104,47 @@ def make_contract(spec):
     return contract
 
 
-def connect(host=HOST, port=PORT, client_id=CLIENT_ID, timeout=CONNECT_TIMEOUT):
+def _port_open(host, port, timeout=1.0):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+        sock.settimeout(timeout)
+        return sock.connect_ex((host, port)) == 0
+
+
+def discover_port(host=HOST):
+    """The API port to use. Fails fast with a fixable message when nothing listens.
+
+    A plain socket probe distinguishes "API disabled / wrong port" (nothing to
+    connect to) from "connected but TWS rejected us", which the old 10s timeout
+    reported identically.
+    """
+    pinned = os.environ.get("IBKR_PORT")
+    if pinned:
+        port = int(pinned)
+        if not _port_open(host, port):
+            sys.exit(NO_LISTENER.format(host=host, ports=port))
+        return port
+
+    live = [p for p in CANDIDATE_PORTS if _port_open(host, p)]
+    if not live:
+        sys.exit(NO_LISTENER.format(host=host, ports=", ".join(map(str, CANDIDATE_PORTS))))
+    if len(live) > 1:
+        log.warning("Multiple API ports open %s — using %d. Pin with IBKR_PORT.", live, live[0])
+    return live[0]
+
+
+def connect(host=HOST, port=None, client_id=CLIENT_ID, timeout=CONNECT_TIMEOUT):
+    port = discover_port(host) if port is None else port
+    log.info("Connecting to IBKR API at %s:%d (client id %d)", host, port, client_id)
     app = IBKRApp()
     app.connect(host, port, client_id)
     thread = threading.Thread(target=app.run, daemon=True)
     thread.start()
     if not app.connected_evt.wait(timeout):
-        log.error("Could not connect to TWS on %s:%s — is TWS/IB Gateway running "
-                  "with API connections enabled?", host, port)
         app.disconnect()
-        sys.exit(1)
+        sys.exit(f"Connected to {host}:{port} but TWS never sent nextValidId within "
+                 f"{timeout:.0f}s.\nUsual causes: another client is already using "
+                 f"client id {client_id} (set IBKR_CLIENT_ID), or TWS is showing an "
+                 "'Accept incoming connection' dialog waiting for a click.")
     return app
 
 

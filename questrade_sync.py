@@ -18,6 +18,8 @@ Refresh tokens also expire after 3 days, so run at least that often (or on deman
 import json
 import ssl
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -52,12 +54,31 @@ def _get(url, headers=None):
         return json.loads(resp.read().decode())
 
 
+STALE_TOKEN = """Questrade rejected the refresh token (HTTP {code}).
+
+Refresh tokens are single-use AND expire after 3 days.{age}
+There is no way to renew a dead token programmatically — generate a new one:
+
+  1. https://login.questrade.com/APIAccess/UserApps.aspx
+  2. On your personal app: New Device -> Generate new token
+  3. Copy the refresh token into {file}
+     (just the token, nothing else), then re-run this script.
+"""
+
+
 def load_refresh_token():
     import os
     if os.environ.get("QUESTRADE_REFRESH_TOKEN"):
         return os.environ["QUESTRADE_REFRESH_TOKEN"].strip()
     if TOKEN_FILE.exists():
-        return TOKEN_FILE.read_text().strip()
+        token = TOKEN_FILE.read_text().strip()
+        if not token:
+            sys.exit(f"{TOKEN_FILE.name} is empty — paste a fresh refresh token into it.")
+        age_days = (time.time() - TOKEN_FILE.stat().st_mtime) / 86400
+        if age_days > 3:
+            print(f"  WARNING: token file is {age_days:.1f} days old; Questrade expires "
+                  "refresh tokens after 3 days, so this will likely fail.")
+        return token
     sys.exit(f"No refresh token. Put it in {TOKEN_FILE.name} or set "
              "QUESTRADE_REFRESH_TOKEN (see this file's docstring).")
 
@@ -65,7 +86,18 @@ def load_refresh_token():
 def redeem(refresh_token):
     """Exchange the refresh token for an access token + api_server; rotate the token."""
     url = f"{LOGIN}?{urllib.parse.urlencode({'grant_type': 'refresh_token', 'refresh_token': refresh_token})}"
-    tok = _get(url)
+    try:
+        tok = _get(url)
+    except urllib.error.HTTPError as exc:
+        # 400 invalid_grant is the everyday case: expired or already-spent token.
+        # A traceback here just buries the one thing the user has to act on.
+        if exc.code in (400, 401):
+            age = ""
+            if TOKEN_FILE.exists():
+                days = (time.time() - TOKEN_FILE.stat().st_mtime) / 86400
+                age = f"\nYours was last written {days:.1f} days ago."
+            sys.exit(STALE_TOKEN.format(code=exc.code, age=age, file=TOKEN_FILE.name))
+        raise
     # Persist the rotated refresh token immediately (it is single-use).
     TOKEN_FILE.write_text(tok["refresh_token"] + "\n")
     return tok["access_token"], tok["api_server"]
